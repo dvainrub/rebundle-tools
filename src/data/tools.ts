@@ -13,15 +13,16 @@ export type Department =
   | "operaciones"
   | "todos";
 
+// Merged categories: presentaciones+diseño+video→creatividad, investigacion+datos→investigacion
 export type Category =
   | "automatizacion"
   | "investigacion"
-  | "presentaciones"
-  | "datos"
+  | "creatividad"
   | "nocode"
-  | "desarrollo"
-  | "video"
-  | "diseno";
+  | "desarrollo";
+
+// Recommendation tiers: tier1=⭐⭐⭐, tier2=⭐⭐, tier3=⭐
+export type RecommendationTier = "tier1" | "tier2" | "tier3" | null;
 
 export interface PricingTier {
   plan: string;
@@ -37,6 +38,7 @@ export interface Tool {
   descripcionCorta: string;
   categoria: Category;
   nivel: SkillLevel;
+  tier: RecommendationTier;
   departamentos: Department[];
   precios: PricingTier[];
   casosDeUso: string[];
@@ -46,12 +48,9 @@ export interface Tool {
 export const categoryLabels: Record<Category, string> = {
   automatizacion: "Automatizacion",
   investigacion: "Investigacion",
-  presentaciones: "Presentaciones",
-  datos: "Analisis de Datos",
+  creatividad: "Creatividad",
   nocode: "No-Code",
   desarrollo: "Desarrollo",
-  video: "Video",
-  diseno: "Diseno",
 };
 
 export const departmentLabels: Record<Department, string> = {
@@ -78,6 +77,24 @@ export const levelColors: Record<SkillLevel, string> = {
   avanzado: "bg-red-100 text-red-800",
 };
 
+export const tierLabels: Record<NonNullable<RecommendationTier>, string> = {
+  tier1: "⭐⭐⭐",
+  tier2: "⭐⭐",
+  tier3: "⭐",
+};
+
+export const tierDescriptions: Record<NonNullable<RecommendationTier>, string> = {
+  tier1: "Altamente Recomendado",
+  tier2: "Recomendado",
+  tier3: "Opcional",
+};
+
+export const tierColors: Record<NonNullable<RecommendationTier>, string> = {
+  tier1: "bg-amber-100 text-amber-800 border-amber-300",
+  tier2: "bg-slate-100 text-slate-700 border-slate-300",
+  tier3: "bg-gray-50 text-gray-600 border-gray-200",
+};
+
 export const tools: Tool[] = [
   // AUTOMATIZACION
   {
@@ -89,6 +106,7 @@ export const tools: Tool[] = [
     descripcionCorta: "Automatizacion visual sin codigo",
     categoria: "automatizacion",
     nivel: "intermedio",
+    tier: "tier1",
     departamentos: ["finanzas", "admin", "tech", "operaciones"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: "1,000 ops/mes" },
@@ -117,6 +135,7 @@ export const tools: Tool[] = [
     descripcionCorta: "Automatizacion simple para todos",
     categoria: "automatizacion",
     nivel: "principiante",
+    tier: "tier3",
     departamentos: ["finanzas", "admin", "ventas", "todos"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: "100 tareas/mes" },
@@ -137,7 +156,7 @@ export const tools: Tool[] = [
     ],
   },
 
-  // INVESTIGACION
+  // INVESTIGACION (includes former "datos" tools)
   {
     id: "perplexity",
     nombre: "Perplexity AI",
@@ -147,6 +166,7 @@ export const tools: Tool[] = [
     descripcionCorta: "Busqueda IA con fuentes citadas",
     categoria: "investigacion",
     nivel: "principiante",
+    tier: "tier2",
     departamentos: ["todos", "legal", "finanzas"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: "5 busquedas Pro/dia" },
@@ -173,6 +193,7 @@ export const tools: Tool[] = [
     descripcionCorta: "Paginas de investigacion compiladas",
     categoria: "investigacion",
     nivel: "principiante",
+    tier: "tier1",
     departamentos: ["marketing", "ventas", "operaciones"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: "Sparkpages limitados" },
@@ -199,6 +220,7 @@ export const tools: Tool[] = [
     descripcionCorta: "Q&A sobre tus propios documentos",
     categoria: "investigacion",
     nivel: "principiante",
+    tier: "tier3",
     departamentos: ["legal", "finanzas", "rrhh"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: "100 notebooks" },
@@ -225,6 +247,7 @@ export const tools: Tool[] = [
     descripcionCorta: "IA dentro de tu workspace Notion",
     categoria: "investigacion",
     nivel: "principiante",
+    tier: "tier2",
     departamentos: ["todos", "admin", "operaciones"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: "20 respuestas" },
@@ -242,36 +265,6 @@ export const tools: Tool[] = [
       "Multiples funciones IA en uno",
     ],
   },
-
-  // PRESENTACIONES
-  {
-    id: "gamma",
-    nombre: "Gamma",
-    url: "https://gamma.app",
-    descripcion:
-      "Plataforma que genera presentaciones, documentos y sitios web completos a partir de texto. Describe lo que quieres y Gamma crea slides profesionales automaticamente.",
-    descripcionCorta: "Presentaciones generadas por IA",
-    categoria: "presentaciones",
-    nivel: "principiante",
-    departamentos: ["ventas", "finanzas", "marketing", "todos"],
-    precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "400 creditos" },
-      { plan: "Plus", precio: "$10/mes", caracteristicas: "400/mes" },
-      { plan: "Pro", precio: "$20/mes", caracteristicas: "Ilimitados" },
-    ],
-    casosDeUso: [
-      "Generar pitch decks rapidamente",
-      "Presentaciones de resultados trimestrales",
-      "Informes board-ready en minutos",
-    ],
-    porQueEsBueno: [
-      "Texto a presentacion completa",
-      "Diseno profesional automatico",
-      "Edicion facil tipo Notion",
-    ],
-  },
-
-  // ANALISIS DE DATOS
   {
     id: "chatgpt",
     nombre: "ChatGPT Code Interpreter",
@@ -279,8 +272,9 @@ export const tools: Tool[] = [
     descripcion:
       "Funcionalidad de ChatGPT que permite subir archivos y ejecutar codigo Python para analisis. Puede procesar Excel, CSV, imagenes, PDFs y generar visualizaciones.",
     descripcionCorta: "Analisis de datos con IA conversacional",
-    categoria: "datos",
+    categoria: "investigacion",
     nivel: "principiante",
+    tier: "tier3",
     departamentos: ["finanzas", "operaciones", "todos"],
     precios: [
       { plan: "Plus", precio: "$20/mes", caracteristicas: "Incluido" },
@@ -305,8 +299,9 @@ export const tools: Tool[] = [
     descripcion:
       "Hoja de calculo moderna con IA integrada y conexiones a APIs. Combina la familiaridad de Excel con funciones que conectan a bases de datos y tienen IA nativa.",
     descripcionCorta: "Excel moderno con IA y APIs",
-    categoria: "datos",
+    categoria: "investigacion",
     nivel: "intermedio",
+    tier: "tier3",
     departamentos: ["finanzas", "ventas", "operaciones"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: "10 integraciones" },
@@ -325,6 +320,90 @@ export const tools: Tool[] = [
     ],
   },
 
+  // CREATIVIDAD (merged: presentaciones + diseño + video)
+  {
+    id: "gamma",
+    nombre: "Gamma",
+    url: "https://gamma.app",
+    descripcion:
+      "Plataforma que genera presentaciones, documentos y sitios web completos a partir de texto. Describe lo que quieres y Gamma crea slides profesionales automaticamente.",
+    descripcionCorta: "Presentaciones generadas por IA",
+    categoria: "creatividad",
+    nivel: "principiante",
+    tier: "tier2",
+    departamentos: ["ventas", "finanzas", "marketing", "todos"],
+    precios: [
+      { plan: "Free", precio: "$0", caracteristicas: "400 creditos" },
+      { plan: "Plus", precio: "$10/mes", caracteristicas: "400/mes" },
+      { plan: "Pro", precio: "$20/mes", caracteristicas: "Ilimitados" },
+    ],
+    casosDeUso: [
+      "Generar pitch decks rapidamente",
+      "Presentaciones de resultados trimestrales",
+      "Informes board-ready en minutos",
+    ],
+    porQueEsBueno: [
+      "Texto a presentacion completa",
+      "Diseño profesional automatico",
+      "Edicion facil tipo Notion",
+    ],
+  },
+  {
+    id: "loom",
+    nombre: "Loom",
+    url: "https://loom.com",
+    descripcion:
+      "Plataforma de grabacion de pantalla y video messaging. Graba tu pantalla con camara, edita y comparte instantaneamente. Ideal para comunicacion asincrona.",
+    descripcionCorta: "Videos rapidos para comunicar",
+    categoria: "creatividad",
+    nivel: "principiante",
+    tier: "tier3",
+    departamentos: ["todos", "admin", "finanzas"],
+    precios: [
+      { plan: "Starter", precio: "$0", caracteristicas: "25 videos, 5 min" },
+      { plan: "Business", precio: "$12.50/mes", caracteristicas: "Ilimitados" },
+      { plan: "Enterprise", precio: "Personalizado", caracteristicas: "SSO" },
+    ],
+    casosDeUso: [
+      "Tutoriales paso a paso sin reuniones",
+      "Explicar procesos complejos visualmente",
+      "Comunicar cambios de politicas",
+    ],
+    porQueEsBueno: [
+      "Un click para grabar",
+      "Transcripcion automatica",
+      "Links compartibles instantaneos",
+    ],
+  },
+  {
+    id: "canva",
+    nombre: "Canva",
+    url: "https://canva.com",
+    descripcion:
+      "Plataforma de diseño con IA (Magic Studio) que democratiza la creacion visual. Templates profesionales, generacion de imagenes IA, y edicion inteligente sin conocimientos de diseño.",
+    descripcionCorta: "Diseño profesional para todos",
+    categoria: "creatividad",
+    nivel: "principiante",
+    tier: "tier3",
+    departamentos: ["marketing", "admin", "rrhh", "todos"],
+    precios: [
+      { plan: "Free", precio: "$0", caracteristicas: "Templates basicos" },
+      { plan: "Pro", precio: "$13/mes", caracteristicas: "500 usos IA/mes" },
+      { plan: "Teams", precio: "$15/mes", caracteristicas: "Primeros 5 usuarios" },
+      { plan: "Enterprise", precio: "Personalizado", caracteristicas: "SSO" },
+    ],
+    casosDeUso: [
+      "Infografias de presupuesto",
+      "Manuales y comunicacion interna",
+      "Contenido para redes sociales",
+    ],
+    porQueEsBueno: [
+      "Cero experiencia de diseño necesaria",
+      "Magic Write genera texto",
+      "Arrastrar y soltar intuitivo",
+    ],
+  },
+
   // NO-CODE
   {
     id: "lovable",
@@ -335,6 +414,7 @@ export const tools: Tool[] = [
     descripcionCorta: "Apps web desde texto",
     categoria: "nocode",
     nivel: "intermedio",
+    tier: "tier3",
     departamentos: ["operaciones", "rrhh", "ventas"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: "5 creditos" },
@@ -362,6 +442,7 @@ export const tools: Tool[] = [
     descripcionCorta: "Apps full-stack sin codigo",
     categoria: "nocode",
     nivel: "intermedio",
+    tier: "tier1",
     departamentos: ["finanzas", "admin", "operaciones"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: "25 mensajes/mes" },
@@ -388,7 +469,8 @@ export const tools: Tool[] = [
       "Funcionalidad de Claude que genera contenido interactivo y funcional en tiempo real. Crea apps web, visualizaciones, documentos interactivos y componentes que se ejecutan en el chat.",
     descripcionCorta: "Herramientas interactivas instantaneas",
     categoria: "nocode",
-    nivel: "avanzado",
+    nivel: "intermedio",
+    tier: "tier3",
     departamentos: ["finanzas", "rrhh", "todos"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: "Limites de uso" },
@@ -418,6 +500,7 @@ export const tools: Tool[] = [
     descripcionCorta: "Asistente de desarrollo en terminal",
     categoria: "desarrollo",
     nivel: "avanzado",
+    tier: "tier2",
     departamentos: ["tech"],
     precios: [
       { plan: "Pro", precio: "$20/mes", caracteristicas: "Incluido" },
@@ -434,61 +517,31 @@ export const tools: Tool[] = [
       "Gestiona git automaticamente",
     ],
   },
-
-  // VIDEO
   {
-    id: "loom",
-    nombre: "Loom",
-    url: "https://loom.com",
+    id: "claude-cowork",
+    nombre: "CLAUDE Co-Work",
+    url: "https://claude.ai",
     descripcion:
-      "Plataforma de grabacion de pantalla y video messaging. Graba tu pantalla con camara, edita y comparte instantaneamente. Ideal para comunicacion asincrona.",
-    descripcionCorta: "Videos rapidos para comunicar",
-    categoria: "video",
-    nivel: "principiante",
-    departamentos: ["todos", "admin", "finanzas"],
+      "Funcionalidad de Anthropic que permite a Claude trabajar de forma autonoma en tareas complejas durante periodos extendidos. Claude puede investigar, planificar y ejecutar tareas sin supervision constante.",
+    descripcionCorta: "Trabajo autonomo extendido con IA",
+    categoria: "desarrollo",
+    nivel: "intermedio",
+    tier: "tier2",
+    departamentos: ["tech", "operaciones"],
     precios: [
-      { plan: "Starter", precio: "$0", caracteristicas: "25 videos, 5 min" },
-      { plan: "Business", precio: "$12.50/mes", caracteristicas: "Ilimitados" },
-      { plan: "Enterprise", precio: "Personalizado", caracteristicas: "SSO" },
+      { plan: "Pro", precio: "$20/mes", caracteristicas: "Incluido" },
+      { plan: "Business", precio: "$25/mes", caracteristicas: "Por usuario" },
+      { plan: "Max", precio: "$100/mes", caracteristicas: "Cuotas mayores" },
     ],
     casosDeUso: [
-      "Tutoriales paso a paso sin reuniones",
-      "Explicar procesos complejos visualmente",
-      "Comunicar cambios de politicas",
+      "Tareas de investigacion autonoma",
+      "Refactoring de proyectos completos",
+      "Documentacion automatica de codebases",
     ],
     porQueEsBueno: [
-      "Un click para grabar",
-      "Transcripcion automatica",
-      "Links compartibles instantaneos",
-    ],
-  },
-
-  // DISENO
-  {
-    id: "canva",
-    nombre: "Canva",
-    url: "https://canva.com",
-    descripcion:
-      "Plataforma de diseno con IA (Magic Studio) que democratiza la creacion visual. Templates profesionales, generacion de imagenes IA, y edicion inteligente sin conocimientos de diseno.",
-    descripcionCorta: "Diseno profesional para todos",
-    categoria: "diseno",
-    nivel: "principiante",
-    departamentos: ["marketing", "admin", "rrhh", "todos"],
-    precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "Templates basicos" },
-      { plan: "Pro", precio: "$13/mes", caracteristicas: "500 usos IA/mes" },
-      { plan: "Teams", precio: "$15/mes", caracteristicas: "Primeros 5 usuarios" },
-      { plan: "Enterprise", precio: "Personalizado", caracteristicas: "SSO" },
-    ],
-    casosDeUso: [
-      "Infografias de presupuesto",
-      "Manuales y comunicacion interna",
-      "Contenido para redes sociales",
-    ],
-    porQueEsBueno: [
-      "Cero experiencia de diseno necesaria",
-      "Magic Write genera texto",
-      "Arrastrar y soltar intuitivo",
+      "Trabaja sin supervision constante",
+      "Completa tareas complejas de principio a fin",
+      "Reporta progreso y resultados",
     ],
   },
 ];
@@ -506,6 +559,14 @@ export function getToolsByLevel(level: SkillLevel): Tool[] {
   return tools.filter((t) => t.nivel === level);
 }
 
+export function getToolsByTier(tier: RecommendationTier): Tool[] {
+  return tools.filter((t) => t.tier === tier);
+}
+
 export function getCategories(): Category[] {
   return [...new Set(tools.map((t) => t.categoria))];
+}
+
+export function getTiers(): NonNullable<RecommendationTier>[] {
+  return ["tier1", "tier2", "tier3"];
 }
