@@ -20,7 +20,7 @@
 
 ## 1. Automatizacion y Workflows
 
-### Make.com (antes Integromat)
+### Make.com
 
 **URL:** https://make.com
 
@@ -73,28 +73,6 @@ La plataforma de automatizacion mas popular del mercado. Conecta mas de 6,000 ap
 - La interfaz mas simple del mercado
 - Documentacion y tutoriales extensos
 - AI integrada para sugerir automatizaciones
-
----
-
-### n8n
-
-**URL:** https://n8n.io
-
-**Descripcion:**
-Plataforma de automatizacion open-source con opcion cloud. Mas potente y flexible que Zapier, ideal para equipos tecnicos que necesitan personalizacion avanzada.
-
-**Precios (2025):**
-| Plan | Precio | Ejecuciones/mes | Caracteristicas |
-|------|--------|-----------------|-----------------|
-| Free (self-hosted) | $0 | Ilimitado | Requiere servidor propio |
-| Starter Cloud | $20/mes | 2,500 | Cloud gestionado |
-| Pro Cloud | $50/mes | 10,000 | Multiples usuarios |
-| Enterprise | Personalizado | Ilimitado | SSO, soporte premium |
-
-**Casos de Uso Corporativo:**
-- **Tech:** Automatizaciones complejas con codigo personalizado
-- **Data:** ETL y pipelines de datos
-- **DevOps:** Integraciones CI/CD, alertas de monitoring
 
 ---
 
@@ -222,56 +200,7 @@ Plataforma que genera presentaciones, documentos y sitios web completos a partir
 
 ---
 
-### Beautiful.ai
-
-**URL:** https://beautiful.ai
-
-**Descripcion:**
-Plataforma de presentaciones con IA que aplica reglas de diseno automaticamente. Cada slide se ajusta dinamicamente mientras agregas contenido.
-
-**Precios (2025):**
-| Plan | Precio | Caracteristicas |
-|------|--------|-----------------|
-| Free | $0 | Slides limitados, marca Beautiful.ai |
-| Pro | $12/mes | Slides ilimitados, exportacion PPT |
-| Team | $40/mes/usuario | Colaboracion, brand kit |
-| Enterprise | Personalizado | SSO, admin avanzado |
-
-**Casos de Uso Corporativo:**
-- **Marketing:** Presentaciones de campana consistentes
-- **RRHH:** Decks de onboarding profesionales
-- **Ventas:** Propuestas con diseno premium
-
----
-
 ## 4. Analisis de Datos
-
-### Julius AI
-
-**URL:** https://julius.ai
-
-**Descripcion:**
-Analista de datos IA que permite subir archivos (Excel, CSV, bases de datos) y hacer preguntas en lenguaje natural. Genera graficos, analisis estadisticos y codigo Python automaticamente.
-
-**Precios (2025):**
-| Plan | Precio | Mensajes/mes | Caracteristicas |
-|------|--------|--------------|-----------------|
-| Free | $0 | 15 | Subida archivos basica |
-| Essential | $20/mes | 250 | Archivos ilimitados, integraciones |
-| Pro | $50/mes | 750 | Modelos avanzados, soporte prioritario |
-| Enterprise | Personalizado | Ilimitado | SSO, on-premise |
-
-**Casos de Uso Corporativo:**
-- **Finanzas:** "Muestra tendencia de gastos ultimos 12 meses"
-- **Ventas:** "Cual es el producto mas vendido por region?"
-- **RRHH:** "Analiza rotacion de empleados por departamento"
-
-**Por que es bueno para usuarios no tecnicos:**
-- Preguntas en espanol natural
-- Genera graficos automaticamente
-- Explica los resultados en lenguaje simple
-
----
 
 ### ChatGPT Code Interpreter (Advanced Data Analysis)
 
@@ -291,6 +220,11 @@ Funcionalidad de ChatGPT que permite subir archivos y ejecutar codigo Python par
 - **Finanzas:** Analisis de hojas de calculo complejas
 - **Data:** Limpieza y transformacion de datos
 - **Reporting:** Generacion automatica de graficos
+
+**Por que es bueno para usuarios no tecnicos:**
+- Preguntas en espanol natural
+- Genera graficos automaticamente
+- Explica los resultados en lenguaje simple
 
 ---
 
@@ -313,28 +247,6 @@ Hoja de calculo moderna con IA integrada y conexiones a APIs. Combina la familia
 - **Finanzas:** Dashboards que se actualizan automaticamente desde APIs
 - **Ventas:** CRM ligero con datos de multiples fuentes
 - **Operaciones:** Reportes automatizados
-
----
-
-### Akkio
-
-**URL:** https://akkio.com
-
-**Descripcion:**
-Plataforma de ML no-code para predicciones y analisis. Sube datos, selecciona que quieres predecir, y Akkio entrena modelos automaticamente.
-
-**Precios (2025):**
-| Plan | Precio | Caracteristicas |
-|------|--------|-----------------|
-| Free Trial | $0 | 14 dias, funcionalidad completa |
-| Starter | $49/mes | 1,000 predicciones/mes |
-| Professional | $199/mes | 10,000 predicciones, chat con datos |
-| Enterprise | Personalizado | Ilimitado, integraciones custom |
-
-**Casos de Uso Corporativo:**
-- **Ventas:** Predecir probabilidad de cierre de deals
-- **Finanzas:** Forecasting de ingresos
-- **RRHH:** Predecir riesgo de rotacion
 
 ---
 
@@ -417,59 +329,6 @@ Funcionalidad de Claude que genera contenido interactivo y funcional en tiempo r
 
 ---
 
-### v0.dev (Vercel)
-
-**URL:** https://v0.dev
-
-**Descripcion:**
-Generador de interfaces de usuario de Vercel. Describe un componente o pagina web, v0 genera codigo React/Next.js listo para produccion con diseno profesional.
-
-**Precios (2025):**
-| Plan | Precio | Creditos/mes |
-|------|--------|--------------|
-| Free | $0 | 200 |
-| Premium | $20/mes | 5,000 |
-| Team | $30/mes/usuario | 10,000, colaboracion |
-
-**Casos de Uso Corporativo:**
-- **Tech:** Prototipos rapidos de UI
-- **Producto:** Mockups funcionales para validar ideas
-- **Marketing:** Landing pages personalizadas
-
----
-
-### Bolt.new
-
-**URL:** https://bolt.new
-
-**Descripcion:**
-Plataforma de desarrollo en navegador que usa IA para generar aplicaciones completas. Combina editor de codigo, terminal y preview en un solo entorno asistido por IA.
-
-**Precios (2025):**
-| Plan | Precio | Tokens/mes |
-|------|--------|------------|
-| Free | $0 | Limitados |
-| Pro | $20/mes | 10M tokens |
-| Team | $40/mes/usuario | 20M tokens |
-
----
-
-### Replit Agent
-
-**URL:** https://replit.com
-
-**Descripcion:**
-Agente IA dentro de Replit que puede construir, desplegar y mantener aplicaciones automaticamente. Describe tu proyecto y el agente lo construye paso a paso.
-
-**Precios (2025):**
-| Plan | Precio | Caracteristicas |
-|------|--------|-----------------|
-| Free | $0 | Proyectos publicos |
-| Replit Core | $25/mes | Agent access, proyectos privados |
-| Teams | $40/mes/usuario | Colaboracion, deployments |
-
----
-
 ## 6. Herramientas de Desarrollo
 
 ### Claude Code
@@ -489,59 +348,6 @@ CLI de desarrollo de Anthropic que convierte a Claude en un asistente de program
 - Desarrollo asistido por IA en terminal
 - Refactoring automatico de codigo
 - Debugging conversacional
-
----
-
-### Cursor
-
-**URL:** https://cursor.sh
-
-**Descripcion:**
-Editor de codigo (fork de VS Code) con IA nativa. Autocomplete inteligente, chat con tu codebase, y capacidad de editar codigo mediante lenguaje natural.
-
-**Precios (2025):**
-| Plan | Precio | Caracteristicas |
-|------|--------|-----------------|
-| Free | $0 | 2,000 completions/mes |
-| Pro | $20/mes | Completions ilimitados, modelos premium |
-| Business | $40/mes/usuario | Admin, privacidad mejorada |
-
-**Casos de Uso:**
-- Desarrollo diario con asistencia IA
-- Onboarding a codebases nuevos
-- Documentacion automatica
-
----
-
-### GitHub Copilot
-
-**URL:** https://github.com/features/copilot
-
-**Descripcion:**
-Asistente de codigo de GitHub/Microsoft integrado en VS Code y otros IDEs. Autocomplete de codigo basado en contexto y comentarios.
-
-**Precios (2025):**
-| Plan | Precio | Caracteristicas |
-|------|--------|-----------------|
-| Individual | $10/mes | Sugerencias de codigo |
-| Business | $19/mes/usuario | Gestion de org, politicas |
-| Enterprise | $39/mes/usuario | Copilot Chat, fine-tuning |
-
----
-
-### Windsurf (Codeium)
-
-**URL:** https://codeium.com/windsurf
-
-**Descripcion:**
-IDE con IA de Codeium. Incluye "Cascade" - agente que puede hacer cambios multi-archivo y ejecutar comandos automaticamente.
-
-**Precios (2025):**
-| Plan | Precio | Caracteristicas |
-|------|--------|-----------------|
-| Free | $0 | Autocomplete ilimitado |
-| Pro | $15/mes | Cascade flows, modelos premium |
-| Enterprise | Personalizado | On-premise, SSO |
 
 ---
 
@@ -596,7 +402,7 @@ Plataforma de diseno con IA (Magic Studio) que democratiza la creacion visual. T
 - **Finanzas:** Infografias de presupuesto, slides de reportes
 - **Admin/RRHH:** Manuales, posters de eventos, comunicacion interna
 - **Marketing:** Contenido social media, emails, presentaciones
-- **Todos:** Documentos profesionales sin diseñador
+- **Todos:** Documentos profesionales sin disenador
 
 **Por que es bueno para usuarios no tecnicos:**
 - Cero experiencia de diseno necesaria - templates listos
@@ -727,14 +533,14 @@ Proporciona la version mejorada."
 | Necesidad | Herramienta Recomendada | Alternativa |
 |-----------|------------------------|-------------|
 | Automatizacion simple | Zapier | Make.com |
-| Automatizacion compleja | Make.com | n8n |
+| Automatizacion compleja | Make.com | Zapier |
 | Investigacion con fuentes | Perplexity | Genspark |
 | Analisis de documentos propios | NotebookLM | Notion AI |
-| Presentaciones rapidas | Gamma | Beautiful.ai |
-| Analisis de datos | Julius AI | ChatGPT Code Interpreter |
+| Presentaciones rapidas | Gamma | Canva |
+| Analisis de datos | ChatGPT Code Interpreter | Rows.com |
 | Crear apps sin codigo | Lovable | Base44 |
-| Herramientas interactivas | Claude Artifacts | v0.dev |
-| Desarrollo de software | Cursor | Claude Code |
+| Herramientas interactivas | Claude Artifacts | Lovable |
+| Desarrollo de software | Claude Code | - |
 | Videos tutoriales | Loom | - |
 | Diseno grafico | Canva | - |
 
@@ -743,16 +549,16 @@ Proporciona la version mejorada."
 | Nivel | Herramientas Ideales |
 |-------|---------------------|
 | Principiante | Canva, Loom, Gamma, ChatGPT |
-| Intermedio | Make.com, Perplexity, Julius AI, NotebookLM |
-| Avanzado | Claude Artifacts, Lovable, Base44, Cursor |
+| Intermedio | Make.com, Perplexity, NotebookLM, Rows.com |
+| Avanzado | Claude Artifacts, Lovable, Base44, Claude Code |
 
 ### Por Departamento
 
 | Departamento | Stack Recomendado |
 |--------------|-------------------|
-| Finanzas | Julius AI + NotebookLM + Gamma + Make.com |
+| Finanzas | ChatGPT + NotebookLM + Gamma + Make.com |
 | Admin/RRHH | Canva + Loom + Notion AI + Zapier |
-| Tech/Data | Cursor + Claude Code + Perplexity + Make.com |
+| Tech/Data | Claude Code + Perplexity + Make.com |
 | Ventas | Gamma + Loom + Zapier + Perplexity |
 | Marketing | Canva + Gamma + Make.com + Loom |
 
