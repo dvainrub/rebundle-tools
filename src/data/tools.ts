@@ -90,9 +90,9 @@ export const tierDescriptions: Record<NonNullable<RecommendationTier>, string> =
 };
 
 export const tierColors: Record<NonNullable<RecommendationTier>, string> = {
-  tier1: "bg-amber-100 text-amber-800 border-amber-300",
-  tier2: "bg-slate-100 text-slate-700 border-slate-300",
-  tier3: "bg-gray-50 text-gray-600 border-gray-200",
+  tier1: "bg-yellow-100 text-yellow-800 border-yellow-400",
+  tier2: "bg-gray-200 text-gray-700 border-gray-400",
+  tier3: "bg-orange-100 text-orange-800 border-orange-400",
 };
 
 export const tools: Tool[] = [
