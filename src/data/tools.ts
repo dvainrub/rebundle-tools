@@ -1,4 +1,6 @@
-// Datos centralizados de herramientas IA para Rebundle
+// Centralized AI tools data for Rebundle - Bilingual (EN/ES)
+
+import { type Localized } from "@/lib/i18n";
 
 export type SkillLevel = "principiante" | "intermedio" | "avanzado";
 
@@ -10,10 +12,9 @@ export type Department =
   | "ventas"
   | "marketing"
   | "legal"
-  | "operaciónes"
+  | "operaciones"
   | "todos";
 
-// Categories: automatizacion, agentes, conocimiento, creatividad, nocode, desarrollo
 export type Category =
   | "automatizacion"
   | "agentes"
@@ -22,73 +23,33 @@ export type Category =
   | "nocode"
   | "desarrollo";
 
-// Recommendation tiers: tier1=Top Pick, tier2=Great, tier3=Good
 export type RecommendationTier = "tier1" | "tier2" | "tier3" | null;
 
 export interface PricingTier {
   plan: string;
   precio: string;
-  caracteristicas: string;
+  caracteristicas: Localized<string>;
 }
 
 export interface Tool {
   id: string;
   nombre: string;
   url: string;
-  descripcion: string;
-  descripcionCorta: string;
+  descripcion: Localized<string>;
+  descripcionCorta: Localized<string>;
   categoria: Category;
   nivel: SkillLevel;
   tier: RecommendationTier;
   departamentos: Department[];
   precios: PricingTier[];
-  casosDeUso: string[];
-  porQueEsBueno: string[];
+  casosDeUso: Localized<string[]>;
+  porQueEsBueno: Localized<string[]>;
 }
-
-export const categoryLabels: Record<Category, string> = {
-  automatizacion: "Automatización",
-  agentes: "Agentes",
-  conocimiento: "Conocimiento",
-  creatividad: "Creatividad",
-  nocode: "No-Code",
-  desarrollo: "Desarrollo",
-};
-
-export const departmentLabels: Record<Department, string> = {
-  finanzas: "Finanzas",
-  admin: "Admin",
-  rrhh: "RRHH",
-  tech: "Tech",
-  ventas: "Ventas",
-  marketing: "Marketing",
-  legal: "Legal",
-  operaciónes: "Operaciones",
-  todos: "Todos",
-};
-
-export const levelLabels: Record<SkillLevel, string> = {
-  principiante: "Principiante",
-  intermedio: "Intermedio",
-  avanzado: "Avanzado",
-};
 
 export const levelColors: Record<SkillLevel, string> = {
   principiante: "bg-green-100 text-green-800",
   intermedio: "bg-yellow-100 text-yellow-800",
   avanzado: "bg-red-100 text-red-800",
-};
-
-export const tierLabels: Record<NonNullable<RecommendationTier>, string> = {
-  tier1: "Top Pick",
-  tier2: "Great",
-  tier3: "Good",
-};
-
-export const tierDescriptions: Record<NonNullable<RecommendationTier>, string> = {
-  tier1: "Altamente Recomendado",
-  tier2: "Recomendado",
-  tier3: "Opcional",
 };
 
 export const tierColors: Record<NonNullable<RecommendationTier>, string> = {
@@ -103,404 +64,693 @@ export const tools: Tool[] = [
     id: "make",
     nombre: "Make.com",
     url: "https://make.com",
-    descripcion:
-      "Plataforma de automatización visual que permite crear flujos de trabajo complejos conectando másde 1,800 aplicaciónes. Destaca por su interfaz tipo canvas con lógica avanzada (condicionales, loops, routers) y manejo nativo de datos JSON/XML.",
-    descripcionCorta: "Automatizacion visual con lógica avanzada",
+    descripcion: {
+      en: "Visual automation platform that lets you create complex workflows connecting over 1,800 applications. Stands out for its canvas-style interface with advanced logic (conditionals, loops, routers) and native JSON/XML data handling.",
+      es: "Plataforma de automatización visual que permite crear flujos de trabajo complejos conectando más de 1,800 aplicaciones. Destaca por su interfaz tipo canvas con lógica avanzada (condicionales, loops, routers) y manejo nativo de datos JSON/XML.",
+    },
+    descripcionCorta: {
+      en: "Visual automation with advanced logic",
+      es: "Automatización visual con lógica avanzada",
+    },
     categoria: "automatizacion",
     nivel: "intermedio",
     tier: "tier1",
-    departamentos: ["finanzas", "admin", "tech", "operaciónes", "rrhh"],
+    departamentos: ["finanzas", "admin", "tech", "operaciones", "rrhh"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "1,000 ops/mes, 2 escenarios" },
-      { plan: "Core", precio: "$9/mes", caracteristicas: "10,000 ops/mes, ilimitados" },
-      { plan: "Pro", precio: "$16/mes", caracteristicas: "Ejecucion prioritaria, tiempo real" },
-      { plan: "Teams", precio: "$29/mes", caracteristicas: "Colaboracion, permisos" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "1,000 ops/month, 2 scenarios", es: "1,000 ops/mes, 2 escenarios" } },
+      { plan: "Core", precio: "$9/mo", caracteristicas: { en: "10,000 ops/month, unlimited", es: "10,000 ops/mes, ilimitados" } },
+      { plan: "Pro", precio: "$16/mo", caracteristicas: { en: "Priority execution, real-time", es: "Ejecución prioritaria, tiempo real" } },
+      { plan: "Teams", precio: "$29/mo", caracteristicas: { en: "Collaboration, permissions", es: "Colaboración, permisos" } },
     ],
-    casosDeUso: [
-      "Finanzas: Conciliacion bancaria automática cruzando extractos con facturas",
-      "Admin: Generar contratos desde formularios y enviar a firma digital",
-      "RRHH: Flujo de onboarding completo (alta en sistemas, cuentas, equipos)",
-      "Tech: Sincronizar tickets Jira con Slack, alertas de monitoreo",
-      "Ventas: Enriquecer leads con datos de LinkedIn/Clearbit al CRM",
-      "Marketing: Segmentar audiencias y activar campañas personalizadas",
-    ],
-    porQueEsBueno: [
-      "Precio por operación 4-6x másbarato que Zapier en alto volumen",
-      "Logica avanzada: routers, iteradores, manejo de errores granular",
-      "Interfaz visual superior que muestra datos en tiempo real",
-      "Ideal para automatizaciones complejas con múltiples ramas",
-    ],
+    casosDeUso: {
+      en: [
+        "Finance: Automatic bank reconciliation matching statements with invoices",
+        "Admin: Generate contracts from forms and send for digital signature",
+        "HR: Complete onboarding workflow (system access, accounts, equipment)",
+        "Tech: Sync Jira tickets with Slack, monitoring alerts",
+        "Sales: Enrich leads with LinkedIn/Clearbit data to CRM",
+        "Marketing: Segment audiences and trigger personalized campaigns",
+      ],
+      es: [
+        "Finanzas: Conciliación bancaria automática cruzando extractos con facturas",
+        "Admin: Generar contratos desde formularios y enviar a firma digital",
+        "RRHH: Flujo de onboarding completo (alta en sistemas, cuentas, equipos)",
+        "Tech: Sincronizar tickets Jira con Slack, alertas de monitoreo",
+        "Ventas: Enriquecer leads con datos de LinkedIn/Clearbit al CRM",
+        "Marketing: Segmentar audiencias y activar campañas personalizadas",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Cost per operation 4-6x cheaper than Zapier at high volume",
+        "Advanced logic: routers, iterators, granular error handling",
+        "Superior visual interface showing real-time data flow",
+        "Ideal for complex automations with multiple branches",
+      ],
+      es: [
+        "Precio por operación 4-6x más barato que Zapier en alto volumen",
+        "Lógica avanzada: routers, iteradores, manejo de errores granular",
+        "Interfaz visual superior que muestra datos en tiempo real",
+        "Ideal para automatizaciones complejas con múltiples ramas",
+      ],
+    },
   },
   {
     id: "zapier",
     nombre: "Zapier",
     url: "https://zapier.com",
-    descripcion:
-      "La plataforma de automatización más popular y fácil de usar, conectando másde 6,000+ aplicaciónes. Perfecta para usuarios no técnicos que necesitan crear automatizaciones rápidas con la biblioteca de integraciónes másamplia del mercado.",
-    descripcionCorta: "Automatizacion simple con másintegraciónes",
+    descripcion: {
+      en: "The most popular and easy-to-use automation platform, connecting 6,000+ applications. Perfect for non-technical users who need to create quick automations with the market's largest integration library.",
+      es: "La plataforma de automatización más popular y fácil de usar, conectando más de 6,000+ aplicaciones. Perfecta para usuarios no técnicos que necesitan crear automatizaciones rápidas con la biblioteca de integraciones más amplia del mercado.",
+    },
+    descripcionCorta: {
+      en: "Simple automation with most integrations",
+      es: "Automatización simple con más integraciones",
+    },
     categoria: "automatizacion",
     nivel: "principiante",
     tier: "tier3",
     departamentos: ["finanzas", "admin", "ventas", "marketing", "todos"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "100 tareas/mes, 5 Zaps" },
-      { plan: "Starter", precio: "$20/mes", caracteristicas: "750 tareas/mes, multi-paso" },
-      { plan: "Professional", precio: "$49/mes", caracteristicas: "2,000 tareas/mes, paths" },
-      { plan: "Team", precio: "$69/mes", caracteristicas: "Por usuario, compartido" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "100 tasks/month, 5 Zaps", es: "100 tareas/mes, 5 Zaps" } },
+      { plan: "Starter", precio: "$20/mo", caracteristicas: { en: "750 tasks/month, multi-step", es: "750 tareas/mes, multi-paso" } },
+      { plan: "Professional", precio: "$49/mo", caracteristicas: { en: "2,000 tasks/month, paths", es: "2,000 tareas/mes, paths" } },
+      { plan: "Team", precio: "$69/mo", caracteristicas: { en: "Per user, shared", es: "Por usuario, compartido" } },
     ],
-    casosDeUso: [
-      "Finanzas: Notificar pagos de Stripe/QuickBooks y enviar a contabilidad",
-      "Admin: Crear tareas en Asana/Monday desde emails entrantes",
-      "RRHH: Publicar ofertas de empleo en múltiples plataformas",
-      "Ventas: Añadir contactos de Calendly a HubSpot automáticamente",
-      "Marketing: Sincronizar suscriptores entre Mailchimp y Google Sheets",
-    ],
-    porQueEsBueno: [
-      "Biblioteca de integraciónes másgrande del mercado (6,000+ apps)",
-      "Curva de aprendizaje mínima: automatizaciones en minutos",
-      "Mejor documentación y soporte con templates pre-construidos",
-      "Marca establecida, ideal para empresas que priorizan estabilidad",
-    ],
+    casosDeUso: {
+      en: [
+        "Finance: Notify Stripe/QuickBooks payments and send to accounting",
+        "Admin: Create tasks in Asana/Monday from incoming emails",
+        "HR: Post job offers to multiple platforms",
+        "Sales: Add Calendly contacts to HubSpot automatically",
+        "Marketing: Sync subscribers between Mailchimp and Google Sheets",
+      ],
+      es: [
+        "Finanzas: Notificar pagos de Stripe/QuickBooks y enviar a contabilidad",
+        "Admin: Crear tareas en Asana/Monday desde emails entrantes",
+        "RRHH: Publicar ofertas de empleo en múltiples plataformas",
+        "Ventas: Añadir contactos de Calendly a HubSpot automáticamente",
+        "Marketing: Sincronizar suscriptores entre Mailchimp y Google Sheets",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Largest integration library in the market (6,000+ apps)",
+        "Minimal learning curve: automations in minutes",
+        "Best documentation and support with pre-built templates",
+        "Established brand, ideal for companies prioritizing stability",
+      ],
+      es: [
+        "Biblioteca de integraciones más grande del mercado (6,000+ apps)",
+        "Curva de aprendizaje mínima: automatizaciones en minutos",
+        "Mejor documentación y soporte con templates pre-construidos",
+        "Marca establecida, ideal para empresas que priorizan estabilidad",
+      ],
+    },
   },
   {
     id: "n8n",
     nombre: "n8n",
     url: "https://n8n.io",
-    descripcion:
-      "Plataforma de automatización open-source con opción self-hosted para control total de datos. Soporta JavaScript/Python nativo y tiene 70+ nodos dedicados a IA via LangChain. Modelo de precios por workflow que resulta máseconómico en alto volumen.",
-    descripcionCorta: "Automatizacion open-source con self-hosting",
+    descripcion: {
+      en: "Open-source automation platform with self-hosted option for total data control. Supports native JavaScript/Python and has 70+ AI-dedicated nodes via LangChain. Workflow-based pricing model that's more economical at high volume.",
+      es: "Plataforma de automatización open-source con opción self-hosted para control total de datos. Soporta JavaScript/Python nativo y tiene 70+ nodos dedicados a IA via LangChain. Modelo de precios por workflow que resulta más económico en alto volumen.",
+    },
+    descripcionCorta: {
+      en: "Open-source automation with self-hosting",
+      es: "Automatización open-source con self-hosting",
+    },
     categoria: "automatizacion",
     nivel: "avanzado",
     tier: "tier3",
-    departamentos: ["tech", "operaciónes", "finanzas"],
+    departamentos: ["tech", "operaciones", "finanzas"],
     precios: [
-      { plan: "Self-hosted", precio: "$0", caracteristicas: "Gratis, ilimitado, tu infra" },
-      { plan: "Starter Cloud", precio: "$22/mes", caracteristicas: "2,500 ejecuciónes" },
-      { plan: "Pro Cloud", precio: "$57/mes", caracteristicas: "10,000 ejecuciónes, colaboración" },
-      { plan: "Enterprise", precio: "Personalizado", caracteristicas: "SSO, SLA, soporte" },
+      { plan: "Self-hosted", precio: "$0", caracteristicas: { en: "Free, unlimited, your infra", es: "Gratis, ilimitado, tu infra" } },
+      { plan: "Starter Cloud", precio: "$22/mo", caracteristicas: { en: "2,500 executions", es: "2,500 ejecuciones" } },
+      { plan: "Pro Cloud", precio: "$57/mo", caracteristicas: { en: "10,000 executions, collaboration", es: "10,000 ejecuciones, colaboración" } },
+      { plan: "Enterprise", precio: "Custom", caracteristicas: { en: "SSO, SLA, support", es: "SSO, SLA, soporte" } },
     ],
-    casosDeUso: [
-      "Tech: Pipelines de datos con transformaciónes complejas en JavaScript",
-      "Operaciones: Automatizaciones con requisitos estrictos de privacidad/compliance",
-      "Finanzas: Procesos internos que no pueden salir de la infraestructura propia",
-      "Marketing: Integraciones de IA con LangChain para contenido personalizado",
-      "Admin: Workflows de alto volumen donde el costo por ejecución importa",
-    ],
-    porQueEsBueno: [
-      "Self-hosting: control total de datos para compliance y privacidad",
-      "1,000+ integraciónes con 70+ nodos de IA via LangChain",
-      "Codigo JavaScript/Python nativo para transformaciónes avanzadas",
-      "Precio por workflow (no por tarea) - máseconómico en alto volumen [VERIFICAR]",
-    ],
+    casosDeUso: {
+      en: [
+        "Tech: Data pipelines with complex JavaScript transformations",
+        "Operations: Automations with strict privacy/compliance requirements",
+        "Finance: Internal processes that can't leave your infrastructure",
+        "Marketing: AI integrations with LangChain for personalized content",
+        "Admin: High-volume workflows where cost per execution matters",
+      ],
+      es: [
+        "Tech: Pipelines de datos con transformaciones complejas en JavaScript",
+        "Operaciones: Automatizaciones con requisitos estrictos de privacidad/compliance",
+        "Finanzas: Procesos internos que no pueden salir de la infraestructura propia",
+        "Marketing: Integraciones de IA con LangChain para contenido personalizado",
+        "Admin: Workflows de alto volumen donde el costo por ejecución importa",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Self-hosting: total data control for compliance and privacy",
+        "1,000+ integrations with 70+ AI nodes via LangChain",
+        "Native JavaScript/Python code for advanced transformations",
+        "Workflow-based pricing (not per task) - more economical at high volume [VERIFY]",
+      ],
+      es: [
+        "Self-hosting: control total de datos para compliance y privacidad",
+        "1,000+ integraciones con 70+ nodos de IA via LangChain",
+        "Código JavaScript/Python nativo para transformaciones avanzadas",
+        "Precio por workflow (no por tarea) - más económico en alto volumen [VERIFICAR]",
+      ],
+    },
   },
 
-  // INVESTIGACION (includes former "datos" tools)
+  // CONOCIMIENTO
   {
     id: "perplexity",
     nombre: "Perplexity AI",
     url: "https://perplexity.ai",
-    descripcion:
-      "Motor de búsqueda conversacional impulsado por IA que proporciona respuestas directas con citas de fuentes verificadas. Combina modelos como GPT-4 y Claude con búsqueda web en tiempo real, eliminando la necesidad de revisar múltiples enlaces.",
-    descripcionCorta: "Busqueda con IA y fuentes verificadas",
+    descripcion: {
+      en: "Conversational AI search engine that provides direct answers with citations from verified sources. Combines models like GPT-4 and Claude with real-time web search, eliminating the need to review multiple links.",
+      es: "Motor de búsqueda conversacional impulsado por IA que proporciona respuestas directas con citas de fuentes verificadas. Combina modelos como GPT-4 y Claude con búsqueda web en tiempo real, eliminando la necesidad de revisar múltiples enlaces.",
+    },
+    descripcionCorta: {
+      en: "AI search with verified sources",
+      es: "Búsqueda con IA y fuentes verificadas",
+    },
     categoria: "conocimiento",
     nivel: "principiante",
     tier: "tier2",
     departamentos: ["todos", "legal", "finanzas", "marketing", "ventas"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "5 búsquedas Pro/dia" },
-      { plan: "Pro", precio: "$20/mes", caracteristicas: "300+ Pro/dia, GPT-4/Claude" },
-      { plan: "Enterprise", precio: "Personalizado", caracteristicas: "SSO, ilimitado" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "5 Pro searches/day", es: "5 búsquedas Pro/día" } },
+      { plan: "Pro", precio: "$20/mo", caracteristicas: { en: "300+ Pro/day, GPT-4/Claude", es: "300+ Pro/día, GPT-4/Claude" } },
+      { plan: "Enterprise", precio: "Custom", caracteristicas: { en: "SSO, unlimited", es: "SSO, ilimitado" } },
     ],
-    casosDeUso: [
-      "Finanzas: Investigar regulaciones financieras con fuentes citadas",
-      "RRHH: Buscar benchmarks salariales por industria y región",
-      "Legal: Investigar jurisprudencia y cambios normativos",
-      "Marketing: Analizar tendencias de mercado en tiempo real",
-      "Ventas: Investigar prospectos y noticias antes de reuniones",
-    ],
-    porQueEsBueno: [
-      "Respuestas incluyen citas con enlaces a fuentes originales",
-      "Combina múltiples LLMs (GPT-4, Claude, Llama) en una interfaz",
-      "Busqueda en tiempo real supera a ChatGPT para info actual",
-      "Interfaz limpia y rápida - muy valorada por su simplicidad",
-    ],
+    casosDeUso: {
+      en: [
+        "Finance: Research financial regulations with cited sources",
+        "HR: Search salary benchmarks by industry and region",
+        "Legal: Research case law and regulatory changes",
+        "Marketing: Analyze market trends in real-time",
+        "Sales: Research prospects and news before meetings",
+      ],
+      es: [
+        "Finanzas: Investigar regulaciones financieras con fuentes citadas",
+        "RRHH: Buscar benchmarks salariales por industria y región",
+        "Legal: Investigar jurisprudencia y cambios normativos",
+        "Marketing: Analizar tendencias de mercado en tiempo real",
+        "Ventas: Investigar prospectos y noticias antes de reuniones",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Responses include citations with links to original sources",
+        "Combines multiple LLMs (GPT-4, Claude, Llama) in one interface",
+        "Real-time search outperforms ChatGPT for current info",
+        "Clean and fast interface - highly valued for simplicity",
+      ],
+      es: [
+        "Respuestas incluyen citas con enlaces a fuentes originales",
+        "Combina múltiples LLMs (GPT-4, Claude, Llama) en una interfaz",
+        "Búsqueda en tiempo real supera a ChatGPT para info actual",
+        "Interfaz limpia y rápida - muy valorada por su simplicidad",
+      ],
+    },
   },
   {
     id: "genspark",
     nombre: "Genspark",
     url: "https://genspark.ai",
-    descripcion:
-      "Motor de búsqueda con IA que genera 'Sparkpages' - páginas informativas personalizadas que sintetizan información de múltiples fuentes en un formato visual estructurado. Diseñado para eliminar SEO spam y contenido publicitario.",
-    descripcionCorta: "Busqueda que genera páginas informativas",
+    descripcion: {
+      en: "AI search engine that generates 'Sparkpages' - personalized informative pages that synthesize information from multiple sources in a structured visual format. Designed to eliminate SEO spam and advertising content.",
+      es: "Motor de búsqueda con IA que genera 'Sparkpages' - páginas informativas personalizadas que sintetizan información de múltiples fuentes en un formato visual estructurado. Diseñado para eliminar SEO spam y contenido publicitario.",
+    },
+    descripcionCorta: {
+      en: "Search that generates informative pages",
+      es: "Búsqueda que genera páginas informativas",
+    },
     categoria: "agentes",
     nivel: "principiante",
     tier: "tier1",
-    departamentos: ["marketing", "ventas", "operaciónes", "rrhh", "tech"],
+    departamentos: ["marketing", "ventas", "operaciones", "rrhh", "tech"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "Busquedas ilimitadas, básico" },
-      { plan: "Plus", precio: "$20/mes", caracteristicas: "Agentes premium, velocidad" },
-      { plan: "Pro", precio: "$199/mes", caracteristicas: "API access [VERIFICAR]" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "Unlimited searches, basic", es: "Búsquedas ilimitadas, básico" } },
+      { plan: "Plus", precio: "$20/mo", caracteristicas: { en: "Premium agents, speed", es: "Agentes premium, velocidad" } },
+      { plan: "Pro", precio: "$199/mo", caracteristicas: { en: "API access [VERIFY]", es: "API access [VERIFICAR]" } },
     ],
-    casosDeUso: [
-      "Marketing: Generar researches de mercado visuales para stakeholders",
-      "Operaciones: Comparar proveedores con tablas comparativas automáticas",
-      "RRHH: Crear guias sintetizando mejores prácticas de la industria",
-      "Tech: Investigar stacks tecnológicos con pros/contras estructurados",
-      "Ventas: Research de prospectos listo para presentar",
-    ],
-    porQueEsBueno: [
-      "Sparkpages eliminan necesidad de abrir múltiples pestañas",
-      "Filtra activamente contenido SEO spam y publicitario",
-      "Agentes especializados por dominio dan resultados relevantes",
-      "Alternativa fresca a motores de búsqueda tradicionales",
-    ],
+    casosDeUso: {
+      en: [
+        "Marketing: Generate visual market research for stakeholders",
+        "Operations: Compare vendors with automatic comparison tables",
+        "HR: Create guides synthesizing industry best practices",
+        "Tech: Research tech stacks with structured pros/cons",
+        "Sales: Prospect research ready to present",
+      ],
+      es: [
+        "Marketing: Generar researches de mercado visuales para stakeholders",
+        "Operaciones: Comparar proveedores con tablas comparativas automáticas",
+        "RRHH: Crear guías sintetizando mejores prácticas de la industria",
+        "Tech: Investigar stacks tecnológicos con pros/contras estructurados",
+        "Ventas: Research de prospectos listo para presentar",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Sparkpages eliminate need to open multiple tabs",
+        "Actively filters SEO spam and advertising content",
+        "Domain-specialized agents give relevant results",
+        "Fresh alternative to traditional search engines",
+      ],
+      es: [
+        "Sparkpages eliminan necesidad de abrir múltiples pestañas",
+        "Filtra activamente contenido SEO spam y publicitario",
+        "Agentes especializados por dominio dan resultados relevantes",
+        "Alternativa fresca a motores de búsqueda tradicionales",
+      ],
+    },
   },
   {
     id: "notebooklm",
     nombre: "NotebookLM",
     url: "https://notebooklm.google.com",
-    descripcion:
-      "Asistente de investigación de Google que permite subir documentos propios (PDFs, Docs, webs) y generar un 'experto virtual' sobre ese contenido. Famoso por generar podcasts de audio donde dos voces IA discuten tus documentos.",
-    descripcionCorta: "Tu experto virtual sobre tus documentos",
+    descripcion: {
+      en: "Google's research assistant that lets you upload your own documents (PDFs, Docs, websites) and generate a 'virtual expert' about that content. Famous for generating audio podcasts where two AI voices discuss your documents.",
+      es: "Asistente de investigación de Google que permite subir documentos propios (PDFs, Docs, webs) y generar un 'experto virtual' sobre ese contenido. Famoso por generar podcasts de audio donde dos voces IA discuten tus documentos.",
+    },
+    descripcionCorta: {
+      en: "Your virtual expert on your documents",
+      es: "Tu experto virtual sobre tus documentos",
+    },
     categoria: "conocimiento",
     nivel: "principiante",
     tier: "tier3",
-    departamentos: ["legal", "finanzas", "rrhh", "tech", "operaciónes"],
+    departamentos: ["legal", "finanzas", "rrhh", "tech", "operaciones"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "50 notebooks, Audio Overviews" },
-      { plan: "Plus", precio: "$10/mes", caracteristicas: "Ilimitados, 500 fuentes" },
-      { plan: "Enterprise", precio: "Incluido", caracteristicas: "Via Google Workspace" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "50 notebooks, Audio Overviews", es: "50 notebooks, Audio Overviews" } },
+      { plan: "Plus", precio: "$10/mo", caracteristicas: { en: "Unlimited, 500 sources", es: "Ilimitados, 500 fuentes" } },
+      { plan: "Enterprise", precio: "Included", caracteristicas: { en: "Via Google Workspace", es: "Via Google Workspace" } },
     ],
-    casosDeUso: [
-      "Legal: Subir contratos para que el equipo pregunte sin leer todo",
-      "RRHH: Chatbot interno sobre políticas, manuales y beneficios",
-      "Finanzas: Analizar reportes anuales con resumenes en audio",
-      "Tech: Documentacion técnica convertida en asistente consultable",
-      "Operaciones: Manuales de procedimientos consultables por chat",
-    ],
-    porQueEsBueno: [
-      "Audio Overviews: podcasts de 10-15 min discutiendo tus documentos",
-      "Respuestas grounded: solo de TUS documentos, reduce alucinaciones",
-      "Integracion nativa con Google Workspace",
-      "Completamente gratuito para uso básico",
-    ],
+    casosDeUso: {
+      en: [
+        "Legal: Upload contracts for the team to query without reading everything",
+        "HR: Internal chatbot about policies, manuals and benefits",
+        "Finance: Analyze annual reports with audio summaries",
+        "Tech: Technical documentation converted to queryable assistant",
+        "Operations: Procedure manuals queryable via chat",
+      ],
+      es: [
+        "Legal: Subir contratos para que el equipo pregunte sin leer todo",
+        "RRHH: Chatbot interno sobre políticas, manuales y beneficios",
+        "Finanzas: Analizar reportes anuales con resúmenes en audio",
+        "Tech: Documentación técnica convertida en asistente consultable",
+        "Operaciones: Manuales de procedimientos consultables por chat",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Audio Overviews: 10-15 min podcasts discussing your documents",
+        "Grounded responses: only from YOUR documents, reduces hallucinations",
+        "Native integration with Google Workspace",
+        "Completely free for basic use",
+      ],
+      es: [
+        "Audio Overviews: podcasts de 10-15 min discutiendo tus documentos",
+        "Respuestas grounded: solo de TUS documentos, reduce alucinaciones",
+        "Integración nativa con Google Workspace",
+        "Completamente gratuito para uso básico",
+      ],
+    },
   },
   {
     id: "notion-ai",
     nombre: "Notion AI",
     url: "https://notion.so/product/ai",
-    descripcion:
-      "Asistente de IA integrado en Notion que puede escribir, resumir, traducir y responder preguntas sobre tu espacio de trabajo. Utiliza tu base de conocimiento interna para generar contenido contextualizado y automatizar tareas de documentación.",
-    descripcionCorta: "Asistente de escritura integrado en Notion",
+    descripcion: {
+      en: "AI assistant integrated into Notion that can write, summarize, translate and answer questions about your workspace. Uses your internal knowledge base to generate contextualized content and automate documentation tasks.",
+      es: "Asistente de IA integrado en Notion que puede escribir, resumir, traducir y responder preguntas sobre tu espacio de trabajo. Utiliza tu base de conocimiento interna para generar contenido contextualizado y automatizar tareas de documentación.",
+    },
+    descripcionCorta: {
+      en: "Writing assistant integrated in Notion",
+      es: "Asistente de escritura integrado en Notion",
+    },
     categoria: "conocimiento",
     nivel: "principiante",
     tier: "tier2",
-    departamentos: ["todos", "admin", "operaciónes", "rrhh", "marketing"],
+    departamentos: ["todos", "admin", "operaciones", "rrhh", "marketing"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "20 respuestas limitadas" },
-      { plan: "AI Add-on", precio: "$10/mes", caracteristicas: "Ilimitado, por usuario" },
-      { plan: "Business + AI", precio: "$18/mes", caracteristicas: "Incluido, por usuario" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "20 limited responses", es: "20 respuestas limitadas" } },
+      { plan: "AI Add-on", precio: "$10/mo", caracteristicas: { en: "Unlimited, per user", es: "Ilimitado, por usuario" } },
+      { plan: "Business + AI", precio: "$18/mo", caracteristicas: { en: "Included, per user", es: "Incluido, por usuario" } },
     ],
-    casosDeUso: [
-      "Finanzas: Resumir reportes y generar narrativas para presentaciones",
-      "RRHH: Crear descripciónes de puestos, resumir evaluaciones",
-      "Marketing: Generar borradores, brainstorming, traducir materiales",
-      "Tech: Documentar código y procesos, crear templates de RFCs",
-      "Operaciones: Crear SOPs automatizados, generar actas de reuniones",
-    ],
-    porQueEsBueno: [
-      "Contexto integrado: conoce todo tu workspace para respuestas específicas",
-      "Flujo de trabajo unificado: todo donde ya trabajas",
-      "Q&A permite encontrar información en segúndos",
-      "Ideal para equipos que usan Notion como sistema operativo central",
-    ],
+    casosDeUso: {
+      en: [
+        "Finance: Summarize reports and generate narratives for presentations",
+        "HR: Create job descriptions, summarize evaluations",
+        "Marketing: Generate drafts, brainstorming, translate materials",
+        "Tech: Document code and processes, create RFC templates",
+        "Operations: Create automated SOPs, generate meeting notes",
+      ],
+      es: [
+        "Finanzas: Resumir reportes y generar narrativas para presentaciones",
+        "RRHH: Crear descripciones de puestos, resumir evaluaciones",
+        "Marketing: Generar borradores, brainstorming, traducir materiales",
+        "Tech: Documentar código y procesos, crear templates de RFCs",
+        "Operaciones: Crear SOPs automatizados, generar actas de reuniones",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Integrated context: knows your entire workspace for specific answers",
+        "Unified workflow: everything where you already work",
+        "Q&A lets you find information in seconds",
+        "Ideal for teams using Notion as their central operating system",
+      ],
+      es: [
+        "Contexto integrado: conoce todo tu workspace para respuestas específicas",
+        "Flujo de trabajo unificado: todo donde ya trabajas",
+        "Q&A permite encontrar información en segundos",
+        "Ideal para equipos que usan Notion como sistema operativo central",
+      ],
+    },
   },
   {
     id: "rows",
     nombre: "Rows.com",
     url: "https://rows.com",
-    descripcion:
-      "Spreadsheet moderno con IA nativa que permite analizar datos, automatizar tareas y conectarse a 50+ integraciónes (Google Analytics, HubSpot, Stripe) sin código. Combina familiaridad de Excel con poder de IA y APIs.",
-    descripcionCorta: "Spreadsheet con IA e integraciónes nativas",
+    descripcion: {
+      en: "Modern spreadsheet with native AI that lets you analyze data, automate tasks and connect to 50+ integrations (Google Analytics, HubSpot, Stripe) without code. Combines Excel familiarity with AI and API power.",
+      es: "Spreadsheet moderno con IA nativa que permite analizar datos, automatizar tareas y conectarse a 50+ integraciones (Google Analytics, HubSpot, Stripe) sin código. Combina familiaridad de Excel con poder de IA y APIs.",
+    },
+    descripcionCorta: {
+      en: "Spreadsheet with AI and native integrations",
+      es: "Spreadsheet con IA e integraciones nativas",
+    },
     categoria: "conocimiento",
     nivel: "intermedio",
     tier: "tier3",
-    departamentos: ["finanzas", "ventas", "operaciónes", "marketing", "tech"],
+    departamentos: ["finanzas", "ventas", "operaciones", "marketing", "tech"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "5 spreadsheets, 10 AI/mes" },
-      { plan: "Plus", precio: "$9/mes", caracteristicas: "Ilimitados, 250 AI/mes" },
-      { plan: "Pro", precio: "$18/mes", caracteristicas: "1,000 AI/mes, embeds" },
-      { plan: "Team", precio: "$49+/mes", caracteristicas: "AI ilimitado, SSO" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "5 spreadsheets, 10 AI/month", es: "5 spreadsheets, 10 AI/mes" } },
+      { plan: "Plus", precio: "$9/mo", caracteristicas: { en: "Unlimited, 250 AI/month", es: "Ilimitados, 250 AI/mes" } },
+      { plan: "Pro", precio: "$18/mo", caracteristicas: { en: "1,000 AI/month, embeds", es: "1,000 AI/mes, embeds" } },
+      { plan: "Team", precio: "$49+/mo", caracteristicas: { en: "Unlimited AI, SSO", es: "AI ilimitado, SSO" } },
     ],
-    casosDeUso: [
-      "Marketing: Conectar Analytics y redes para dashboards en vivo",
-      "Finanzas: Integrar Stripe/PayPal para reportes de ingresos automáticos",
-      "Ventas: Sincronizar HubSpot/Salesforce para pipeline en tiempo real",
-      "Tech: Monitorear métricas de Mixpanel/Amplitude con alertas",
-      "Operaciones: Consolidar datos de múltiples fuentes automáticamente",
-    ],
-    porQueEsBueno: [
-      "Integraciones nativas: conecta a herramientas sin Zapier",
-      "AI Analyst: pregunta en lenguaje natural, obtiene análisis",
-      "Familiar para usuarios de Excel/Google Sheets",
-      "Colaboracion en tiempo real con controles de acceso",
-    ],
+    casosDeUso: {
+      en: [
+        "Marketing: Connect Analytics and social for live dashboards",
+        "Finance: Integrate Stripe/PayPal for automatic revenue reports",
+        "Sales: Sync HubSpot/Salesforce for real-time pipeline",
+        "Tech: Monitor Mixpanel/Amplitude metrics with alerts",
+        "Operations: Consolidate data from multiple sources automatically",
+      ],
+      es: [
+        "Marketing: Conectar Analytics y redes para dashboards en vivo",
+        "Finanzas: Integrar Stripe/PayPal para reportes de ingresos automáticos",
+        "Ventas: Sincronizar HubSpot/Salesforce para pipeline en tiempo real",
+        "Tech: Monitorear métricas de Mixpanel/Amplitude con alertas",
+        "Operaciones: Consolidar datos de múltiples fuentes automáticamente",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Native integrations: connect to tools without Zapier",
+        "AI Analyst: ask in natural language, get analysis",
+        "Familiar for Excel/Google Sheets users",
+        "Real-time collaboration with access controls",
+      ],
+      es: [
+        "Integraciones nativas: conecta a herramientas sin Zapier",
+        "AI Analyst: pregunta en lenguaje natural, obtiene análisis",
+        "Familiar para usuarios de Excel/Google Sheets",
+        "Colaboración en tiempo real con controles de acceso",
+      ],
+    },
   },
   {
     id: "manus",
     nombre: "Manus",
     url: "https://manus.im",
-    descripcion:
-      "Agente de IA autónomo capaz de ejecutar tareas complejas de forma independiente: navegar por internet, escribir código, crear documentos y completar workflows multi-paso sin supervisión constante. Posicionado como 'el primer agente de IA verdaderamente general'.",
-    descripcionCorta: "Agente autónomo que ejecuta tareas complejas",
+    descripcion: {
+      en: "Autonomous AI agent capable of executing complex tasks independently: browsing the internet, writing code, creating documents and completing multi-step workflows without constant supervision. Positioned as 'the first truly general AI agent'.",
+      es: "Agente de IA autónomo capaz de ejecutar tareas complejas de forma independiente: navegar por internet, escribir código, crear documentos y completar workflows multi-paso sin supervisión constante. Posicionado como 'el primer agente de IA verdaderamente general'.",
+    },
+    descripcionCorta: {
+      en: "Autonomous agent that executes complex tasks",
+      es: "Agente autónomo que ejecuta tareas complejas",
+    },
     categoria: "agentes",
     nivel: "intermedio",
     tier: "tier2",
-    departamentos: ["tech", "operaciónes", "marketing", "ventas", "finanzas"],
+    departamentos: ["tech", "operaciones", "marketing", "ventas", "finanzas"],
     precios: [
-      { plan: "Credits", precio: "$39/mes aprox", caracteristicas: "Sistema de créditos [VERIFICAR]" },
-      { plan: "Enterprise", precio: "Contactar", caracteristicas: "Acceso dedicado, sin colas" },
+      { plan: "Credits", precio: "~$39/mo", caracteristicas: { en: "Credit system [VERIFY]", es: "Sistema de créditos [VERIFICAR]" } },
+      { plan: "Enterprise", precio: "Contact", caracteristicas: { en: "Dedicated access, no queues", es: "Acceso dedicado, sin colas" } },
     ],
-    casosDeUso: [
-      "Tech: Automatizar investigación de código, crear prototipos, scraping",
-      "Marketing: Generar reportes de competencia completos con gráficos",
-      "Operaciones: Automatizar procesos multi-paso con varias herramientas",
-      "Ventas: Investigar empresas prospectas y generar briefings automáticos",
-      "Finanzas: Compilar datos de múltiples fuentes en reportes estructurados",
-    ],
-    porQueEsBueno: [
-      "Autonomia real: ejecuta tareas de 10-30 min sin intervención",
-      "Navegacion web real: abre páginas, hace clicks, extrae datos",
-      "Genera entregables completos: documentos, spreadsheets, código",
-      "Pionero en agentes autónomos accesibles al público",
-    ],
+    casosDeUso: {
+      en: [
+        "Tech: Automate code research, create prototypes, scraping",
+        "Marketing: Generate complete competitor reports with graphs",
+        "Operations: Automate multi-step processes with various tools",
+        "Sales: Research prospect companies and generate automatic briefings",
+        "Finance: Compile data from multiple sources into structured reports",
+      ],
+      es: [
+        "Tech: Automatizar investigación de código, crear prototipos, scraping",
+        "Marketing: Generar reportes de competencia completos con gráficos",
+        "Operaciones: Automatizar procesos multi-paso con varias herramientas",
+        "Ventas: Investigar empresas prospectas y generar briefings automáticos",
+        "Finanzas: Compilar datos de múltiples fuentes en reportes estructurados",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Real autonomy: executes 10-30 min tasks without intervention",
+        "Real web navigation: opens pages, clicks, extracts data",
+        "Generates complete deliverables: documents, spreadsheets, code",
+        "Pioneer in autonomous agents accessible to the public",
+      ],
+      es: [
+        "Autonomía real: ejecuta tareas de 10-30 min sin intervención",
+        "Navegación web real: abre páginas, hace clicks, extrae datos",
+        "Genera entregables completos: documentos, spreadsheets, código",
+        "Pionero en agentes autónomos accesibles al público",
+      ],
+    },
   },
 
-  // CREATIVIDAD (merged: presentaciones + diseño + video)
+  // CREATIVIDAD
   {
     id: "gamma",
     nombre: "Gamma",
     url: "https://gamma.app",
-    descripcion:
-      "Plataforma de IA que genera presentaciones, documentos y sitios web de forma automática a partir de texto o prompts. Transforma ideas en contenido visual profesional en segúndos, sin necesidad de diseño manual.",
-    descripcionCorta: "Presentaciones con IA automáticas",
+    descripcion: {
+      en: "AI platform that automatically generates presentations, documents and websites from text or prompts. Transforms ideas into professional visual content in seconds, without manual design.",
+      es: "Plataforma de IA que genera presentaciones, documentos y sitios web de forma automática a partir de texto o prompts. Transforma ideas en contenido visual profesional en segundos, sin necesidad de diseño manual.",
+    },
+    descripcionCorta: {
+      en: "AI-powered automatic presentations",
+      es: "Presentaciones con IA automáticas",
+    },
     categoria: "creatividad",
     nivel: "principiante",
     tier: "tier2",
-    departamentos: ["ventas", "finanzas", "marketing", "rrhh", "tech", "operaciónes", "todos"],
+    departamentos: ["ventas", "finanzas", "marketing", "rrhh", "tech", "operaciones", "todos"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "400 créditos, con marca" },
-      { plan: "Plus", precio: "$10/mes", caracteristicas: "Sin marca, export PDF/PPT" },
-      { plan: "Pro", precio: "$20/mes", caracteristicas: "Ilimitados, analiticas" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "400 credits, with branding", es: "400 créditos, con marca" } },
+      { plan: "Plus", precio: "$10/mo", caracteristicas: { en: "No branding, PDF/PPT export", es: "Sin marca, export PDF/PPT" } },
+      { plan: "Pro", precio: "$20/mo", caracteristicas: { en: "Unlimited, analytics", es: "Ilimitados, analíticas" } },
     ],
-    casosDeUso: [
-      "Finanzas: Reportes trimestrales y presentaciones de resultados",
-      "Ventas: Propuestas comerciales y pitch decks personalizados",
-      "Marketing: Presentaciones de campañas para stakeholders",
-      "RRHH: Onboarding decks y presentaciones de cultura",
-      "Tech: Documentar arquitecturas y roadmaps de producto",
-      "Operaciones: Manuales visuales de procesos y SOPs",
-    ],
-    porQueEsBueno: [
-      "IA genera contenido completo (texto + diseño + imagenes)",
-      "Diseños modernos y profesionales sin habilidades de diseño",
-      "Formato web interactivo supera a PowerPoint en engagement",
-      "Ideal para crear contenido rápido sin depender de diseñadores",
-    ],
+    casosDeUso: {
+      en: [
+        "Finance: Quarterly reports and results presentations",
+        "Sales: Commercial proposals and personalized pitch decks",
+        "Marketing: Campaign presentations for stakeholders",
+        "HR: Onboarding decks and culture presentations",
+        "Tech: Document architectures and product roadmaps",
+        "Operations: Visual process manuals and SOPs",
+      ],
+      es: [
+        "Finanzas: Reportes trimestrales y presentaciones de resultados",
+        "Ventas: Propuestas comerciales y pitch decks personalizados",
+        "Marketing: Presentaciones de campañas para stakeholders",
+        "RRHH: Onboarding decks y presentaciones de cultura",
+        "Tech: Documentar arquitecturas y roadmaps de producto",
+        "Operaciones: Manuales visuales de procesos y SOPs",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "AI generates complete content (text + design + images)",
+        "Modern professional designs without design skills",
+        "Interactive web format beats PowerPoint in engagement",
+        "Ideal for creating quick content without depending on designers",
+      ],
+      es: [
+        "IA genera contenido completo (texto + diseño + imágenes)",
+        "Diseños modernos y profesionales sin habilidades de diseño",
+        "Formato web interactivo supera a PowerPoint en engagement",
+        "Ideal para crear contenido rápido sin depender de diseñadores",
+      ],
+    },
   },
   {
     id: "canva",
     nombre: "Canva",
     url: "https://canva.com",
-    descripcion:
-      "Plataforma de diseño visual todo-en-uno que democratiza la creación gráfica. Permite crear desde posts para redes hasta presentaciones, videos y materiales impresos con templates profesionales. Incluye herramientas de IA para generar y editar imagenes, textos y diseños.",
-    descripcionCorta: "Diseño visual para todos",
+    descripcion: {
+      en: "All-in-one visual design platform that democratizes graphic creation. Create everything from social posts to presentations, videos and print materials with professional templates. Includes AI tools for generating and editing images, text and designs.",
+      es: "Plataforma de diseño visual todo-en-uno que democratiza la creación gráfica. Permite crear desde posts para redes hasta presentaciones, videos y materiales impresos con templates profesionales. Incluye herramientas de IA para generar y editar imágenes, textos y diseños.",
+    },
+    descripcionCorta: {
+      en: "Visual design for everyone",
+      es: "Diseño visual para todos",
+    },
     categoria: "creatividad",
     nivel: "principiante",
     tier: "tier3",
-    departamentos: ["marketing", "admin", "rrhh", "ventas", "finanzas", "operaciónes", "todos"],
+    departamentos: ["marketing", "admin", "rrhh", "ventas", "finanzas", "operaciones", "todos"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "250,000+ templates, 5GB" },
-      { plan: "Pro", precio: "$15/mes", caracteristicas: "100M+ elementos, Brand Kit" },
-      { plan: "Teams", precio: "$10/usuario", caracteristicas: "Colaboracion, permisos" },
-      { plan: "Enterprise", precio: "Personalizado", caracteristicas: "SSO, admin" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "250,000+ templates, 5GB", es: "250,000+ templates, 5GB" } },
+      { plan: "Pro", precio: "$15/mo", caracteristicas: { en: "100M+ elements, Brand Kit", es: "100M+ elementos, Brand Kit" } },
+      { plan: "Teams", precio: "$10/user", caracteristicas: { en: "Collaboration, permissions", es: "Colaboración, permisos" } },
+      { plan: "Enterprise", precio: "Custom", caracteristicas: { en: "SSO, admin", es: "SSO, admin" } },
     ],
-    casosDeUso: [
-      "Marketing: Contenido para redes, banners, flyers, materiales",
-      "RRHH: Ofertas de empleo atractivas, certificados, employer branding",
-      "Ventas: Propuestas visuales, one-pagers de producto",
-      "Finanzas: Infografias de datos financieros, reportes visuales",
-      "Admin: Comunicados internos, invitaciones, materiales corporativos",
-      "Operaciones: Diagramásde procesos, checklists visuales",
-    ],
-    porQueEsBueno: [
-      "Curva de aprendizaje casi nula: diseños profesionales en minutos",
-      "Biblioteca masiva de templates, fotos, iconos para cualquier necesidad",
-      "Herramientas de IA integradas (Magic Write, Eraser, Text to Image)",
-      "Brand Kit mantiene consistencia de marca en todos los materiales",
-    ],
+    casosDeUso: {
+      en: [
+        "Marketing: Content for social, banners, flyers, materials",
+        "HR: Attractive job offers, certificates, employer branding",
+        "Sales: Visual proposals, product one-pagers",
+        "Finance: Financial data infographics, visual reports",
+        "Admin: Internal communications, invitations, corporate materials",
+        "Operations: Process diagrams, visual checklists",
+      ],
+      es: [
+        "Marketing: Contenido para redes, banners, flyers, materiales",
+        "RRHH: Ofertas de empleo atractivas, certificados, employer branding",
+        "Ventas: Propuestas visuales, one-pagers de producto",
+        "Finanzas: Infografías de datos financieros, reportes visuales",
+        "Admin: Comunicados internos, invitaciones, materiales corporativos",
+        "Operaciones: Diagramas de procesos, checklists visuales",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Almost zero learning curve: professional designs in minutes",
+        "Massive library of templates, photos, icons for any need",
+        "Integrated AI tools (Magic Write, Eraser, Text to Image)",
+        "Brand Kit maintains brand consistency across all materials",
+      ],
+      es: [
+        "Curva de aprendizaje casi nula: diseños profesionales en minutos",
+        "Biblioteca masiva de templates, fotos, iconos para cualquier necesidad",
+        "Herramientas de IA integradas (Magic Write, Eraser, Text to Image)",
+        "Brand Kit mantiene consistencia de marca en todos los materiales",
+      ],
+    },
   },
   {
     id: "heygen",
     nombre: "HeyGen",
     url: "https://heygen.com",
-    descripcion:
-      "Plataforma de generación de video con IA que permite crear videos profesionales utilizando avatares digitales realistas y voces sintetizadas en másde 175 idiomas. Ofrece traducción automática de videos con sincronización labial, clonación de voz, y avatares personalizados.",
-    descripcionCorta: "Videos con avatares IA y traducción automática",
+    descripcion: {
+      en: "AI video generation platform that creates professional videos using realistic digital avatars and synthesized voices in 175+ languages. Offers automatic video translation with lip sync, voice cloning, and custom avatars.",
+      es: "Plataforma de generación de video con IA que permite crear videos profesionales utilizando avatares digitales realistas y voces sintetizadas en más de 175 idiomas. Ofrece traducción automática de videos con sincronización labial, clonación de voz, y avatares personalizados.",
+    },
+    descripcionCorta: {
+      en: "Videos with AI avatars and auto-translation",
+      es: "Videos con avatares IA y traducción automática",
+    },
     categoria: "creatividad",
     nivel: "intermedio",
     tier: "tier2",
-    departamentos: ["marketing", "ventas", "rrhh", "operaciónes", "todos"],
+    departamentos: ["marketing", "ventas", "rrhh", "operaciones", "todos"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "3 videos/mes, 3 min, 720p con marca" },
-      { plan: "Creator", precio: "$29/mes", caracteristicas: "Ilimitados 30 min, 1080p, clonación voz" },
-      { plan: "Team", precio: "$39/usuario", caracteristicas: "4K, colaboración, min 2 usuarios" },
-      { plan: "Enterprise", precio: "Personalizado", caracteristicas: "SSO, soporte dedicado [VERIFICAR]" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "3 videos/month, 3 min, 720p with branding", es: "3 videos/mes, 3 min, 720p con marca" } },
+      { plan: "Creator", precio: "$29/mo", caracteristicas: { en: "Unlimited 30 min, 1080p, voice cloning", es: "Ilimitados 30 min, 1080p, clonación voz" } },
+      { plan: "Team", precio: "$39/user", caracteristicas: { en: "4K, collaboration, min 2 users", es: "4K, colaboración, min 2 usuarios" } },
+      { plan: "Enterprise", precio: "Custom", caracteristicas: { en: "SSO, dedicated support [VERIFY]", es: "SSO, soporte dedicado [VERIFICAR]" } },
     ],
-    casosDeUso: [
-      "Marketing: Videos promocionales y anuncios UGC a escala sin producción tradicional",
-      "Ventas: Videos personalizados de prospeccion con nombre del cliente dinámico",
-      "RRHH: Videos de bienvenida y formación para onboarding de empleados",
-      "Formacion: Capacitacion en compliance y uso de software actualizable al instante",
-      "Comunicacion: Mensajes de liderazgo traducidos automáticamente a múltiples idiomas",
-    ],
-    porQueEsBueno: [
-      "Traduccion con lip-sync en 175+ idiomáspara empresas globales",
-      "Crear videos profesionales solo con texto, sin camaras ni edición",
-      "Escalabilidad: generar cientos de videos personalizados simultaneamente",
-      "Valoracion alta (4.7/5 estrellas) por calidad de avatares y soporte",
-    ],
+    casosDeUso: {
+      en: [
+        "Marketing: Promotional videos and UGC ads at scale without traditional production",
+        "Sales: Personalized prospecting videos with dynamic client name",
+        "HR: Welcome and training videos for employee onboarding",
+        "Training: Compliance and software training instantly updatable",
+        "Communication: Leadership messages automatically translated to multiple languages",
+      ],
+      es: [
+        "Marketing: Videos promocionales y anuncios UGC a escala sin producción tradicional",
+        "Ventas: Videos personalizados de prospección con nombre del cliente dinámico",
+        "RRHH: Videos de bienvenida y formación para onboarding de empleados",
+        "Formación: Capacitación en compliance y uso de software actualizable al instante",
+        "Comunicación: Mensajes de liderazgo traducidos automáticamente a múltiples idiomas",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Translation with lip-sync in 175+ languages for global companies",
+        "Create professional videos with text only, no cameras or editing",
+        "Scalability: generate hundreds of personalized videos simultaneously",
+        "High rating (4.7/5 stars) for avatar quality and support",
+      ],
+      es: [
+        "Traducción con lip-sync en 175+ idiomas para empresas globales",
+        "Crear videos profesionales solo con texto, sin cámaras ni edición",
+        "Escalabilidad: generar cientos de videos personalizados simultáneamente",
+        "Valoración alta (4.7/5 estrellas) por calidad de avatares y soporte",
+      ],
+    },
   },
   {
     id: "elevenlabs",
     nombre: "ElevenLabs",
     url: "https://elevenlabs.io",
-    descripcion:
-      "Plataforma de IA especializada en generación de voz, clonación vocal y doblaje automático. Ofrece texto a voz ultrarrealista en másde 70 idiomáscon control emocional avanzado, ideal para podcasts, videos, e-learning y atención al cliente.",
-    descripcionCorta: "Generacion de voz y clonación con IA",
+    descripcion: {
+      en: "AI platform specialized in voice generation, voice cloning and automatic dubbing. Offers ultra-realistic text-to-speech in 70+ languages with advanced emotional control, ideal for podcasts, videos, e-learning and customer service.",
+      es: "Plataforma de IA especializada en generación de voz, clonación vocal y doblaje automático. Ofrece texto a voz ultrarrealista en más de 70 idiomas con control emocional avanzado, ideal para podcasts, videos, e-learning y atención al cliente.",
+    },
+    descripcionCorta: {
+      en: "Voice generation and cloning with AI",
+      es: "Generación de voz y clonación con IA",
+    },
     categoria: "creatividad",
     nivel: "intermedio",
     tier: "tier2",
-    departamentos: ["marketing", "rrhh", "operaciónes", "tech", "todos"],
+    departamentos: ["marketing", "rrhh", "operaciones", "tech", "todos"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "10,000 créditos (~10 min), no comercial" },
-      { plan: "Starter", precio: "$5/mes", caracteristicas: "30,000 créditos, uso comercial" },
-      { plan: "Creator", precio: "$22/mes", caracteristicas: "100,000 créditos, clonación pro" },
-      { plan: "Pro", precio: "$99/mes", caracteristicas: "500,000 créditos, API avanzada" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "10,000 credits (~10 min), non-commercial", es: "10,000 créditos (~10 min), no comercial" } },
+      { plan: "Starter", precio: "$5/mo", caracteristicas: { en: "30,000 credits, commercial use", es: "30,000 créditos, uso comercial" } },
+      { plan: "Creator", precio: "$22/mo", caracteristicas: { en: "100,000 credits, pro cloning", es: "100,000 créditos, clonación pro" } },
+      { plan: "Pro", precio: "$99/mo", caracteristicas: { en: "500,000 credits, advanced API", es: "500,000 créditos, API avanzada" } },
     ],
-    casosDeUso: [
-      "Marketing: Voces para anuncios y videos promocionales en múltiples idiomas",
-      "Contenido: Narracion de podcasts, audiolibros y videos de YouTube",
-      "Formacion: Materiales de e-learning y cursos online con voces naturales",
-      "Soporte: Agentes conversacionales de voz para atención automatizada",
-      "Accesibilidad: Conversión de texto a audio para personas con discapacidades",
-    ],
-    porQueEsBueno: [
-      "Calidad de voz ultrarrealista con control de emociones avanzado",
-      "70+ idiomásy 30+ opciónes de doblaje con sincronización labial",
-      "Clonacion de voz precisa para mantener consistencia de marca",
-      "API robusta con SDKs para Python y TypeScript",
-    ],
+    casosDeUso: {
+      en: [
+        "Marketing: Voices for ads and promotional videos in multiple languages",
+        "Content: Narration for podcasts, audiobooks and YouTube videos",
+        "Training: E-learning materials and online courses with natural voices",
+        "Support: Voice conversational agents for automated customer service",
+        "Accessibility: Text to audio conversion for people with disabilities",
+      ],
+      es: [
+        "Marketing: Voces para anuncios y videos promocionales en múltiples idiomas",
+        "Contenido: Narración de podcasts, audiolibros y videos de YouTube",
+        "Formación: Materiales de e-learning y cursos online con voces naturales",
+        "Soporte: Agentes conversacionales de voz para atención automatizada",
+        "Accesibilidad: Conversión de texto a audio para personas con discapacidades",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Ultra-realistic voice quality with advanced emotion control",
+        "70+ languages and 30+ dubbing options with lip sync",
+        "Precise voice cloning to maintain brand consistency",
+        "Robust API with Python and TypeScript SDKs",
+      ],
+      es: [
+        "Calidad de voz ultrarrealista con control de emociones avanzado",
+        "70+ idiomas y 30+ opciones de doblaje con sincronización labial",
+        "Clonación de voz precisa para mantener consistencia de marca",
+        "API robusta con SDKs para Python y TypeScript",
+      ],
+    },
   },
 
   // NO-CODE
@@ -508,62 +758,106 @@ export const tools: Tool[] = [
     id: "lovable",
     nombre: "Lovable",
     url: "https://lovable.dev",
-    descripcion:
-      "Plataforma de desarrollo de aplicaciónes web con IA que permite crear apps fullstack completas a partir de descripciónes en lenguaje natural. Genera código React/TypeScript real y desplegable, con integración a Supabase para backend y autenticacion.",
-    descripcionCorta: "Apps fullstack con IA conversacional",
+    descripcion: {
+      en: "AI-powered web application development platform that lets you create complete fullstack apps from natural language descriptions. Generates real, deployable React/TypeScript code with Supabase integration for backend and authentication.",
+      es: "Plataforma de desarrollo de aplicaciones web con IA que permite crear apps fullstack completas a partir de descripciones en lenguaje natural. Genera código React/TypeScript real y desplegable, con integración a Supabase para backend y autenticación.",
+    },
+    descripcionCorta: {
+      en: "Fullstack apps with conversational AI",
+      es: "Apps fullstack con IA conversacional",
+    },
     categoria: "nocode",
     nivel: "intermedio",
     tier: "tier3",
-    departamentos: ["operaciónes", "rrhh", "ventas", "finanzas", "marketing", "tech"],
+    departamentos: ["operaciones", "rrhh", "ventas", "finanzas", "marketing", "tech"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "Proyectos limitados" },
-      { plan: "Starter", precio: "$20/mes", caracteristicas: "Mas mensajes IA, dominios" },
-      { plan: "Launch", precio: "$50/mes", caracteristicas: "Prioridad, soporte" },
-      { plan: "Scale", precio: "$100+/mes", caracteristicas: "Equipo, SLA" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "Limited projects", es: "Proyectos limitados" } },
+      { plan: "Starter", precio: "$20/mo", caracteristicas: { en: "More AI messages, domains", es: "Más mensajes IA, dominios" } },
+      { plan: "Launch", precio: "$50/mo", caracteristicas: { en: "Priority, support", es: "Prioridad, soporte" } },
+      { plan: "Scale", precio: "$100+/mo", caracteristicas: { en: "Team, SLA", es: "Equipo, SLA" } },
     ],
-    casosDeUso: [
-      "Finanzas: Dashboard de seguimiento de gastos con gráficos interactivos",
-      "RRHH: Portal de onboarding con formularios y checklist",
-      "Ventas: CRM interno simplificado para seguimiento de leads",
-      "Marketing: Landing pages para campañas con formularios de captura",
-      "Tech: Prototipos funciónales para validar ideas antes de desarrollo",
-    ],
-    porQueEsBueno: [
-      "Genera código React/TypeScript real que puedes exportar y modificar",
-      "Integracion nativa con Supabase para auth, DB y storage",
-      "Interfaz conversacional: describes y la IA construye iterativamente",
-      "Comunidad activa con ejemplos y templates compartidos",
-    ],
+    casosDeUso: {
+      en: [
+        "Finance: Expense tracking dashboard with interactive charts",
+        "HR: Onboarding portal with forms and checklist",
+        "Sales: Simplified internal CRM for lead tracking",
+        "Marketing: Landing pages for campaigns with capture forms",
+        "Tech: Functional prototypes to validate ideas before development",
+      ],
+      es: [
+        "Finanzas: Dashboard de seguimiento de gastos con gráficos interactivos",
+        "RRHH: Portal de onboarding con formularios y checklist",
+        "Ventas: CRM interno simplificado para seguimiento de leads",
+        "Marketing: Landing pages para campañas con formularios de captura",
+        "Tech: Prototipos funcionales para validar ideas antes de desarrollo",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Generates real React/TypeScript code you can export and modify",
+        "Native Supabase integration for auth, DB and storage",
+        "Conversational interface: describe and AI builds iteratively",
+        "Active community with shared examples and templates",
+      ],
+      es: [
+        "Genera código React/TypeScript real que puedes exportar y modificar",
+        "Integración nativa con Supabase para auth, DB y storage",
+        "Interfaz conversacional: describes y la IA construye iterativamente",
+        "Comunidad activa con ejemplos y templates compartidos",
+      ],
+    },
   },
   {
     id: "base44",
     nombre: "Base44",
     url: "https://base44.com",
-    descripcion:
-      "Plataforma no-code para crear aplicaciónes de negocio internas rápidamente. Enfocada en herramientas operativas y de gestión con capacidades de base de datos, formularios y automatizaciones integradas.",
-    descripcionCorta: "Apps de negocio internas sin código",
+    descripcion: {
+      en: "No-code platform for quickly creating internal business applications. Focused on operational and management tools with integrated database, forms and automation capabilities.",
+      es: "Plataforma no-code para crear aplicaciones de negocio internas rápidamente. Enfocada en herramientas operativas y de gestión con capacidades de base de datos, formularios y automatizaciones integradas.",
+    },
+    descripcionCorta: {
+      en: "Internal business apps without code",
+      es: "Apps de negocio internas sin código",
+    },
     categoria: "nocode",
     nivel: "intermedio",
     tier: "tier1",
-    departamentos: ["finanzas", "admin", "operaciónes", "rrhh", "legal"],
+    departamentos: ["finanzas", "admin", "operaciones", "rrhh", "legal"],
     precios: [
-      { plan: "Free", precio: "$0", caracteristicas: "Proyectos limitados" },
-      { plan: "Pro", precio: "$25-50/mes", caracteristicas: "Ilimitados, integraciónes" },
-      { plan: "Enterprise", precio: "Contactar", caracteristicas: "SSO, soporte dedicado" },
+      { plan: "Free", precio: "$0", caracteristicas: { en: "Limited projects", es: "Proyectos limitados" } },
+      { plan: "Pro", precio: "$25-50/mo", caracteristicas: { en: "Unlimited, integrations", es: "Ilimitados, integraciones" } },
+      { plan: "Enterprise", precio: "Contact", caracteristicas: { en: "SSO, dedicated support", es: "SSO, soporte dedicado" } },
     ],
-    casosDeUso: [
-      "Finanzas: Sistema de aprobación de gastos con flujos automatizados",
-      "Admin: Gestion de activos de oficina y reserva de salas",
-      "RRHH: Portal de solicitudes (vacaciones, permisos) con aprobaciónes",
-      "Operaciones: Seguimiento de pedidos y gestión de proveedores",
-      "Legal: Base de datos de contratos con recordatorios de vencimiento",
-    ],
-    porQueEsBueno: [
-      "Diseñado para herramientas internas de negocio (no landing pages)",
-      "Base de datos relacional integrada sin configurar backend",
-      "Flujos de trabajo y automatizaciones nativas para aprobaciónes",
-      "Curva de aprendizaje máscorta que alternativas como Retool",
-    ],
+    casosDeUso: {
+      en: [
+        "Finance: Expense approval system with automated workflows",
+        "Admin: Office asset management and room booking",
+        "HR: Request portal (vacations, permits) with approvals",
+        "Operations: Order tracking and vendor management",
+        "Legal: Contract database with expiration reminders",
+      ],
+      es: [
+        "Finanzas: Sistema de aprobación de gastos con flujos automatizados",
+        "Admin: Gestión de activos de oficina y reserva de salas",
+        "RRHH: Portal de solicitudes (vacaciones, permisos) con aprobaciones",
+        "Operaciones: Seguimiento de pedidos y gestión de proveedores",
+        "Legal: Base de datos de contratos con recordatorios de vencimiento",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Designed for internal business tools (not landing pages)",
+        "Integrated relational database without backend setup",
+        "Native workflows and automations for approvals",
+        "Shorter learning curve than alternatives like Retool",
+      ],
+      es: [
+        "Diseñado para herramientas internas de negocio (no landing pages)",
+        "Base de datos relacional integrada sin configurar backend",
+        "Flujos de trabajo y automatizaciones nativas para aprobaciones",
+        "Curva de aprendizaje más corta que alternativas como Retool",
+      ],
+    },
   },
 
   // DESARROLLO
@@ -571,94 +865,163 @@ export const tools: Tool[] = [
     id: "claude-code",
     nombre: "Claude Code",
     url: "https://claude.ai",
-    descripcion:
-      "CLI oficial de Anthropic que integra Claude directamente en el flujo de trabajo de programacion. Ofrece capacidades agenticas para editar archivos, ejecutar comandos, navegar codebases y realizar tareas de desarrollo complejas de forma autonoma en la terminal.",
-    descripcionCorta: "CLI agéntico para desarrollo de software",
+    descripcion: {
+      en: "Anthropic's official CLI that integrates Claude directly into the programming workflow. Offers agentic capabilities to edit files, execute commands, navigate codebases and perform complex development tasks autonomously in the terminal.",
+      es: "CLI oficial de Anthropic que integra Claude directamente en el flujo de trabajo de programación. Ofrece capacidades agénticas para editar archivos, ejecutar comandos, navegar codebases y realizar tareas de desarrollo complejas de forma autónoma en la terminal.",
+    },
+    descripcionCorta: {
+      en: "Agentic CLI for software development",
+      es: "CLI agéntico para desarrollo de software",
+    },
     categoria: "desarrollo",
     nivel: "avanzado",
     tier: "tier2",
     departamentos: ["tech"],
     precios: [
-      { plan: "Pro", precio: "$20/mes", caracteristicas: "Incluido con limites" },
-      { plan: "Max", precio: "$100/mes", caracteristicas: "Uso extendido, prioridad" },
-      { plan: "API Usage", precio: "Por tokens", caracteristicas: "Pago por uso" },
+      { plan: "Pro", precio: "$20/mo", caracteristicas: { en: "Included with limits", es: "Incluido con límites" } },
+      { plan: "Max", precio: "$100/mo", caracteristicas: { en: "Extended use, priority", es: "Uso extendido, prioridad" } },
+      { plan: "API Usage", precio: "Per tokens", caracteristicas: { en: "Pay per use", es: "Pago por uso" } },
     ],
-    casosDeUso: [
-      "Refactorizar código legacy y modernizar arquitecturas automáticamente",
-      "Implementar features describiendo requisitos en lenguaje natural",
-      "Debuggear errores complejos analizando logs y stack traces",
-      "Crear tests unitarios y de integración para código existente",
-      "Code reviews automáticos con sugerencias de mejora",
-      "Migrar proyectos entre frameworks o actualizar dependencias",
-    ],
-    porQueEsBueno: [
-      "Integra en terminal sin cambiar flujo de trabajo existente",
-      "Lee, escribe y ejecuta código con contexto completo del proyecto",
-      "Modelo Claude másavanzado con razonamiento extendido",
-      "Aumentos de productividad 2-5x según testimonios de desarrolladores",
-    ],
+    casosDeUso: {
+      en: [
+        "Refactor legacy code and modernize architectures automatically",
+        "Implement features describing requirements in natural language",
+        "Debug complex errors analyzing logs and stack traces",
+        "Create unit and integration tests for existing code",
+        "Automatic code reviews with improvement suggestions",
+        "Migrate projects between frameworks or update dependencies",
+      ],
+      es: [
+        "Refactorizar código legacy y modernizar arquitecturas automáticamente",
+        "Implementar features describiendo requisitos en lenguaje natural",
+        "Debuggear errores complejos analizando logs y stack traces",
+        "Crear tests unitarios y de integración para código existente",
+        "Code reviews automáticos con sugerencias de mejora",
+        "Migrar proyectos entre frameworks o actualizar dependencias",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Integrates in terminal without changing existing workflow",
+        "Reads, writes and executes code with full project context",
+        "Most advanced Claude model with extended reasoning",
+        "2-5x productivity increases according to developer testimonials",
+      ],
+      es: [
+        "Integra en terminal sin cambiar flujo de trabajo existente",
+        "Lee, escribe y ejecuta código con contexto completo del proyecto",
+        "Modelo Claude más avanzado con razonamiento extendido",
+        "Aumentos de productividad 2-5x según testimonios de desarrolladores",
+      ],
+    },
   },
   {
     id: "cursor",
     nombre: "Cursor",
     url: "https://cursor.com",
-    descripcion:
-      "Editor de código basado en VS Code con inteligencia artificial nativa que acelera el desarrollo mediante generación inteligente de código, refactorización automática y comprensión contextual completa del codebase. Incluye un agente de IA que ejecuta tareas de programacion de forma autonoma.",
-    descripcionCorta: "Editor de código con IA integrada",
+    descripcion: {
+      en: "VS Code-based code editor with native AI that accelerates development through intelligent code generation, automatic refactoring and complete codebase contextual understanding. Includes an AI agent that executes programming tasks autonomously.",
+      es: "Editor de código basado en VS Code con inteligencia artificial nativa que acelera el desarrollo mediante generación inteligente de código, refactorización automática y comprensión contextual completa del codebase. Incluye un agente de IA que ejecuta tareas de programación de forma autónoma.",
+    },
+    descripcionCorta: {
+      en: "Code editor with integrated AI",
+      es: "Editor de código con IA integrada",
+    },
     categoria: "desarrollo",
     nivel: "intermedio",
     tier: "tier1",
     departamentos: ["tech"],
     precios: [
-      { plan: "Hobby", precio: "$0", caracteristicas: "Requests limitados, autocompletado Tab" },
-      { plan: "Pro", precio: "$20/mes", caracteristicas: "Tab ilimitado, agentes background" },
-      { plan: "Pro+", precio: "$60/mes", caracteristicas: "3x créditos en todos los modelos" },
-      { plan: "Teams", precio: "$40/usuario", caracteristicas: "Chats compartidos, SSO, analytics" },
+      { plan: "Hobby", precio: "$0", caracteristicas: { en: "Limited requests, Tab autocomplete", es: "Requests limitados, autocompletado Tab" } },
+      { plan: "Pro", precio: "$20/mo", caracteristicas: { en: "Unlimited Tab, background agents", es: "Tab ilimitado, agentes background" } },
+      { plan: "Pro+", precio: "$60/mo", caracteristicas: { en: "3x credits on all models", es: "3x créditos en todos los modelos" } },
+      { plan: "Teams", precio: "$40/user", caracteristicas: { en: "Shared chats, SSO, analytics", es: "Chats compartidos, SSO, analytics" } },
     ],
-    casosDeUso: [
-      "Tech: Desarrollo de features nuevas entendiendo contexto del proyecto",
-      "Tech: Refactorizar código legacy manteniendo funciónalidad",
-      "Tech: Debugging identificando problemáscon contexto del codebase",
-      "Tech: Onboarding - nuevos devs exploran codebase via chat",
-      "Tech: Generacion automática de tests unitarios",
-      "Product/Tech: Prototipado rápido de MVPs con generación asistida",
-    ],
-    porQueEsBueno: [
-      "Indexa todo el codebase para sugerencias con contexto arquitectonico completo",
-      "Modo agente autónomo: edita múltiples archivos y ejecuta comandos",
-      "Transicion sin fricción desde VS Code (mismo ecosistema de extensiones)",
-      "Flexibilidad de modelos: GPT-4, Claude, modelos propios según tarea",
-    ],
+    casosDeUso: {
+      en: [
+        "Tech: New feature development understanding project context",
+        "Tech: Refactor legacy code maintaining functionality",
+        "Tech: Debugging identifying issues with codebase context",
+        "Tech: Onboarding - new devs explore codebase via chat",
+        "Tech: Automatic unit test generation",
+        "Product/Tech: Rapid MVP prototyping with assisted generation",
+      ],
+      es: [
+        "Tech: Desarrollo de features nuevas entendiendo contexto del proyecto",
+        "Tech: Refactorizar código legacy manteniendo funcionalidad",
+        "Tech: Debugging identificando problemas con contexto del codebase",
+        "Tech: Onboarding - nuevos devs exploran codebase via chat",
+        "Tech: Generación automática de tests unitarios",
+        "Product/Tech: Prototipado rápido de MVPs con generación asistida",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Indexes entire codebase for suggestions with complete architectural context",
+        "Autonomous agent mode: edits multiple files and executes commands",
+        "Frictionless transition from VS Code (same extension ecosystem)",
+        "Model flexibility: GPT-4, Claude, custom models per task",
+      ],
+      es: [
+        "Indexa todo el codebase para sugerencias con contexto arquitectónico completo",
+        "Modo agente autónomo: edita múltiples archivos y ejecuta comandos",
+        "Transición sin fricción desde VS Code (mismo ecosistema de extensiones)",
+        "Flexibilidad de modelos: GPT-4, Claude, modelos propios según tarea",
+      ],
+    },
   },
   {
     id: "claude-cowork",
     nombre: "Claude Co-Work",
     url: "https://claude.ai",
-    descripcion:
-      "Funcionalidad de tareas en segúndo plano de Claude Code que permite ejecutar trabajos autónomos mientras el desarrollador continua con otras actividades. Ideal para tareas largas como migraciónes, generación de documentación o refactorizaciónes extensas.",
-    descripcionCorta: "Tareas autonomásen segúndo plano",
+    descripcion: {
+      en: "Background task functionality of Claude Code that allows executing autonomous jobs while the developer continues with other activities. Ideal for long tasks like migrations, documentation generation or extensive refactoring.",
+      es: "Funcionalidad de tareas en segundo plano de Claude Code que permite ejecutar trabajos autónomos mientras el desarrollador continúa con otras actividades. Ideal para tareas largas como migraciones, generación de documentación o refactorizaciones extensas.",
+    },
+    descripcionCorta: {
+      en: "Autonomous background tasks",
+      es: "Tareas autónomas en segundo plano",
+    },
     categoria: "agentes",
     nivel: "intermedio",
     tier: "tier2",
-    departamentos: ["tech", "operaciónes"],
+    departamentos: ["tech", "operaciones"],
     precios: [
-      { plan: "Pro", precio: "$20/mes", caracteristicas: "Tareas background limitadas" },
-      { plan: "Max", precio: "$100/mes", caracteristicas: "Multiples simultaneas, prioridad" },
+      { plan: "Pro", precio: "$20/mo", caracteristicas: { en: "Limited background tasks", es: "Tareas background limitadas" } },
+      { plan: "Max", precio: "$100/mo", caracteristicas: { en: "Multiple simultaneous, priority", es: "Múltiples simultáneas, prioridad" } },
     ],
-    casosDeUso: [
-      "Ejecutar migraciónes de base de datos mientras trabajas en otro",
-      "Generar documentación completa del proyecto de forma asíncrona",
-      "Refactorizar múltiples archivos en paralelo sin bloquear terminal",
-      "Ejecutar suites de tests completas y recibir resultados al terminar",
-      "Crear PRs automáticamente tras completar cambios de código",
-      "Analizar codebase completo para detectar vulnerabilidades",
-    ],
-    porQueEsBueno: [
-      "Multitasking real: seguir trabajando mientras Claude ejecuta tareas largas",
-      "Reduce tiempos de espera en tareas que requieren procesamiento extenso",
-      "Notificaciones inteligentes cuando tareas se completan o requieren atención",
-      "Maximiza productividad sin supervisión constante de tareas de IA",
-    ],
+    casosDeUso: {
+      en: [
+        "Execute database migrations while working on something else",
+        "Generate complete project documentation asynchronously",
+        "Refactor multiple files in parallel without blocking terminal",
+        "Run complete test suites and receive results when done",
+        "Create PRs automatically after completing code changes",
+        "Analyze entire codebase to detect vulnerabilities",
+      ],
+      es: [
+        "Ejecutar migraciones de base de datos mientras trabajas en otro",
+        "Generar documentación completa del proyecto de forma asíncrona",
+        "Refactorizar múltiples archivos en paralelo sin bloquear terminal",
+        "Ejecutar suites de tests completas y recibir resultados al terminar",
+        "Crear PRs automáticamente tras completar cambios de código",
+        "Analizar codebase completo para detectar vulnerabilidades",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Real multitasking: keep working while Claude executes long tasks",
+        "Reduces wait times on tasks requiring extensive processing",
+        "Smart notifications when tasks complete or need attention",
+        "Maximizes productivity without constant AI task supervision",
+      ],
+      es: [
+        "Multitasking real: seguir trabajando mientras Claude ejecuta tareas largas",
+        "Reduce tiempos de espera en tareas que requieren procesamiento extenso",
+        "Notificaciones inteligentes cuando tareas se completan o requieren atención",
+        "Maximiza productividad sin supervisión constante de tareas de IA",
+      ],
+    },
   },
 ];
 

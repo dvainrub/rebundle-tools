@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronDown,
@@ -9,23 +9,22 @@ import {
   Zap,
   Search,
   Presentation,
-  BarChart3,
   Code2,
   Layers,
-  Star,
+  Globe,
 } from "lucide-react";
 import {
   tools,
-  categoryLabels,
-  levelLabels,
   levelColors,
-  tierLabels,
-  tierDescriptions,
   tierColors,
   type Category,
   type Tool,
   type RecommendationTier,
+  type SkillLevel,
 } from "@/data/tools";
+import { ui } from "@/data/translations";
+import { useLang } from "@/lib/useLang";
+import { type Lang } from "@/lib/i18n";
 
 const categoryIcons: Record<Category, React.ReactNode> = {
   automatizacion: <Zap className="h-4 w-4" />,
@@ -45,7 +44,20 @@ const categoryColors: Record<Category, string> = {
   desarrollo: "bg-slate-100 text-slate-800",
 };
 
-function ToolCard({ tool }: { tool: Tool }) {
+function LanguageToggle({ lang, toggleLang }: { lang: Lang; toggleLang: () => void }) {
+  return (
+    <button
+      onClick={toggleLang}
+      className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200"
+      title={lang === "en" ? "Switch to Spanish" : "Cambiar a Inglés"}
+    >
+      <Globe className="h-4 w-4" />
+      {lang === "en" ? "ES" : "EN"}
+    </button>
+  );
+}
+
+function ToolCard({ tool, lang }: { tool: Tool; lang: Lang }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -65,16 +77,16 @@ function ToolCard({ tool }: { tool: Tool }) {
             {tool.tier && (
               <span
                 className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-medium ${tierColors[tool.tier]}`}
-                title={tierDescriptions[tool.tier]}
+                title={ui.tierDescriptions[tool.tier][lang]}
               >
-                {tierLabels[tool.tier]}
+                {ui.tiers[tool.tier][lang]}
               </span>
             )}
             <span
               className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium ${categoryColors[tool.categoria]}`}
             >
               {categoryIcons[tool.categoria]}
-              {categoryLabels[tool.categoria]}
+              {ui.categories[tool.categoria][lang]}
             </span>
           </div>
 
@@ -82,14 +94,14 @@ function ToolCard({ tool }: { tool: Tool }) {
           <h3 className="text-lg font-semibold text-gray-900">{tool.nombre}</h3>
 
           {/* Short description */}
-          <p className="mt-1 text-sm text-gray-600">{tool.descripcionCorta}</p>
+          <p className="mt-1 text-sm text-gray-600">{tool.descripcionCorta[lang]}</p>
 
           {/* Skill level badge */}
           <div className="mt-3">
             <span
               className={`inline-block rounded-full px-2.5 py-0.5 text-xs font-medium ${levelColors[tool.nivel]}`}
             >
-              {levelLabels[tool.nivel]}
+              {ui.levels[tool.nivel][lang]}
             </span>
           </div>
         </div>
@@ -113,13 +125,13 @@ function ToolCard({ tool }: { tool: Tool }) {
             <div className="border-t border-gray-100 px-5 pb-5 pt-4">
               {/* Full description */}
               <p className="text-sm leading-relaxed text-gray-700">
-                {tool.descripcion}
+                {tool.descripcion[lang]}
               </p>
 
               {/* Pricing Table */}
               <div className="mt-5">
                 <h4 className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-500">
-                  Precios
+                  {ui.card.pricing[lang]}
                 </h4>
                 <div className="grid gap-2">
                   {tool.precios.map((tier, idx) => (
@@ -135,7 +147,7 @@ function ToolCard({ tool }: { tool: Tool }) {
                           {tier.precio}
                         </span>
                         <span className="ml-2 text-xs text-gray-500">
-                          {tier.caracteristicas}
+                          {tier.caracteristicas[lang]}
                         </span>
                       </div>
                     </div>
@@ -146,10 +158,10 @@ function ToolCard({ tool }: { tool: Tool }) {
               {/* Use Cases */}
               <div className="mt-5">
                 <h4 className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-500">
-                  Casos de Uso
+                  {ui.card.useCases[lang]}
                 </h4>
                 <ul className="space-y-2">
-                  {tool.casosDeUso.map((caso, idx) => (
+                  {tool.casosDeUso[lang].map((caso, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
                       <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gray-400" />
                       {caso}
@@ -158,13 +170,13 @@ function ToolCard({ tool }: { tool: Tool }) {
                 </ul>
               </div>
 
-              {/* Why It's Good - styled like Dashboard */}
+              {/* Why It's Good */}
               <div className="mt-5">
                 <h4 className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-500">
-                  Por Que Es Bueno
+                  {ui.card.whyItsGood[lang]}
                 </h4>
                 <div className="grid gap-2">
-                  {tool.porQueEsBueno.map((razon, idx) => (
+                  {tool.porQueEsBueno[lang].map((razon, idx) => (
                     <div
                       key={idx}
                       className="flex items-center gap-3 rounded-lg bg-emerald-50 px-3 py-2.5"
@@ -185,7 +197,7 @@ function ToolCard({ tool }: { tool: Tool }) {
                 rel="noopener noreferrer"
                 className="mt-5 inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800"
               >
-                Visitar {tool.nombre}
+                {ui.card.visit[lang]} {tool.nombre}
                 <ExternalLink className="h-4 w-4" />
               </a>
             </div>
@@ -196,11 +208,12 @@ function ToolCard({ tool }: { tool: Tool }) {
   );
 }
 
-export default function Catalog2Design() {
+function CatalogContent() {
+  const { lang, toggleLang } = useLang();
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [selectedTier, setSelectedTier] = useState<RecommendationTier | "all">("all");
 
-  const categories = Object.keys(categoryLabels) as Category[];
+  const categories = Object.keys(ui.categories) as Category[];
   const tiers: NonNullable<RecommendationTier>[] = ["tier1", "tier2", "tier3"];
 
   const filteredTools = tools.filter((t) => {
@@ -225,12 +238,17 @@ export default function Catalog2Design() {
       {/* Header */}
       <header className="border-b border-gray-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-8">
-          <h1 className="text-3xl font-bold text-gray-900">
-            Stack IA Recomendado por Rebundle
-          </h1>
-          <p className="mt-2 text-gray-600">
-            Explora las mejores herramientas de inteligencia artificial para tu organización
-          </p>
+          <div className="flex items-start justify-between">
+            <div>
+              <h1 className="text-3xl font-bold text-gray-900">
+                {ui.header.title[lang]}
+              </h1>
+              <p className="mt-2 text-gray-600">
+                {ui.header.subtitle[lang]}
+              </p>
+            </div>
+            <LanguageToggle lang={lang} toggleLang={toggleLang} />
+          </div>
         </div>
       </header>
 
@@ -239,7 +257,7 @@ export default function Catalog2Design() {
         <div className="mx-auto max-w-6xl px-4 py-4">
           {/* Tier Filters */}
           <div className="mb-3 flex flex-wrap items-center gap-2">
-            <span className="text-sm font-medium text-gray-500">Recomendacion:</span>
+            <span className="text-sm font-medium text-gray-500">{ui.filters.recommendation[lang]}</span>
             <button
               onClick={() => setSelectedTier("all")}
               className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
@@ -248,7 +266,7 @@ export default function Catalog2Design() {
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
-              Todas
+              {ui.filters.all[lang]}
             </button>
             {tiers.map((tier) => {
               const count = tools.filter((t) => t.tier === tier).length;
@@ -263,7 +281,7 @@ export default function Catalog2Design() {
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                 >
-                  {tierLabels[tier]} ({count})
+                  {ui.tiers[tier][lang]} ({count})
                 </button>
               );
             })}
@@ -271,7 +289,7 @@ export default function Catalog2Design() {
 
           {/* Category Filters */}
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-sm font-medium text-gray-500">Categoria:</span>
+            <span className="text-sm font-medium text-gray-500">{ui.filters.category[lang]}</span>
             <button
               onClick={() => setSelectedCategory(null)}
               className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
@@ -280,7 +298,7 @@ export default function Catalog2Design() {
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
-              Todas ({tools.length})
+              {ui.filters.all[lang]} ({tools.length})
             </button>
             {categories.map((cat) => {
               const count = tools.filter((t) => t.categoria === cat).length;
@@ -295,7 +313,7 @@ export default function Catalog2Design() {
                   }`}
                 >
                   {categoryIcons[cat]}
-                  {categoryLabels[cat]} ({count})
+                  {ui.categories[cat][lang]} ({count})
                 </button>
               );
             })}
@@ -319,7 +337,7 @@ export default function Catalog2Design() {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.2 }}
               >
-                <ToolCard tool={tool} />
+                <ToolCard tool={tool} lang={lang} />
               </motion.div>
             ))}
           </AnimatePresence>
@@ -327,10 +345,18 @@ export default function Catalog2Design() {
 
         {sortedTools.length === 0 && (
           <div className="py-16 text-center">
-            <p className="text-gray-500">No hay herramientas con estos filtros</p>
+            <p className="text-gray-500">{ui.empty.noTools[lang]}</p>
           </div>
         )}
       </main>
     </div>
+  );
+}
+
+export default function Catalog2Design() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-gray-50" />}>
+      <CatalogContent />
+    </Suspense>
   );
 }
