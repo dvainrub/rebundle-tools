@@ -13,11 +13,11 @@ export type Department =
   | "operaciones"
   | "todos";
 
-// Categories: automatizacion, agentes, investigacion, creatividad, nocode, desarrollo
+// Categories: automatizacion, agentes, conocimiento, creatividad, nocode, desarrollo
 export type Category =
   | "automatizacion"
   | "agentes"
-  | "investigacion"
+  | "conocimiento"
   | "creatividad"
   | "nocode"
   | "desarrollo";
@@ -49,7 +49,7 @@ export interface Tool {
 export const categoryLabels: Record<Category, string> = {
   automatizacion: "Automatizacion",
   agentes: "Agentes",
-  investigacion: "Investigacion",
+  conocimiento: "Conocimiento",
   creatividad: "Creatividad",
   nocode: "No-Code",
   desarrollo: "Desarrollo",
@@ -202,7 +202,7 @@ export const tools: Tool[] = [
     descripcion:
       "Motor de busqueda conversacional impulsado por IA que proporciona respuestas directas con citas de fuentes verificadas. Combina modelos como GPT-4 y Claude con busqueda web en tiempo real, eliminando la necesidad de revisar multiples enlaces.",
     descripcionCorta: "Busqueda con IA y fuentes verificadas",
-    categoria: "investigacion",
+    categoria: "conocimiento",
     nivel: "principiante",
     tier: "tier2",
     departamentos: ["todos", "legal", "finanzas", "marketing", "ventas"],
@@ -262,7 +262,7 @@ export const tools: Tool[] = [
     descripcion:
       "Asistente de investigacion de Google que permite subir documentos propios (PDFs, Docs, webs) y generar un 'experto virtual' sobre ese contenido. Famoso por generar podcasts de audio donde dos voces IA discuten tus documentos.",
     descripcionCorta: "Tu experto virtual sobre tus documentos",
-    categoria: "investigacion",
+    categoria: "conocimiento",
     nivel: "principiante",
     tier: "tier3",
     departamentos: ["legal", "finanzas", "rrhh", "tech", "operaciones"],
@@ -292,7 +292,7 @@ export const tools: Tool[] = [
     descripcion:
       "Asistente de IA integrado en Notion que puede escribir, resumir, traducir y responder preguntas sobre tu espacio de trabajo. Utiliza tu base de conocimiento interna para generar contenido contextualizado y automatizar tareas de documentacion.",
     descripcionCorta: "Asistente de escritura integrado en Notion",
-    categoria: "investigacion",
+    categoria: "conocimiento",
     nivel: "principiante",
     tier: "tier2",
     departamentos: ["todos", "admin", "operaciones", "rrhh", "marketing"],
@@ -322,7 +322,7 @@ export const tools: Tool[] = [
     descripcion:
       "Spreadsheet moderno con IA nativa que permite analizar datos, automatizar tareas y conectarse a 50+ integraciones (Google Analytics, HubSpot, Stripe) sin codigo. Combina familiaridad de Excel con poder de IA y APIs.",
     descripcionCorta: "Spreadsheet con IA e integraciones nativas",
-    categoria: "investigacion",
+    categoria: "conocimiento",
     nivel: "intermedio",
     tier: "tier3",
     departamentos: ["finanzas", "ventas", "operaciones", "marketing", "tech"],
