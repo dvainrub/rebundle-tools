@@ -106,7 +106,7 @@ export const ui = {
   tiers: {
     tier1: {
       en: "Top Pick",
-      es: "Mejor Opcion",
+      es: "Mejor Opción",
     } as Localized<string>,
     tier2: {
       en: "Great",
@@ -190,7 +190,7 @@ export const ui = {
     } as Localized<string>,
     maxTools: {
       en: "Maximum 5 tools",
-      es: "Maximo 5 herramientas",
+      es: "Máximo 5 herramientas",
     } as Localized<string>,
     minTools: {
       en: "Select at least 2 tools",
@@ -198,11 +198,11 @@ export const ui = {
     } as Localized<string>,
     backToCatalog: {
       en: "Back to catalog",
-      es: "Volver al catalogo",
+      es: "Volver al catálogo",
     } as Localized<string>,
     description: {
       en: "Description",
-      es: "Descripcion",
+      es: "Descripción",
     } as Localized<string>,
     details: {
       en: "Details",
@@ -214,7 +214,7 @@ export const ui = {
     } as Localized<string>,
     selectFromCatalog: {
       en: "Select tools from the catalog to compare them",
-      es: "Selecciona herramientas del catalogo para compararlas",
+      es: "Selecciona herramientas del catálogo para compararlas",
     } as Localized<string>,
   },
 } as const;

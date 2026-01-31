@@ -103,7 +103,7 @@ Use `null` for missing resources (shows X icon with Resources toggle ON).
 
 ## Content Guidelines
 
-- **Spanish**: Use proper accents (a, e, i, o, u, n)
+- **Spanish**: Use proper accents (á, é, í, ó, ú, ñ)
 - **Use cases**: Prefix with department (Finance:/Finanzas:, HR:/RRHH:, etc.)
 - **Departments**: finanzas, admin, rrhh, tech, ventas, marketing, legal, operaciones, todos
 - **Levels**: principiante, intermedio, avanzado
