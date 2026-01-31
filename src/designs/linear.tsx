@@ -362,14 +362,50 @@ function CatalogContent() {
   const { lang, toggleLang } = useLang();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
-  const [selectedTier, setSelectedTier] = useState<RecommendationTier | "all">("all");
-  const [selectedLevel, setSelectedLevel] = useState<SkillLevel | "all">("all");
+
+  // Initialize filters from URL params
+  const initialCategory = searchParams.get("category") as Category | null;
+  const initialTier = (searchParams.get("tier") as RecommendationTier) || "all";
+  const initialLevel = (searchParams.get("level") as SkillLevel) || "all";
+
+  const [selectedCategory, setSelectedCategory] = useState<Category | null>(initialCategory);
+  const [selectedTier, setSelectedTier] = useState<RecommendationTier | "all">(initialTier);
+  const [selectedLevel, setSelectedLevel] = useState<SkillLevel | "all">(initialLevel);
   const [showResources, setShowResources] = useState(false);
 
   // Compare mode state
   const [compareMode, setCompareMode] = useState(false);
   const [selectedTools, setSelectedTools] = useState<string[]>([]);
+
+  // Update URL when filters change
+  const updateUrlParams = (
+    category: Category | null,
+    tier: RecommendationTier | "all",
+    level: SkillLevel | "all"
+  ) => {
+    const params = new URLSearchParams();
+    if (lang !== "en") params.set("lang", lang);
+    if (category) params.set("category", category);
+    if (tier !== "all" && tier !== null) params.set("tier", tier);
+    if (level !== "all") params.set("level", level);
+    const queryString = params.toString();
+    router.replace(queryString ? `?${queryString}` : "/", { scroll: false });
+  };
+
+  const handleCategoryChange = (category: Category | null) => {
+    setSelectedCategory(category);
+    updateUrlParams(category, selectedTier, selectedLevel);
+  };
+
+  const handleTierChange = (tier: RecommendationTier | "all") => {
+    setSelectedTier(tier);
+    updateUrlParams(selectedCategory, tier, selectedLevel);
+  };
+
+  const handleLevelChange = (level: SkillLevel | "all") => {
+    setSelectedLevel(level);
+    updateUrlParams(selectedCategory, selectedTier, level);
+  };
 
   const categories = Object.keys(ui.categories) as Category[];
   const tiers: NonNullable<RecommendationTier>[] = ["tier1", "tier2", "tier3"];
@@ -462,7 +498,7 @@ function CatalogContent() {
             </span>
             <FilterPill
               active={selectedTier === "all"}
-              onClick={() => setSelectedTier("all")}
+              onClick={() => handleTierChange("all")}
             >
               {ui.filters.all[lang]}
             </FilterPill>
@@ -473,7 +509,7 @@ function CatalogContent() {
                 <FilterPill
                   key={tier}
                   active={selectedTier === tier}
-                  onClick={() => setSelectedTier(tier)}
+                  onClick={() => handleTierChange(tier)}
                   count={count}
                   icon={tier === "tier1" ? <Sparkles className="h-3 w-3" /> : undefined}
                 >
@@ -490,7 +526,7 @@ function CatalogContent() {
             </span>
             <FilterPill
               active={selectedCategory === null}
-              onClick={() => setSelectedCategory(null)}
+              onClick={() => handleCategoryChange(null)}
               count={tools.length}
             >
               {ui.filters.all[lang]}
@@ -501,7 +537,7 @@ function CatalogContent() {
                 <FilterPill
                   key={cat}
                   active={selectedCategory === cat}
-                  onClick={() => setSelectedCategory(cat)}
+                  onClick={() => handleCategoryChange(cat)}
                   count={count}
                   icon={categoryIcons[cat]}
                 >
@@ -518,7 +554,7 @@ function CatalogContent() {
             </span>
             <FilterPill
               active={selectedLevel === "all"}
-              onClick={() => setSelectedLevel("all")}
+              onClick={() => handleLevelChange("all")}
             >
               {ui.filters.all[lang]}
             </FilterPill>
@@ -528,7 +564,7 @@ function CatalogContent() {
                 <FilterPill
                   key={level}
                   active={selectedLevel === level}
-                  onClick={() => setSelectedLevel(level)}
+                  onClick={() => handleLevelChange(level)}
                   count={count}
                 >
                   {ui.levels[level][lang]}
