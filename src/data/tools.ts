@@ -211,15 +211,15 @@ export const tools: Tool[] = [
     porQueEsBueno: {
       en: [
         "Self-hosting: total data control for compliance and privacy",
-        "1,000+ integrations with 70+ AI nodes via LangChain",
+        "70+ AI nodes for building autonomous agents with multi-agent orchestration",
         "Native JavaScript/Python code for advanced transformations",
-        "Workflow-based pricing (not per task) - more economical at high volume [VERIFY]",
+        "Workflow-based pricing (not per task) - more economical at high volume",
       ],
       es: [
         "Self-hosting: control total de datos para compliance y privacidad",
-        "1,000+ integraciones con 70+ nodos de IA via LangChain",
+        "70+ nodos de IA para construir agentes autónomos con orquestación multi-agente",
         "Código JavaScript/Python nativo para transformaciones avanzadas",
-        "Precio por workflow (no por tarea) - más económico en alto volumen [VERIFICAR]",
+        "Precio por workflow (no por tarea) - más económico en alto volumen",
       ],
     },
   },
@@ -230,8 +230,8 @@ export const tools: Tool[] = [
     nombre: "Perplexity AI",
     url: "https://perplexity.ai",
     descripcion: {
-      en: "Conversational AI search engine that provides direct answers with citations from verified sources. Combines models like GPT-4 and Claude with real-time web search, eliminating the need to review multiple links.",
-      es: "Motor de búsqueda conversacional impulsado por IA que proporciona respuestas directas con citas de fuentes verificadas. Combina modelos como GPT-4 y Claude con búsqueda web en tiempo real, eliminando la necesidad de revisar múltiples enlaces.",
+      en: "Conversational AI search engine that provides direct answers with citations from verified sources. Features Deep Research mode for comprehensive multi-step analysis, plus specialized tools like Perplexity Finance and Perplexity Patents for domain-specific research.",
+      es: "Motor de búsqueda conversacional con IA que proporciona respuestas directas con citas de fuentes verificadas. Incluye modo Deep Research para análisis exhaustivo multi-paso, además de herramientas especializadas como Perplexity Finance y Perplexity Patents para investigación por dominio.",
     },
     descripcionCorta: {
       en: "AI search with verified sources",
@@ -267,15 +267,15 @@ export const tools: Tool[] = [
     porQueEsBueno: {
       en: [
         "Responses include citations with links to original sources",
+        "Deep Research mode: comprehensive analysis with 50+ sources in one report",
+        "Specialized tools: Perplexity Finance for investors, Patents for IP research",
         "Combines multiple LLMs (GPT-4, Claude, Llama) in one interface",
-        "Real-time search outperforms ChatGPT for current info",
-        "Clean and fast interface - highly valued for simplicity",
       ],
       es: [
         "Respuestas incluyen citas con enlaces a fuentes originales",
+        "Modo Deep Research: análisis exhaustivo con 50+ fuentes en un reporte",
+        "Herramientas especializadas: Perplexity Finance para inversores, Patents para investigación IP",
         "Combina múltiples LLMs (GPT-4, Claude, Llama) en una interfaz",
-        "Búsqueda en tiempo real supera a ChatGPT para info actual",
-        "Interfaz limpia y rápida - muy valorada por su simplicidad",
       ],
     },
   },
@@ -284,8 +284,8 @@ export const tools: Tool[] = [
     nombre: "Genspark",
     url: "https://genspark.ai",
     descripcion: {
-      en: "AI search engine that generates 'Sparkpages' - personalized informative pages that synthesize information from multiple sources in a structured visual format. Designed to eliminate SEO spam and advertising content.",
-      es: "Motor de búsqueda con IA que genera 'Sparkpages' - páginas informativas personalizadas que sintetizan información de múltiples fuentes en un formato visual estructurado. Diseñado para eliminar SEO spam y contenido publicitario.",
+      en: "AI search engine with specialized agents that generates 'Sparkpages' - informative pages synthesizing multiple sources. Includes Super Agent for autonomous browser tasks, AI Slides for presentations, AI Sheets for data analysis, and AI Developer for no-code apps.",
+      es: "Motor de búsqueda con agentes especializados que genera 'Sparkpages' - páginas informativas sintetizando múltiples fuentes. Incluye Super Agent para tareas autónomas del navegador, AI Slides para presentaciones, AI Sheets para análisis de datos y AI Developer para apps sin código.",
     },
     descripcionCorta: {
       en: "Search that generates informative pages",
@@ -321,15 +321,15 @@ export const tools: Tool[] = [
     porQueEsBueno: {
       en: [
         "Sparkpages eliminate need to open multiple tabs",
+        "Super Agent executes browser tasks autonomously: calls, emails, bookings",
+        "Multi-tool suite: AI Slides, Sheets, Docs, Developer, Designer in one platform",
         "Actively filters SEO spam and advertising content",
-        "Domain-specialized agents give relevant results",
-        "Fresh alternative to traditional search engines",
       ],
       es: [
         "Sparkpages eliminan necesidad de abrir múltiples pestañas",
+        "Super Agent ejecuta tareas del navegador de forma autónoma: llamadas, emails, reservas",
+        "Suite multi-herramienta: AI Slides, Sheets, Docs, Developer, Designer en una plataforma",
         "Filtra activamente contenido SEO spam y publicitario",
-        "Agentes especializados por dominio dan resultados relevantes",
-        "Alternativa fresca a motores de búsqueda tradicionales",
       ],
     },
   },
@@ -497,8 +497,8 @@ export const tools: Tool[] = [
     nombre: "Manus",
     url: "https://manus.im",
     descripcion: {
-      en: "Autonomous AI agent capable of executing complex tasks independently: browsing the internet, writing code, creating documents and completing multi-step workflows without constant supervision. Positioned as 'the first truly general AI agent'.",
-      es: "Agente de IA autónomo capaz de ejecutar tareas complejas de forma independiente: navegar por internet, escribir código, crear documentos y completar workflows multi-paso sin supervisión constante. Posicionado como 'el primer agente de IA verdaderamente general'.",
+      en: "Autonomous AI agent that builds full-stack websites, creates presentations, analyzes data, and executes complex multi-step workflows. Features Wide Research mode running 100+ agents in parallel for comprehensive analysis, plus built-in website builder with database and Stripe integration.",
+      es: "Agente de IA autónomo que construye sitios web full-stack, crea presentaciones, analiza datos y ejecuta workflows complejos multi-paso. Incluye modo Wide Research ejecutando 100+ agentes en paralelo para análisis exhaustivo, además de constructor de sitios web integrado con base de datos e integración Stripe.",
     },
     descripcionCorta: {
       en: "Autonomous agent that executes complex tasks",
@@ -532,16 +532,16 @@ export const tools: Tool[] = [
     },
     porQueEsBueno: {
       en: [
-        "Real autonomy: executes 10-30 min tasks without intervention",
-        "Real web navigation: opens pages, clicks, extracts data",
-        "Generates complete deliverables: documents, spreadsheets, code",
-        "Pioneer in autonomous agents accessible to the public",
+        "Wide Research: 100 parallel agents for comprehensive analysis in minutes",
+        "Built-in website builder with database, Stripe, SEO, and analytics",
+        "Generates complete deliverables: documents, spreadsheets, presentations, code",
+        "Real web navigation: opens pages, clicks, fills forms, extracts data",
       ],
       es: [
-        "Autonomía real: ejecuta tareas de 10-30 min sin intervención",
-        "Navegación web real: abre páginas, hace clicks, extrae datos",
-        "Genera entregables completos: documentos, spreadsheets, código",
-        "Pionero en agentes autónomos accesibles al público",
+        "Wide Research: 100 agentes en paralelo para análisis exhaustivo en minutos",
+        "Constructor de sitios web integrado con base de datos, Stripe, SEO y analytics",
+        "Genera entregables completos: documentos, spreadsheets, presentaciones, código",
+        "Navegación web real: abre páginas, hace clicks, llena formularios, extrae datos",
       ],
     },
   },
@@ -700,14 +700,14 @@ export const tools: Tool[] = [
       en: [
         "Translation with lip-sync in 175+ languages for global companies",
         "Create professional videos with text only, no cameras or editing",
-        "Scalability: generate hundreds of personalized videos simultaneously",
-        "High rating (4.7/5 stars) for avatar quality and support",
+        "Enterprise-proven: Komatsu, Equity Trust, Wurth Group use for global training",
+        "Interactive Avatars: adaptive learning experiences that respond to viewer input",
       ],
       es: [
         "Traducción con lip-sync en 175+ idiomas para empresas globales",
         "Crear videos profesionales solo con texto, sin cámaras ni edición",
-        "Escalabilidad: generar cientos de videos personalizados simultáneamente",
-        "Valoración alta (4.7/5 estrellas) por calidad de avatares y soporte",
+        "Probado en enterprise: Komatsu, Equity Trust, Wurth Group lo usan para formación global",
+        "Avatares Interactivos: experiencias de aprendizaje adaptativas que responden al espectador",
       ],
     },
   },
@@ -754,15 +754,15 @@ export const tools: Tool[] = [
     porQueEsBueno: {
       en: [
         "Ultra-realistic voice quality with advanced emotion control",
-        "70+ languages and 30+ dubbing options with lip sync",
+        "ElevenReader app: listen to PDFs, articles, and ebooks on the go",
         "Precise voice cloning to maintain brand consistency",
-        "Robust API with Python and TypeScript SDKs",
+        "Voice Design: create custom voices from text descriptions without recordings",
       ],
       es: [
         "Calidad de voz ultrarrealista con control de emociones avanzado",
-        "70+ idiomas y 30+ opciones de doblaje con sincronización labial",
+        "App ElevenReader: escuchar PDFs, artículos y ebooks en movimiento",
         "Clonación de voz precisa para mantener consistencia de marca",
-        "API robusta con SDKs para Python y TypeScript",
+        "Voice Design: crear voces personalizadas desde descripciones de texto sin grabaciones",
       ],
     },
   },
@@ -921,14 +921,14 @@ export const tools: Tool[] = [
     porQueEsBueno: {
       en: [
         "Integrates in terminal without changing existing workflow",
-        "Reads, writes and executes code with full project context",
-        "Most advanced Claude model with extended reasoning",
+        "Official Security Review GitHub Action for automated vulnerability detection",
+        "Git workflow automation: smart commits, parallel development with worktrees",
         "2-5x productivity increases according to developer testimonials",
       ],
       es: [
         "Integra en terminal sin cambiar flujo de trabajo existente",
-        "Lee, escribe y ejecuta código con contexto completo del proyecto",
-        "Modelo Claude más avanzado con razonamiento extendido",
+        "GitHub Action oficial de Security Review para detección automática de vulnerabilidades",
+        "Automatización de flujos git: commits inteligentes, desarrollo paralelo con worktrees",
         "Aumentos de productividad 2-5x según testimonios de desarrolladores",
       ],
     },
@@ -978,13 +978,13 @@ export const tools: Tool[] = [
     porQueEsBueno: {
       en: [
         "Indexes entire codebase for suggestions with complete architectural context",
-        "Autonomous agent mode: edits multiple files and executes commands",
+        "Agent mode with AGENTS.md: configure autonomous multi-file coding without prompting",
         "Frictionless transition from VS Code (same extension ecosystem)",
         "Model flexibility: GPT-4, Claude, custom models per task",
       ],
       es: [
         "Indexa todo el codebase para sugerencias con contexto arquitectónico completo",
-        "Modo agente autónomo: edita múltiples archivos y ejecuta comandos",
+        "Modo agente con AGENTS.md: configura codificación autónoma multi-archivo sin prompting",
         "Transición sin fricción desde VS Code (mismo ecosistema de extensiones)",
         "Flexibilidad de modelos: GPT-4, Claude, modelos propios según tarea",
       ],
