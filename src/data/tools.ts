@@ -47,7 +47,7 @@ export interface Tool {
 }
 
 export const categoryLabels: Record<Category, string> = {
-  automatizacion: "Automatizacion",
+  automatizacion: "Automatización",
   agentes: "Agentes",
   conocimiento: "Conocimiento",
   creatividad: "Creatividad",
