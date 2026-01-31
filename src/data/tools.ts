@@ -73,7 +73,7 @@ export const tools: Tool[] = [
       es: "Automatización visual con lógica avanzada",
     },
     categoria: "automatizacion",
-    nivel: "intermedio",
+    nivel: "principiante",
     tier: "tier1",
     departamentos: ["finanzas", "admin", "tech", "operaciones", "rrhh"],
     precios: [
@@ -513,7 +513,7 @@ export const tools: Tool[] = [
       es: "Agente autónomo que ejecuta tareas complejas",
     },
     categoria: "agentes",
-    nivel: "intermedio",
+    nivel: "principiante",
     tier: "tier2",
     departamentos: ["tech", "operaciones", "marketing", "ventas", "finanzas"],
     precios: [
@@ -956,8 +956,8 @@ export const tools: Tool[] = [
       es: "Editor de código con IA integrada",
     },
     categoria: "desarrollo",
-    nivel: "intermedio",
-    tier: "tier1",
+    nivel: "avanzado",
+    tier: "tier3",
     departamentos: ["tech"],
     precios: [
       { plan: "Hobby", precio: "$0", caracteristicas: { en: "Limited requests, Tab autocomplete", es: "Requests limitados, autocompletado Tab" } },
@@ -1013,7 +1013,7 @@ export const tools: Tool[] = [
       es: "Tareas autónomas en segundo plano",
     },
     categoria: "agentes",
-    nivel: "intermedio",
+    nivel: "principiante",
     tier: "tier2",
     departamentos: ["tech", "operaciones"],
     precios: [
