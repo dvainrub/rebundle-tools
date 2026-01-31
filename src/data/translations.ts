@@ -161,4 +161,60 @@ export const ui = {
       es: "Sin recurso vinculado",
     } as Localized<string>,
   },
+
+  // Compare feature
+  compare: {
+    toggle: {
+      en: "Compare",
+      es: "Comparar",
+    } as Localized<string>,
+    addToCompare: {
+      en: "Add to compare",
+      es: "Agregar",
+    } as Localized<string>,
+    removeFromCompare: {
+      en: "Remove",
+      es: "Quitar",
+    } as Localized<string>,
+    compareButton: {
+      en: "Compare",
+      es: "Comparar",
+    } as Localized<string>,
+    addTool: {
+      en: "Add tool",
+      es: "Agregar herramienta",
+    } as Localized<string>,
+    searchTools: {
+      en: "Search tools...",
+      es: "Buscar herramientas...",
+    } as Localized<string>,
+    maxTools: {
+      en: "Maximum 5 tools",
+      es: "Maximo 5 herramientas",
+    } as Localized<string>,
+    minTools: {
+      en: "Select at least 2 tools",
+      es: "Selecciona al menos 2 herramientas",
+    } as Localized<string>,
+    backToCatalog: {
+      en: "Back to catalog",
+      es: "Volver al catalogo",
+    } as Localized<string>,
+    description: {
+      en: "Description",
+      es: "Descripcion",
+    } as Localized<string>,
+    details: {
+      en: "Details",
+      es: "Detalles",
+    } as Localized<string>,
+    noToolsSelected: {
+      en: "No tools selected for comparison",
+      es: "No hay herramientas seleccionadas para comparar",
+    } as Localized<string>,
+    selectFromCatalog: {
+      en: "Select tools from the catalog to compare them",
+      es: "Selecciona herramientas del catalogo para compararlas",
+    } as Localized<string>,
+  },
 } as const;

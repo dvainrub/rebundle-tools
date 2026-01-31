@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronDown,
@@ -17,6 +18,9 @@ import {
   Bot,
   X,
   BookOpen,
+  Plus,
+  Minus,
+  GitCompare,
 } from "lucide-react";
 import {
   tools,
@@ -26,7 +30,7 @@ import {
   type SkillLevel,
 } from "@/data/tools";
 import { ui } from "@/data/translations";
-import { resourceMapping, type ResourceLink } from "@/data/resourceMapping";
+import { resourceMapping } from "@/data/resourceMapping";
 import { useLang } from "@/lib/useLang";
 import { type Lang } from "@/lib/i18n";
 
@@ -89,7 +93,50 @@ function LanguageToggle({ lang, toggleLang }: { lang: Lang; toggleLang: () => vo
   );
 }
 
-function ToolCard({ tool, lang, showResources }: { tool: Tool; lang: Lang; showResources: boolean }) {
+function CompareToggle({
+  lang,
+  compareMode,
+  onToggle,
+}: {
+  lang: Lang;
+  compareMode: boolean;
+  onToggle: () => void;
+}) {
+  return (
+    <button
+      onClick={onToggle}
+      className={`group flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm font-medium transition-all ${
+        compareMode
+          ? "border-violet-300 bg-violet-100 text-violet-700"
+          : "border-gray-200 bg-white text-gray-600 hover:border-violet-300 hover:bg-violet-50 hover:text-violet-700"
+      }`}
+      title={ui.compare.toggle[lang]}
+    >
+      <GitCompare className="h-4 w-4" />
+      <span className="hidden sm:inline">{ui.compare.toggle[lang]}</span>
+    </button>
+  );
+}
+
+interface ToolCardProps {
+  tool: Tool;
+  lang: Lang;
+  showResources: boolean;
+  compareMode: boolean;
+  isSelected: boolean;
+  onToggleSelect: () => void;
+  canSelect: boolean;
+}
+
+function ToolCard({
+  tool,
+  lang,
+  showResources,
+  compareMode,
+  isSelected,
+  onToggleSelect,
+  canSelect,
+}: ToolCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const tierStyle = tool.tier ? tierStyles[tool.tier] : null;
 
@@ -146,12 +193,50 @@ function ToolCard({ tool, lang, showResources }: { tool: Tool; lang: Lang; showR
           </p>
 
           {/* Skill level badge */}
-          <div className="mt-3">
+          <div className="mt-3 flex items-center gap-2">
             <span
               className={`inline-flex items-center rounded-md border px-2 py-0.5 font-mono text-[10px] ${levelStyles[tool.nivel]}`}
             >
               {ui.levels[tool.nivel][lang]}
             </span>
+            {/* Compare button */}
+            {compareMode && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (canSelect || isSelected) {
+                    onToggleSelect();
+                  }
+                }}
+                disabled={!canSelect && !isSelected}
+                className={`inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[10px] font-medium transition-all ${
+                  isSelected
+                    ? "border-violet-300 bg-violet-100 text-violet-700"
+                    : canSelect
+                    ? "border-gray-200 bg-white text-gray-600 hover:border-violet-300 hover:bg-violet-50 hover:text-violet-700"
+                    : "cursor-not-allowed border-gray-100 bg-gray-50 text-gray-400"
+                }`}
+                title={
+                  isSelected
+                    ? ui.compare.removeFromCompare[lang]
+                    : canSelect
+                    ? ui.compare.addToCompare[lang]
+                    : ui.compare.maxTools[lang]
+                }
+              >
+                {isSelected ? (
+                  <>
+                    <Minus className="h-2.5 w-2.5" />
+                    {ui.compare.removeFromCompare[lang]}
+                  </>
+                ) : (
+                  <>
+                    <Plus className="h-2.5 w-2.5" />
+                    {ui.compare.addToCompare[lang]}
+                  </>
+                )}
+              </button>
+            )}
           </div>
         </div>
 
@@ -327,10 +412,16 @@ function FilterPill({
 
 function CatalogContent() {
   const { lang, toggleLang } = useLang();
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [selectedTier, setSelectedTier] = useState<RecommendationTier | "all">("all");
   const [selectedLevel, setSelectedLevel] = useState<SkillLevel | "all">("all");
   const [showResources, setShowResources] = useState(false);
+
+  // Compare mode state
+  const [compareMode, setCompareMode] = useState(false);
+  const [selectedTools, setSelectedTools] = useState<string[]>([]);
 
   const categories = Object.keys(ui.categories) as Category[];
   const tiers: NonNullable<RecommendationTier>[] = ["tier1", "tier2", "tier3"];
@@ -354,6 +445,25 @@ function CatalogContent() {
     return aOrder - bOrder;
   });
 
+  const toggleToolSelection = (toolId: string) => {
+    setSelectedTools((prev) =>
+      prev.includes(toolId)
+        ? prev.filter((id) => id !== toolId)
+        : prev.length < 5
+        ? [...prev, toolId]
+        : prev
+    );
+  };
+
+  const goToCompare = () => {
+    const params = new URLSearchParams();
+    params.set("tools", selectedTools.join(","));
+    if (lang !== "en") {
+      params.set("lang", lang);
+    }
+    router.push(`/compare?${params.toString()}`);
+  };
+
   return (
     <div className="relative min-h-screen bg-gray-50">
       {/* Subtle ambient background */}
@@ -375,7 +485,29 @@ function CatalogContent() {
                 {ui.header.subtitle[lang]}
               </p>
             </div>
-            <LanguageToggle lang={lang} toggleLang={toggleLang} />
+            <div className="flex items-center gap-2">
+              <CompareToggle
+                lang={lang}
+                compareMode={compareMode}
+                onToggle={() => {
+                  setCompareMode(!compareMode);
+                  if (compareMode) {
+                    setSelectedTools([]);
+                  }
+                }}
+              />
+              {compareMode && selectedTools.length >= 2 && (
+                <button
+                  onClick={goToCompare}
+                  className="flex items-center gap-2 rounded-lg bg-violet-600 px-3 py-1.5 text-sm font-medium text-white transition-all hover:bg-violet-700"
+                >
+                  <GitCompare className="h-4 w-4" />
+                  <span className="hidden sm:inline">{ui.compare.compareButton[lang]}</span>
+                  <span className="font-mono">({selectedTools.length})</span>
+                </button>
+              )}
+              <LanguageToggle lang={lang} toggleLang={toggleLang} />
+            </div>
           </div>
         </div>
       </header>
@@ -490,7 +622,15 @@ function CatalogContent() {
                 exit={{ opacity: 0, scale: 0.95, y: -10 }}
                 transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
               >
-                <ToolCard tool={tool} lang={lang} showResources={showResources} />
+                <ToolCard
+                  tool={tool}
+                  lang={lang}
+                  showResources={showResources}
+                  compareMode={compareMode}
+                  isSelected={selectedTools.includes(tool.id)}
+                  onToggleSelect={() => toggleToolSelection(tool.id)}
+                  canSelect={selectedTools.length < 5}
+                />
               </motion.div>
             ))}
           </AnimatePresence>
