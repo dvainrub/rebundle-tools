@@ -21,14 +21,38 @@ const BentoDesign = dynamic(() => import("@/designs/bento"), {
 const MinimalDesign = dynamic(() => import("@/designs/minimal"), {
   loading: () => <div className="min-h-screen bg-white" />,
 });
+const DarkDesign = dynamic(() => import("@/designs/dark"), {
+  loading: () => <div className="min-h-screen bg-[#0a0a0a]" />,
+});
+const BrutalistDesign = dynamic(() => import("@/designs/brutalist"), {
+  loading: () => <div className="min-h-screen bg-yellow-100" />,
+});
+const AppleDesign = dynamic(() => import("@/designs/apple"), {
+  loading: () => <div className="min-h-screen bg-[#FBFBFD]" />,
+});
+const LinearDesign = dynamic(() => import("@/designs/linear"), {
+  loading: () => <div className="min-h-screen bg-[#0C0C0D]" />,
+});
+const NotionDesign = dynamic(() => import("@/designs/notion"), {
+  loading: () => <div className="min-h-screen bg-[#FFFAF5]" />,
+});
+const StripeDesign = dynamic(() => import("@/designs/stripe"), {
+  loading: () => <div className="min-h-screen bg-white" />,
+});
 
-type DesignKey = "catalog2" | "gradient" | "bento" | "minimal";
+type DesignKey = "catalog2" | "gradient" | "bento" | "minimal" | "dark" | "brutalist" | "apple" | "linear" | "notion" | "stripe";
 
 const designs: Record<DesignKey, { component: React.ComponentType; label: string }> = {
   catalog2: { component: Catalog2Design, label: "Default" },
   minimal: { component: MinimalDesign, label: "Swiss Minimal" },
   gradient: { component: GradientDesign, label: "Gradient Mesh" },
   bento: { component: BentoDesign, label: "Bento Grid" },
+  dark: { component: DarkDesign, label: "Dark Premium" },
+  brutalist: { component: BrutalistDesign, label: "Neo-Brutalist" },
+  apple: { component: AppleDesign, label: "Apple" },
+  linear: { component: LinearDesign, label: "Linear" },
+  notion: { component: NotionDesign, label: "Notion" },
+  stripe: { component: StripeDesign, label: "Stripe" },
 };
 
 function DesignSwitcher() {
