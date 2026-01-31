@@ -1,0 +1,292 @@
+{
+  "tool": "Lovable",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "useCase": "Finance: Expense tracking dashboard with reimbursement workflows and receipt scanning",
+      "department": "Finance",
+      "resource": {
+        "title": "Expense Management Tools - AI-Powered Reimbursement & Budgeting",
+        "url": "https://lovable.dev/solutions/use-case/expense-management-tools",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official Lovable solution page for building expense tracking with automated reimbursement processing, receipt scanning, and expense categorization"
+      }
+    },
+    {
+      "useCase": "HR: AI-powered hiring platform with resume analysis, candidate matching, and automated outreach",
+      "department": "HR",
+      "resource": {
+        "title": "How One Recruiter Built an AI Hiring Platform with Lovable",
+        "url": "https://lovable.dev/blog/ai-hiring-platform-recruiter",
+        "type": "blog",
+        "verified": true,
+        "notes": "Case study of Kyler, former Google/Unity/Rivian recruiter, who built a fully automated AI hiring platform in days. Features include AI resume builder, job matching, automated messaging, and employer dashboard."
+      }
+    },
+    {
+      "useCase": "Sales: Build custom CRM systems for lead tracking and customer relationship management",
+      "department": "Sales",
+      "resource": {
+        "title": "Building a personal CRM in Lovable",
+        "url": "https://maa1.medium.com/building-a-personal-crm-in-lovable-76ae99c2c800",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Medium tutorial on building a personal CRM with Lovable. Additional official resource: https://lovable.dev/solutions/use-case/internal-tools-crm-systems"
+      },
+      "alternativeResource": {
+        "title": "Simple CRM with Resend (Video Tutorial)",
+        "url": "https://docs.lovable.dev/use-case/video-tutorials",
+        "type": "video",
+        "verified": true,
+        "notes": "Official video tutorial covering email automation, Supabase authentication, admin dashboards, and newsletter functionality"
+      }
+    },
+    {
+      "useCase": "Marketing: Build high-converting landing pages for campaigns with lead capture forms",
+      "department": "Marketing",
+      "resource": {
+        "title": "Can AI Build a $10K Landing Page in 1 Hour? We Tried It LIVE",
+        "url": "https://lovable.dev/video/can-ai-build-a-10k-landing-page-in-1-hour-we-tried-it-live",
+        "type": "video",
+        "verified": true,
+        "notes": "1h15m livestream by Kristian and Harry demonstrating building a landing page with animations, visual editing, and real-time design. Includes follow-up with Supabase and payment integration."
+      },
+      "alternativeResource": {
+        "title": "Build High-Impact Marketing Campaign Pages with AI",
+        "url": "https://lovable.dev/solutions/use-case/marketing-campaign-landing-page",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official solution page for creating professional, high-converting marketing campaign pages with AI"
+      }
+    },
+    {
+      "useCase": "Tech: Rapid MVP prototyping to validate ideas before full development",
+      "department": "Tech",
+      "resource": {
+        "title": "How to Validate a Business Idea Before Building It",
+        "url": "https://lovable.dev/guides/bloghow-to-validate-a-business-idea",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official Lovable guide with 7-step validation process for entrepreneurs, emphasizing rapid prototyping to test assumptions quickly"
+      },
+      "alternativeResource": {
+        "title": "AI Startup Sprint: Build your first MVP in one week with Lovable",
+        "url": "https://maven.com/vibecode/startup-bootcamp-sprint-from-idea-to-mvp-lovable-in-one-week-fast-validation-ai-prototype-builders",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Maven course by Elena Avramenko for founders and solo builders to go from idea to MVP in one week"
+      }
+    },
+    {
+      "useCase": "Finance: Budget trackers with spending monitoring, forecasting, and approval workflows",
+      "department": "Finance",
+      "resource": {
+        "title": "Internal Tools for Finance & Operations - Budget Trackers",
+        "url": "https://lovable.dev/tools",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official Lovable internal tools page featuring budget trackers, approval workflows, and data collection tools for finance teams"
+      }
+    },
+    {
+      "useCase": "Product: AI-powered calorie/nutrition tracking app with meal logging",
+      "department": "Tech",
+      "resource": {
+        "title": "Creating a full-stack AI based calorie/nutrition tracker in just 8 hrs using Supabase & Lovable",
+        "url": "https://dev.to/asheeshh/creating-a-full-stack-ai-based-calorienutrition-tracker-in-just-8-hrs-using-supabase-lovable-10g6",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Dev.to tutorial building Munchwise app with natural language meal logging, AI-powered nutrition analysis, user authentication, and daily/weekly analytics"
+      }
+    },
+    {
+      "useCase": "Finance: Invoice generators and billing management tools",
+      "department": "Finance",
+      "resource": {
+        "title": "Build Invoicing Tools with AI",
+        "url": "https://lovable.dev/solutions/use-case/internal-tools-invoicing-tools",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official solution page for creating invoicing and billing management tools to streamline billing and payment processes"
+      }
+    },
+    {
+      "useCase": "Operations: Project management tools with task tracking and team collaboration",
+      "department": "Operations",
+      "resource": {
+        "title": "Project Management Tools - AI-Powered Task Tracking & Collaboration",
+        "url": "https://lovable.dev/solutions/use-case/project-management-tools",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official solution page for building platforms like Asana or Trello with intelligent task tracking, Kanban boards, deadlines, and collaboration features"
+      }
+    },
+    {
+      "useCase": "Tech: SaaS apps with Stripe payment integration and subscriptions",
+      "department": "Tech",
+      "resource": {
+        "title": "How to QUICKLY Add Stripe Payments to Your Apps (Lovable AI)",
+        "url": "https://lovable.dev/video/how-to-quickly-add-stripe-payments-to-your-apps-lovable-ai",
+        "type": "video",
+        "verified": true,
+        "notes": "Video tutorial demonstrating Stripe integration with Supabase authentication, secure API key management, and subscription paywalls"
+      },
+      "alternativeResource": {
+        "title": "Set up payments with Stripe - Lovable Documentation",
+        "url": "https://docs.lovable.dev/integrations/stripe",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official documentation for Stripe payment integration"
+      }
+    },
+    {
+      "useCase": "Product: Feature request trackers to centralize and prioritize customer feedback",
+      "department": "Tech",
+      "resource": {
+        "title": "Feedback Tool (Video Tutorial)",
+        "url": "https://docs.lovable.dev/use-case/video-tutorials",
+        "type": "video",
+        "verified": true,
+        "notes": "Official video tutorial covering user authentication, feedback submission with voting, admin dashboards with AI summaries, and real-time presence tracking"
+      }
+    },
+    {
+      "useCase": "Tech: Convert Figma designs into full-stack applications",
+      "department": "Tech",
+      "resource": {
+        "title": "Turn Figma Designs into Full Stack Apps Using Lovable and Builder.io",
+        "url": "https://www.builder.io/blog/lovable-builder",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Builder.io blog post explaining how to convert Figma designs into full-stack apps using Lovable"
+      },
+      "alternativeResource": {
+        "title": "Figma to Lovable - Design to Code with AI",
+        "url": "https://lovable.dev/videos/figma",
+        "type": "video",
+        "verified": true,
+        "notes": "Official Lovable video library for Figma integration tutorials"
+      }
+    },
+    {
+      "useCase": "Marketing: ROI calculators to show prospects potential savings",
+      "department": "Marketing",
+      "resource": {
+        "title": "Internal Tools - ROI Calculators",
+        "url": "https://lovable.dev/tools",
+        "type": "guide",
+        "verified": true,
+        "notes": "Build calculators with custom calculations, branded design, and instant results for sales and marketing teams"
+      }
+    },
+    {
+      "useCase": "Tech: Login and signup forms with secure authentication",
+      "department": "Tech",
+      "resource": {
+        "title": "How to Use an AI Form Builder to Create Secure Login and Sign-up Forms",
+        "url": "https://lovable.dev/blog/ai-form-builder-authentication-login",
+        "type": "blog",
+        "verified": true,
+        "notes": "Blog post covering Supabase integration, automated validation, email verification, OAuth, and session management"
+      }
+    },
+    {
+      "useCase": "Product: Roadmap dashboards to visualize upcoming work and customer feedback",
+      "department": "Tech",
+      "resource": {
+        "title": "Internal Tools - Roadmap Dashboards",
+        "url": "https://lovable.dev/tools",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official internal tools page featuring roadmap dashboards for product teams to visualize work and understand customer feedback"
+      }
+    }
+  ],
+  "videoTutorials": {
+    "source": "https://docs.lovable.dev/use-case/video-tutorials",
+    "tutorials": [
+      "AI-Powered Calorie Tracking WebApp (GPT-4, Supabase, Stripe, deployment)",
+      "SaaS Landing Page with Groq API (animations, AI email, contact forms)",
+      "Feedback Tool (auth, voting, admin dashboards, AI summaries)",
+      "Productized Development Agency (subscriptions, Stripe, task management)",
+      "Simple CRM with Resend (email automation, newsletters)",
+      "Luma Copycat with Supabase (events, real-time comments)",
+      "Custom CRM with Make (CRM + automation)",
+      "$10K Landing Page in 1 Hour (rapid development)",
+      "Micro-SaaS Spanish Learning App (4-part series)"
+    ]
+  },
+  "officialSolutionPages": [
+    {
+      "category": "Internal Tools",
+      "url": "https://lovable.dev/tools",
+      "toolTypes": ["ROI Calculators", "Campaign Dashboards", "Partner Portals", "Roadmap Dashboards", "Feature Request Trackers", "Research Repositories", "Budget Trackers", "Approval Workflows", "Data Collection Tools"]
+    },
+    {
+      "category": "Use Cases",
+      "urls": [
+        "https://lovable.dev/solutions/use-case/expense-management-tools",
+        "https://lovable.dev/solutions/use-case/internal-tools-crm-systems",
+        "https://lovable.dev/solutions/use-case/internal-tools-hiring-softwares",
+        "https://lovable.dev/solutions/use-case/marketing-campaign-landing-page",
+        "https://lovable.dev/solutions/use-case/project-management-tools",
+        "https://lovable.dev/solutions/use-case/internal-tools-invoicing-tools",
+        "https://lovable.dev/solutions/use-case/startup-mvp-showcase"
+      ]
+    }
+  ],
+  "communityResources": [
+    {
+      "title": "Building Real Apps by Chatting with AI - My Experience with Lovable.dev",
+      "url": "https://medium.com/@charleysQA/medium-article-draft-building-real-apps-by-chatting-with-ai-my-experience-with-lovable-dev-600eda219f1c",
+      "type": "blog"
+    },
+    {
+      "title": "From MVPs to Mobile Apps: 20+ Real Projects Built With v0, Lovable, Bolt & Replit",
+      "url": "https://medium.com/@agencyai/from-mvps-to-mobile-apps-20-real-projects-built-with-v0-lovable-bolt-replit-ed0185cb2821",
+      "type": "blog"
+    },
+    {
+      "title": "Lovable Community Videos - User Showcases & Success Stories",
+      "url": "https://lovable.dev/videos/Community",
+      "type": "video"
+    },
+    {
+      "title": "How to Build an MVP with AI: A Step-By-Step Guide to Lovable",
+      "url": "https://mobitouch.net/blog/how-to-build-an-mvp-with-ai-a-step-by-step-guide-to-lovable",
+      "type": "guide"
+    }
+  ],
+  "mappingToCurrentCatalog": {
+    "Finance: Expense tracking dashboard with interactive charts": {
+      "resourceFound": true,
+      "resource": "https://lovable.dev/solutions/use-case/expense-management-tools",
+      "notes": "Official solution page covers expense tracking, reimbursement workflows, receipt scanning"
+    },
+    "HR: Onboarding portal with forms and checklist": {
+      "resourceFound": true,
+      "resource": "https://lovable.dev/blog/ai-hiring-platform-recruiter",
+      "alternateResource": "https://lovable.dev/solutions/use-case/internal-tools-hiring-softwares",
+      "notes": "Found case study for AI hiring platform. For onboarding specifically, recommend using the hiring software solution page which includes application forms and workflows"
+    },
+    "Sales: Simplified internal CRM for lead tracking": {
+      "resourceFound": true,
+      "resource": "https://maa1.medium.com/building-a-personal-crm-in-lovable-76ae99c2c800",
+      "alternateResource": "https://lovable.dev/solutions/use-case/internal-tools-crm-systems",
+      "notes": "Medium tutorial + official solution page both available"
+    },
+    "Marketing: Landing pages for campaigns with capture forms": {
+      "resourceFound": true,
+      "resource": "https://lovable.dev/video/can-ai-build-a-10k-landing-page-in-1-hour-we-tried-it-live",
+      "alternateResource": "https://lovable.dev/solutions/use-case/marketing-campaign-landing-page",
+      "notes": "Livestream video + official solution page both available"
+    },
+    "Tech: Functional prototypes to validate ideas before development": {
+      "resourceFound": true,
+      "resource": "https://lovable.dev/guides/bloghow-to-validate-a-business-idea",
+      "alternateResource": "https://maven.com/vibecode/startup-bootcamp-sprint-from-idea-to-mvp-lovable-in-one-week-fast-validation-ai-prototype-builders",
+      "notes": "Official guide on idea validation + Maven course for MVP in one week"
+    }
+  }
+}

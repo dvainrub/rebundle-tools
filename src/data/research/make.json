@@ -1,0 +1,384 @@
+{
+  "tool": "Make.com",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "department": "HR",
+      "useCase": "Automate employee onboarding workflow with NDA generation, contract management, and status tracking",
+      "resource": {
+        "title": "Automated Onboarding with Make.com: Save Time, Cut Costs, Scale Faster",
+        "url": "https://scalevise.com/resources/automated-onboarding-with-make-com-save-time-cut-costs-scale-faster/",
+        "type": "guide",
+        "verified": true,
+        "description": "Comprehensive guide showing how to transform employee onboarding from a 2-week process into a 2-hour workflow using Make.com, Google Workspace, and smart logic. Covers data collection, role-based logic, account provisioning, notifications, document distribution, and progress tracking."
+      }
+    },
+    {
+      "department": "HR",
+      "useCase": "Automate freelancer/contractor onboarding with Airtable and PandaDoc for NDA generation and signature tracking",
+      "resource": {
+        "title": "How To Automate Employee Onboarding Process in Make.com",
+        "url": "https://www.dumplingai.com/blog/how-to-automate-employee-onboarding-process-in-make-com",
+        "type": "tutorial",
+        "verified": true,
+        "description": "Step-by-step tutorial on automating freelancer onboarding using Airtable, Make.com, and PandaDoc. Covers webhook triggers, NDA generation, document signing monitoring, and automatic record updates."
+      }
+    },
+    {
+      "department": "Finance",
+      "useCase": "Extract invoice data from email attachments and store in Google Sheets for accounting",
+      "resource": {
+        "title": "How to Extract Invoice Data from Emails Using Dumpling AI and Make.com",
+        "url": "https://www.dumplingai.com/blog/how-to-extract-invoice-data-from-emails-using-dumpling-ai-and-make-com",
+        "type": "tutorial",
+        "verified": true,
+        "description": "Tutorial demonstrating how to automate invoice processing by extracting key details from email attachments using AI and storing them in Google Sheets. Covers Gmail triggers, attachment iteration, document extraction, JSON parsing, and spreadsheet storage."
+      }
+    },
+    {
+      "department": "Finance",
+      "useCase": "Accounts payable workflow automation with invoice processing",
+      "resource": {
+        "title": "Accounts Payable (AP) Workflow Automation With Make.com",
+        "url": "https://www.intuz.com/blog/account-payable-workflow-automation",
+        "type": "blog",
+        "verified": false,
+        "description": "Blog post about automating accounts payable workflows including invoice processing with Make.com."
+      }
+    },
+    {
+      "department": "Finance",
+      "useCase": "Automate monthly client invoicing workflow",
+      "resource": {
+        "title": "How I Helped My Friend Automate Monthly Client Invoices with Make.com",
+        "url": "https://medium.com/@thoufeeq87/how-i-helped-my-friend-automate-monthly-client-invoices-with-make-com-e679daf1d57d",
+        "type": "blog",
+        "verified": false,
+        "description": "Real-world case study about automating monthly client invoicing using Make.com."
+      }
+    },
+    {
+      "department": "Admin",
+      "useCase": "Automate contract creation with DocuSign and digital signatures",
+      "resource": {
+        "title": "Mastering the DocuSign Module in Make.com (with Airtable + Google Docs)",
+        "url": "https://community.make.com/t/mastering-the-docusign-module-in-make-com-with-airtable-google-docs/94045",
+        "type": "tutorial",
+        "verified": false,
+        "description": "Make.com community tutorial on mastering DocuSign integration with Airtable and Google Docs for contract automation."
+      }
+    },
+    {
+      "department": "Admin",
+      "useCase": "Automate document signing workflows with DocuSign",
+      "resource": {
+        "title": "Automating DocuSign Envelopes with Make.com",
+        "url": "https://www.goodfellastech.com/blog/how-to-automate-docusign-envelopes-using-make-com",
+        "type": "blog",
+        "verified": false,
+        "description": "Technical blog post about automating DocuSign envelope creation and management with Make.com."
+      }
+    },
+    {
+      "department": "Admin",
+      "useCase": "Automate document signing with DocuSeal integration",
+      "resource": {
+        "title": "Automate with Make.com | DocuSeal Docs",
+        "url": "https://www.docuseal.com/resources/automate-with-make-com",
+        "type": "guide",
+        "verified": false,
+        "description": "Official DocuSeal documentation on integrating with Make.com for document automation."
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Sync Jira tickets with Slack notifications for development teams",
+      "resource": {
+        "title": "Jira Cloud Platform and Slack Integration | Workflow Automation | Make",
+        "url": "https://www.make.com/en/integrations/jira/slack",
+        "type": "guide",
+        "verified": false,
+        "description": "Official Make.com integration page showing available workflows between Jira Cloud and Slack for team notifications and ticket syncing."
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Automate Slack notifications from Google Sheets data",
+      "resource": {
+        "title": "Automate Slack Messages with Make.com: A Simple Guide",
+        "url": "https://4spotconsulting.com/automate-slack-notifications-with-make-com/",
+        "type": "guide",
+        "verified": false,
+        "description": "Guide on automating Slack messages and notifications using Make.com, including Google Sheets integration."
+      }
+    },
+    {
+      "department": "Sales",
+      "useCase": "Automated lead generation with LinkedIn, Apollo, and Apify integration",
+      "resource": {
+        "title": "Automated Lead Generation System Using Make.com, Apollo, LinkedIn, and Apify",
+        "url": "https://www.classcentral.com/course/youtube-steal-this-powerful-make-com-lead-generation-system-489808",
+        "type": "video",
+        "verified": false,
+        "description": "YouTube video course by Jono Catliff demonstrating how to build an automated lead generation system using Make.com with Apollo, LinkedIn, and Apify integrations."
+      }
+    },
+    {
+      "department": "Sales",
+      "useCase": "Lead enrichment automation with Clearbit and CRM integration",
+      "resource": {
+        "title": "Clearbit and HubSpot CRM Integration | Workflow Automation | Make",
+        "url": "https://www.make.com/en/integrations/clearbit/hubspotcrm",
+        "type": "guide",
+        "verified": false,
+        "description": "Official Make.com integration page for Clearbit and HubSpot CRM, enabling lead enrichment workflows."
+      }
+    },
+    {
+      "department": "Sales",
+      "useCase": "CRM automations and building a scalable sales system",
+      "resource": {
+        "title": "Part 6 - Make.com CRM Automations & How to Build A Scalable Sales System",
+        "url": "https://completeaitraining.com/course/video-course-part-6-makecom-crm-automations-how-to-build-a-scalable-sales-system/",
+        "type": "video",
+        "verified": false,
+        "description": "Video course covering Make.com CRM automations and strategies for building scalable sales systems."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Email marketing automation and campaign segmentation",
+      "resource": {
+        "title": "How to Automate Data Collection - Part 2: Email Marketing Segmentation",
+        "url": "https://www.make.com/en/how-to-guides/how-to-automate-data-collection-part-two-email-marketing-segmentation",
+        "type": "tutorial",
+        "verified": false,
+        "description": "Official Make.com tutorial on automating data collection for email marketing segmentation."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Automate email campaigns with Make.com",
+      "resource": {
+        "title": "How to Automate Your Email Campaigns Using Make.com",
+        "url": "https://medium.com/@sik6883/how-to-automate-your-email-campaigns-using-make-com-e2fa842e85e7",
+        "type": "blog",
+        "verified": false,
+        "description": "Medium blog post with step-by-step guide on automating email campaigns using Make.com."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Boost ActiveCampaign email automations with Make.com",
+      "resource": {
+        "title": "How to Boost ActiveCampaign Automations With Make",
+        "url": "https://www.make.com/en/how-to-guides/activecampaign-automation",
+        "type": "tutorial",
+        "verified": false,
+        "description": "Official Make.com tutorial on enhancing ActiveCampaign email automations."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Automate social media posting across multiple platforms",
+      "resource": {
+        "title": "Automate Social Media Posting On Multiple Platforms Using Make.com & Templated API",
+        "url": "https://templated.io/blog/automate-social-media-posting-on-multiple-platforms-using-make-and-templated-api/",
+        "type": "tutorial",
+        "verified": false,
+        "description": "Tutorial on automating social media posts across multiple platforms using Make.com and Templated API."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Instagram post automation",
+      "resource": {
+        "title": "What is Instagram Post Automation? 4 Ideas to Try Today",
+        "url": "https://www.make.com/en/how-to-guides/instagram-post-automation",
+        "type": "tutorial",
+        "verified": false,
+        "description": "Official Make.com guide on Instagram post automation with practical ideas."
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Sync Notion databases with Google Calendar automatically",
+      "resource": {
+        "title": "Automate Your Business with Make.com - Idea #6: Sync Notion with Google Calendar Automatically",
+        "url": "https://medium.com/@tristen_40888/automate-your-business-with-make-com-idea-6-sync-notion-with-google-calendar-automatically-1ad3c949ff66",
+        "type": "blog",
+        "verified": false,
+        "description": "Medium blog post on syncing Notion databases with Google Calendar using Make.com automation."
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Notion database automation and CRM workflows",
+      "resource": {
+        "title": "Boost Your Notion Database with Make.com Automation",
+        "url": "https://4spotconsulting.com/streamline-notion-with-make-com-automation/",
+        "type": "guide",
+        "verified": false,
+        "description": "Guide on enhancing Notion database capabilities with Make.com automation workflows."
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Zoom webinar registration automation from Google Sheets",
+      "resource": {
+        "title": "Add Zoom Webinar registrants from new rows on a Google Sheet",
+        "url": "https://www.make.com/en/templates/6631-add-zoom-webinar-registrants-from-new-rows-on-a-google-sheet",
+        "type": "template",
+        "verified": false,
+        "description": "Official Make.com template for automatically registering Zoom webinar participants from Google Sheets."
+      }
+    },
+    {
+      "department": "E-commerce",
+      "useCase": "Auto-send Shopify orders to dropshipping suppliers",
+      "resource": {
+        "title": "How to Auto Send Shopify Orders to Dropshipping Suppliers [Guide]",
+        "url": "https://www.make.com/en/how-to-guides/shopify-order-to-manufacturer",
+        "type": "tutorial",
+        "verified": false,
+        "description": "Official Make.com guide on automating Shopify order forwarding to dropshipping suppliers."
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Automate real estate workflows for agents and investors",
+      "resource": {
+        "title": "How to Automate Real Estate Workflows with Make.com (No-Code)",
+        "url": "https://batchdata.io/blog/how-to-use-make-com-to-automate-real-estate-workflows",
+        "type": "guide",
+        "verified": false,
+        "description": "Guide on using Make.com to automate real estate workflows without coding."
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Build AI chatbots with Make.com and Voiceflow",
+      "resource": {
+        "title": "How to Create a Chatbot using Make.com: A Step-by-Step Guide",
+        "url": "https://www.voiceflow.com/blog/make-com-ai-chatbot",
+        "type": "tutorial",
+        "verified": false,
+        "description": "Voiceflow blog tutorial on creating AI chatbots integrated with Make.com."
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Build AI customer support agent with Make.com",
+      "resource": {
+        "title": "How to Build an AI Customer Support Agent with Make.com",
+        "url": "https://www.classcentral.com/course/youtube-how-to-build-an-ai-customer-support-agent-with-make-com-490252",
+        "type": "video",
+        "verified": false,
+        "description": "YouTube video by Bart Slodyczka on building AI-powered customer support agents with Make.com."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Content creation automation with AI and GPT",
+      "resource": {
+        "title": "How I Automated Product Article Generation with Make.com and ChatGPT",
+        "url": "https://hardest.medium.com/how-i-automated-product-article-generation-with-make-com-and-chatgpt-1d5044099e82",
+        "type": "blog",
+        "verified": false,
+        "description": "Medium blog post on automating product article generation using Make.com and ChatGPT."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "AI-powered campaign automation with GPT integration",
+      "resource": {
+        "title": "How to Blend Make.com with GPTs for End-to-End Campaign Automation",
+        "url": "https://www.growth-rocket.com/blog/how-to-blend-make-com-with-gpts-for-end-to-end-campaign-automation/",
+        "type": "blog",
+        "verified": false,
+        "description": "Growth Rocket blog on combining Make.com with GPT models for comprehensive campaign automation."
+      }
+    },
+    {
+      "department": "General",
+      "useCase": "Beginner tutorial for Make.com automation basics",
+      "resource": {
+        "title": "Make.com Automation Tutorial - From Basics to Building Workflows",
+        "url": "https://www.classcentral.com/course/youtube-make-com-automation-tutorial-for-beginners-365771",
+        "type": "video",
+        "verified": false,
+        "description": "YouTube beginner tutorial by Kevin Stratvert covering Make.com basics and workflow building."
+      }
+    },
+    {
+      "department": "General",
+      "useCase": "Make.com basics - how to automate anything",
+      "resource": {
+        "title": "Make.com Basics - How to Automate Anything",
+        "url": "https://www.classcentral.com/course/youtube-make-com-basics-how-to-automate-anything-best-skill-i-ever-learned-489850",
+        "type": "video",
+        "verified": false,
+        "description": "YouTube video by Jono Catliff on Make.com fundamentals and general automation techniques."
+      }
+    },
+    {
+      "department": "General",
+      "useCase": "5 favourite Make.com use cases for streamlining workflows",
+      "resource": {
+        "title": "5 Favourite Make.com Use Cases: The Unique Ways You Can Streamline Workflows",
+        "url": "https://www.fruitionservices.io/post/make-com-use-cases",
+        "type": "blog",
+        "verified": false,
+        "description": "Blog post by Fruition Services highlighting 5 unique Make.com use cases for workflow optimization."
+      }
+    }
+  ],
+  "originalUseCases": {
+    "note": "Mapping of original catalog use cases to resources found",
+    "finance_bank_reconciliation": {
+      "found": false,
+      "alternative": "Invoice extraction and accounts payable automation found instead - no specific bank reconciliation tutorial found for Make.com",
+      "resources": [
+        "https://www.dumplingai.com/blog/how-to-extract-invoice-data-from-emails-using-dumpling-ai-and-make-com",
+        "https://www.intuz.com/blog/account-payable-workflow-automation"
+      ]
+    },
+    "admin_contract_forms": {
+      "found": true,
+      "resources": [
+        "https://community.make.com/t/mastering-the-docusign-module-in-make-com-with-airtable-google-docs/94045",
+        "https://www.goodfellastech.com/blog/how-to-automate-docusign-envelopes-using-make-com",
+        "https://www.docuseal.com/resources/automate-with-make-com"
+      ]
+    },
+    "hr_onboarding": {
+      "found": true,
+      "resources": [
+        "https://scalevise.com/resources/automated-onboarding-with-make-com-save-time-cut-costs-scale-faster/",
+        "https://www.dumplingai.com/blog/how-to-automate-employee-onboarding-process-in-make-com"
+      ]
+    },
+    "tech_jira_slack": {
+      "found": true,
+      "resources": [
+        "https://www.make.com/en/integrations/jira/slack",
+        "https://4spotconsulting.com/automate-slack-notifications-with-make-com/"
+      ]
+    },
+    "sales_lead_enrichment": {
+      "found": true,
+      "resources": [
+        "https://www.classcentral.com/course/youtube-steal-this-powerful-make-com-lead-generation-system-489808",
+        "https://www.make.com/en/integrations/clearbit/hubspotcrm"
+      ]
+    },
+    "marketing_campaigns": {
+      "found": true,
+      "resources": [
+        "https://www.make.com/en/how-to-guides/how-to-automate-data-collection-part-two-email-marketing-segmentation",
+        "https://medium.com/@sik6883/how-to-automate-your-email-campaigns-using-make-com-e2fa842e85e7",
+        "https://www.make.com/en/how-to-guides/activecampaign-automation"
+      ]
+    }
+  }
+}

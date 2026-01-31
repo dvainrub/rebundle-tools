@@ -1,0 +1,310 @@
+{
+  "tool": "Manus",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "department": "Marketing",
+      "useCase": "Competitive Intelligence Monitoring: Systematically monitor competitors' press releases, social media updates, client wins, and thought leadership content across multiple platforms",
+      "resource": {
+        "title": "The AI Agent Showdown: ChatGPT vs. Manus AI for Content Marketing Competitive Intelligence",
+        "url": "https://lisapeyton.com/the-ai-agent-showdown-chatgpt-vs-manus-ai-for-content-marketing-competitive-intelligence/",
+        "type": "blog",
+        "verified": true,
+        "notes": "Author tested Manus AI monitoring 14 competitors over 2 weeks. Manus completed analysis in 5 minutes with structured spreadsheet output and systematic data collection across 6 intelligence categories."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Website SEO Optimization: Analyze website content and deliver detailed reports covering meta tags, mobile friendliness, and technical SEO issues",
+      "resource": {
+        "title": "11 Practical Use Cases of Manus AI in Marketing",
+        "url": "https://blusteak.com/blog/manus-ai-in-marketing",
+        "type": "guide",
+        "verified": true,
+        "notes": "Functions as an 'in-house SEO expert' analyzing website content for missing meta tags, mobile friendliness, and other SEO factors."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Landing Page CRO Optimization: Examine conversion factors by assessing layout, copy clarity, and CTA effectiveness to identify optimization opportunities",
+      "resource": {
+        "title": "11 Practical Use Cases of Manus AI in Marketing",
+        "url": "https://blusteak.com/blog/manus-ai-in-marketing",
+        "type": "guide",
+        "verified": true,
+        "notes": "Examines conversion factors including layout, copy clarity and CTA effectiveness to boost ROI."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Social Media Opinion Research: Sift through social media and web content to understand brand perception and industry sentiment",
+      "resource": {
+        "title": "11 Practical Use Cases of Manus AI in Marketing",
+        "url": "https://blusteak.com/blog/manus-ai-in-marketing",
+        "type": "guide",
+        "verified": true,
+        "notes": "Pulls out relevant insights from social media noise for brand perception analysis."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Performance Marketing Data Audit: Analyze ad campaign performance, identify budget drains, and provide benchmarks against industry standards",
+      "resource": {
+        "title": "11 Practical Use Cases of Manus AI in Marketing",
+        "url": "https://blusteak.com/blog/manus-ai-in-marketing",
+        "type": "guide",
+        "verified": true,
+        "notes": "Identifies budget drains and inefficiencies while providing actionable recommendations."
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Shareable Reporting Dashboards: Transform data into interactive dashboards that are visually compelling and shareable via public links",
+      "resource": {
+        "title": "11 Practical Use Cases of Manus AI in Marketing",
+        "url": "https://blusteak.com/blog/manus-ai-in-marketing",
+        "type": "guide",
+        "verified": true,
+        "notes": "Creates dashboards that are 'not just beautiful and insightful but also instantly shareable via publicly viewable links.'"
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Presentation Deck Design: Create polished presentations from data briefs for meetings, investor calls, and product pitches",
+      "resource": {
+        "title": "Best AI Presentation Maker | Create Slides Instantly",
+        "url": "https://manus.im/tools/ai-presentation",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official Manus feature page. Researches topics, writes content, and designs complete decks. Exports to PowerPoint, Google Slides, and PDF."
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Full-Stack Website Development: Build complete web applications with frontend, backend, database, and user authentication from natural language descriptions",
+      "resource": {
+        "title": "AI Website Builder | Build Full-Stack Web Apps with Manus",
+        "url": "https://manus.im/features/webapp",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official Manus feature page. Conversational full-stack development with built-in database, Stripe integration, SEO optimization, and analytics."
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Custom AI Workflow Automation: Build reusable AI skills that automate complex multi-step tasks with script execution in secure sandbox environments",
+      "resource": {
+        "title": "Build Custom AI Workflows with Manus Agent Skills",
+        "url": "https://manus.im/features/agent-skills",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official Manus feature page. Runs in isolated VMs with Python/Bash execution. Skills can be packaged and reused across conversations."
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Code Research and Prototyping: Automate code research and create functional prototypes using AI agent capabilities",
+      "resource": {
+        "title": "Manus AI Full Tutorial - Build Websites, Apps & Slides with One AI Agent",
+        "url": "https://www.youtube.com/watch?v=2q6iTrbLWVk",
+        "type": "video",
+        "verified": true,
+        "notes": "YouTube tutorial showing how to build websites, apps, and slides with Manus AI."
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "API Integration and Development: Use Manus Agent API to integrate autonomous AI capabilities into custom applications",
+      "resource": {
+        "title": "Getting Started with the Manus Agent API (Full Code, Tips & Costing)",
+        "url": "https://jewelhuq.medium.com/getting-started-with-the-manus-agent-api-full-code-tips-costing-eef90bacd06c",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Medium article with full code examples for Manus Agent API integration."
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "GitHub Repository Analysis: Analyze trending GitHub repositories for architecture, code patterns, and documentation",
+      "resource": {
+        "title": "In-depth technical investigation into the Manus AI agent (GitHub Gist)",
+        "url": "https://gist.github.com/renschni/4fbc70b31bad8dd57f3370239dccd58f",
+        "type": "guide",
+        "verified": true,
+        "notes": "Technical investigation into Manus AI architecture, tool orchestration, and autonomous capabilities."
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "eCommerce Operation Analysis: Analyze delivery times, pricing strategies, and promotional impact to identify performance patterns",
+      "resource": {
+        "title": "11 Practical Use Cases of Manus AI in Marketing",
+        "url": "https://blusteak.com/blog/manus-ai-in-marketing",
+        "type": "guide",
+        "verified": true,
+        "notes": "Analyzes operational metrics to identify performance patterns and improvement opportunities."
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Interactive Content Creation: Build functional web tools like quizzes, interactive forms, and dynamic email generators",
+      "resource": {
+        "title": "11 Practical Use Cases of Manus AI in Marketing",
+        "url": "https://blusteak.com/blog/manus-ai-in-marketing",
+        "type": "guide",
+        "verified": true,
+        "notes": "Builds 'quizzes and interactive forms to dynamic email generators' for audience engagement."
+      }
+    },
+    {
+      "department": "Sales",
+      "useCase": "Sales Data Analysis and Insights: Decode sales performance through trend spotting and benchmarking across products, geographies, and timeframes",
+      "resource": {
+        "title": "11 Practical Use Cases of Manus AI in Marketing",
+        "url": "https://blusteak.com/blog/manus-ai-in-marketing",
+        "type": "guide",
+        "verified": true,
+        "notes": "Dissects revenue across products, geographies, and timeframes for sales insights."
+      }
+    },
+    {
+      "department": "Sales",
+      "useCase": "Online Competitive Research: Mine web data to uncover competitors' pricing models and product differentiation strategies",
+      "resource": {
+        "title": "11 Practical Use Cases of Manus AI in Marketing",
+        "url": "https://blusteak.com/blog/manus-ai-in-marketing",
+        "type": "guide",
+        "verified": true,
+        "notes": "Organizes competitive insights into structured, usable information for sales teams."
+      }
+    },
+    {
+      "department": "Finance",
+      "useCase": "Financial Data AI Assistant: Build no-hallucination financial data assistants for accurate financial analysis",
+      "resource": {
+        "title": "I Built a 'No-Hallucination' Financial AI Assistant with Manus",
+        "url": "https://medium.com/@bwzheng2010/i-built-myself-a-no-hallucination-financial-data-ai-assistant-88a43961f104",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Medium article describing building a financial AI assistant using Manus that avoids hallucinations."
+      }
+    },
+    {
+      "department": "Finance",
+      "useCase": "Stock Analysis Dashboard: Create stock analysis dashboards for traders and investors",
+      "resource": {
+        "title": "Stock Analysis Dashboard Using Manus AI",
+        "url": "https://dicloak.com/video-insights-detail/stock-analysis-dashboard-using-manus-ai",
+        "type": "video",
+        "verified": true,
+        "notes": "Video tutorial showing how to create stock analysis dashboards with Manus AI."
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Wide Research with Parallel AI Agents: Run comprehensive research using up to 100 AI agents processing queries in parallel",
+      "resource": {
+        "title": "100x AI Agents: Manus Wide Research",
+        "url": "https://ajsai.substack.com/p/100x-ai-agents-manus-wide-research",
+        "type": "blog",
+        "verified": true,
+        "notes": "Substack article about Manus Wide Research feature for parallel processing with 100 general AI agents."
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Data Visualization: Transform data into visual charts, graphs, and interactive visualizations",
+      "resource": {
+        "title": "Real-World Manus Data Visualization Use Cases",
+        "url": "https://manus.so/post/dts5q7bc",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official Manus blog post about data visualization use cases for faster insights and smarter decisions."
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Zapier Integration for Workflow Automation: Connect Manus with other tools like Browse AI, Microsoft Excel, and hundreds of apps",
+      "resource": {
+        "title": "Browse AI Manus Integration - Zapier",
+        "url": "https://zapier.com/apps/browse-ai/integrations/manus",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official Zapier integration page for connecting Manus with other automation tools."
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Brand Identity and Strategy: Create consistent visual language, tone of voice, and branded assets",
+      "resource": {
+        "title": "11 Practical Use Cases of Manus AI in Marketing",
+        "url": "https://blusteak.com/blog/manus-ai-in-marketing",
+        "type": "guide",
+        "verified": true,
+        "notes": "Creates color schemes, layout choices, and content voice for brand consistency."
+      }
+    }
+  ],
+  "additionalResources": [
+    {
+      "title": "Manus AI Mastery: Build Real-World Projects with AI Agents (Udemy Course)",
+      "url": "https://www.udemy.com/course/manus-ai-mastery-build-real-world-projects-with-ai-agents/",
+      "type": "course",
+      "notes": "Paid Udemy course covering real-world project building with Manus AI agents."
+    },
+    {
+      "title": "Manus AI in Action: Real-World Use Cases and Automation (The Rundown University Workshop)",
+      "url": "https://app.therundown.ai/workshops/manus-ai-in-action-real-world-use-cases-and-automation",
+      "type": "workshop",
+      "notes": "Workshop covering real-world use cases and automation with Manus AI."
+    },
+    {
+      "title": "Learn Manus AI: Automate Tasks with Ease (Free Course)",
+      "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/learn-manus-ai-automate-tasks-with-ease",
+      "type": "course",
+      "notes": "Free course from Great Learning on automating tasks with Manus AI."
+    },
+    {
+      "title": "Data Analysis Mastery with ChatGPT and Manus AI Tools (Udemy Course)",
+      "url": "https://www.udemy.com/course/from-basics-to-advanced-data-analysis-using-chatgpt/",
+      "type": "course",
+      "notes": "Udemy course covering data analysis with ChatGPT and Manus AI tools."
+    },
+    {
+      "title": "How to Use Manus AI: A Step-by-Step Guide",
+      "url": "https://medium.com/techthync/how-to-use-manus-ai-a-step-by-step-guide-9129b4c0f4bb",
+      "type": "tutorial",
+      "notes": "Medium step-by-step guide for using Manus AI."
+    },
+    {
+      "title": "Manus 1.5: Build Full-Stack Websites in Minutes - No Coding Required",
+      "url": "https://manus.so/post/manus-1-5-fullstack-website-guide",
+      "type": "guide",
+      "notes": "Official guide on building full-stack websites with Manus 1.5."
+    },
+    {
+      "title": "From Fiction to Function: 20+ Real-World Applications of Manus AI",
+      "url": "https://medium.com/@usamabajwa86/from-fiction-to-function-20-real-world-applications-of-manus-ai-e426dadf3ab1",
+      "type": "blog",
+      "notes": "Medium article covering 20+ real-world applications of Manus AI."
+    },
+    {
+      "title": "Manus AI: The Ultimate Guide to Understanding and Using It",
+      "url": "https://www.singlegrain.com/digital-marketing/manus-ai-the-ultimate-guide-to-understanding-and-using-it/",
+      "type": "guide",
+      "notes": "Single Grain comprehensive guide on understanding and using Manus AI."
+    },
+    {
+      "title": "From Mind to Machine: The Rise of Manus AI as a Fully Autonomous Digital Agent (arXiv Paper)",
+      "url": "https://arxiv.org/abs/2505.02024v1",
+      "type": "research",
+      "notes": "Academic paper on Manus AI as a fully autonomous digital agent."
+    },
+    {
+      "title": "AI Models for Marketers: A Real-World Look at Manus AI vs. ChatGPT",
+      "url": "https://lisapeyton.com/ai-models-for-marketers-a-real-world-look-at-manus-ai-vs-chatgpt/",
+      "type": "blog",
+      "notes": "Comparison blog post for marketers evaluating Manus AI vs ChatGPT."
+    }
+  ]
+}

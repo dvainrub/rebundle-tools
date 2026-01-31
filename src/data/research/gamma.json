@@ -1,0 +1,334 @@
+{
+  "tool": "Gamma",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "department": "Sales",
+      "useCase": "Create pitch decks and sales proposals that convert clients",
+      "originalUseCase": "Sales: Commercial proposals and personalized pitch decks",
+      "resource": {
+        "title": "SaaStr AI App of The Week: Gamma (The AI Sales Deck Generator That's Converting Our Biggest Partners)",
+        "url": "https://www.saastr.com/saastr-ai-app-of-the-week-gamma-the-ai-sales-deck-generator-thats-converting-our-biggest/",
+        "type": "blog",
+        "verified": true,
+        "notes": "SaaStr article about how Gamma is being used to create sales decks that convert major partners"
+      }
+    },
+    {
+      "department": "Sales",
+      "useCase": "Condense long documents into concise decks that close deals",
+      "originalUseCase": "Sales: Commercial proposals and personalized pitch decks",
+      "resource": {
+        "title": "Gamma Turns 100-Page Decks into 18 Slides That Close 6-Figure Deals",
+        "url": "https://completeaitraining.com/news/gamma-turns-100-page-decks-into-18-slides-that-close-6/",
+        "type": "blog",
+        "verified": true,
+        "notes": "Article about using Gamma to transform lengthy proposals into effective sales decks"
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Create campaign decks and marketing reports for stakeholders",
+      "originalUseCase": "Marketing: Campaign presentations for stakeholders",
+      "resource": {
+        "title": "AI Marketing Tools | Create Campaign Decks & Reports Fast | Gamma.app",
+        "url": "https://gamma.app/solutions/marketing",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official Gamma marketing solutions page with campaign deck use cases"
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Unleash marketing productivity with AI-powered presentations",
+      "originalUseCase": "Marketing: Campaign presentations for stakeholders",
+      "resource": {
+        "title": "Gamma.App Review: Is This the Best AI Presentation Tool? (O8 Agency)",
+        "url": "https://www.o8.agency/blog/unleash-your-marketing-productivity-ai-marketing-tools-gammaapp-review",
+        "type": "blog",
+        "verified": true,
+        "notes": "Marketing agency review of Gamma for marketing productivity use cases"
+      }
+    },
+    {
+      "department": "HR",
+      "useCase": "Create employee training and development presentations",
+      "originalUseCase": "HR: Onboarding decks and culture presentations",
+      "resource": {
+        "title": "Training and Developing Employees (Gamma Example)",
+        "url": "https://gamma.app/docs/Training-and-Developing-Employees-7x9ka7kr82yb67e",
+        "type": "guide",
+        "verified": true,
+        "notes": "Real Gamma document example for employee training presentations"
+      }
+    },
+    {
+      "department": "HR",
+      "useCase": "Create company culture decks with AI assistance",
+      "originalUseCase": "HR: Onboarding decks and culture presentations",
+      "resource": {
+        "title": "How to create a Company Culture Deck with AI",
+        "url": "https://medium.com/@JimTheAIWhisperer/how-to-create-a-company-culture-deck-with-ai-5256a302370",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Medium tutorial on using AI tools including Gamma for culture decks"
+      }
+    },
+    {
+      "department": "Tech/Project Management",
+      "useCase": "Transform project presentations and document roadmaps",
+      "originalUseCase": "Tech: Document architectures and product roadmaps",
+      "resource": {
+        "title": "Gamma AI for Project Management: How AI Can Transform Your Project Presentations in 2025",
+        "url": "https://pmpwithray.com/blogs/gamma-ai-for-project-management/",
+        "type": "guide",
+        "verified": true,
+        "notes": "Comprehensive guide on using Gamma for project management presentations and roadmaps"
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Create Standard Operating Procedures (SOPs) and process documentation",
+      "originalUseCase": "Operations: Visual process manuals and SOPs",
+      "resource": {
+        "title": "The Ultimate SOP Creation Framework 1.0 (Gamma Example)",
+        "url": "https://gamma.app/docs/The-Ultimate-SOP-Creation-Framework-10-8h8vxihm881vunp",
+        "type": "guide",
+        "verified": true,
+        "notes": "Real Gamma document demonstrating SOP creation framework"
+      }
+    },
+    {
+      "department": "Education/Training",
+      "useCase": "Create classroom slides and educational presentations quickly",
+      "originalUseCase": "Additional use case - Education",
+      "resource": {
+        "title": "Use Gamma AI for Class Slides? A Friendly, Fast Guide",
+        "url": "https://sider.ai/blog/ai-tools/use-gamma-ai-for-class-slides-a-friendly-fast-guide",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Step-by-step guide for educators using Gamma to create class presentations"
+      }
+    },
+    {
+      "department": "General Business",
+      "useCase": "Learn to create presentations, documents, and websites with Gamma",
+      "originalUseCase": "General tutorial",
+      "resource": {
+        "title": "Gamma AI Tutorial 2025: How to Create Presentations with Gamma App",
+        "url": "https://dicloak.com/blog-detail/gamma-ai-tutorial-2025-how-to-create-presentations-with-gamma-app",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Comprehensive step-by-step tutorial covering account setup, creation, and export"
+      }
+    },
+    {
+      "department": "General Business",
+      "useCase": "Complete guide to creating stunning slide decks in minutes",
+      "originalUseCase": "General tutorial",
+      "resource": {
+        "title": "Gamma AI Presentations: The Ultimate Guide to Creating Stunning Slide Decks in Minutes",
+        "url": "https://7minute.ai/gamma-ai-presentations/",
+        "type": "guide",
+        "verified": true,
+        "notes": "In-depth guide covering all aspects of Gamma AI presentations"
+      }
+    },
+    {
+      "department": "General Business",
+      "useCase": "Real-world 10-day test of Gamma for business presentations",
+      "originalUseCase": "Review/case study",
+      "resource": {
+        "title": "I tested Gamma AI for 10 days - Full review of its presentation power (2025)",
+        "url": "https://techpoint.africa/guide/i-tested-gamma-ai-for-10-days/",
+        "type": "blog",
+        "verified": true,
+        "notes": "Hands-on 10-day review with real-world use cases and examples"
+      }
+    },
+    {
+      "department": "General Business",
+      "useCase": "Build slide decks in seconds - honest review",
+      "originalUseCase": "Review",
+      "resource": {
+        "title": "I tested Gamma, the AI that builds slide decks in seconds - here's what impressed me (and what didn't)",
+        "url": "https://www.tomsguide.com/ai/i-tested-gamma-the-ai-that-builds-slide-decks-in-seconds-heres-what-impressed-me-and-what-didnt",
+        "type": "blog",
+        "verified": true,
+        "notes": "Tom's Guide honest review with pros and cons"
+      }
+    },
+    {
+      "department": "General Business",
+      "useCase": "50+ presentations created - comprehensive review",
+      "originalUseCase": "Review",
+      "resource": {
+        "title": "Gamma App Review (2026): I Created 50+ Presentations, Here's My Brutal Review",
+        "url": "https://kripeshadwani.com/gamma-app-review/",
+        "type": "blog",
+        "verified": true,
+        "notes": "Extensive review after creating 50+ presentations with detailed use cases"
+      }
+    },
+    {
+      "department": "General Business",
+      "useCase": "Learn Gamma through structured courses",
+      "originalUseCase": "Training course",
+      "resource": {
+        "title": "Become a Presentation Pro in 1 Hour with Gamma AI (Udemy)",
+        "url": "https://www.udemy.com/course/gamma-ai-peresentaion/",
+        "type": "video",
+        "verified": true,
+        "notes": "1-hour Udemy course for mastering Gamma AI presentations"
+      }
+    },
+    {
+      "department": "General Business",
+      "useCase": "Build professional presentations faster with structured training",
+      "originalUseCase": "Training course",
+      "resource": {
+        "title": "Master Gamma AI: Build Professional Presentations Faster (Udemy)",
+        "url": "https://www.udemy.com/course/master-gamma-ai-build-professional-presentations-faster/",
+        "type": "video",
+        "verified": true,
+        "notes": "Udemy course focused on speed and professional quality"
+      }
+    },
+    {
+      "department": "General Business",
+      "useCase": "Master AI-powered presentations with Skillshare",
+      "originalUseCase": "Training course",
+      "resource": {
+        "title": "Master AI-Powered Presentations: Create Presentations with Gamma AI (Skillshare)",
+        "url": "https://www.skillshare.com/en/classes/master-ai-powered-presentations-create-presentations-with-gamma-ai/2031067529",
+        "type": "video",
+        "verified": true,
+        "notes": "Skillshare course on AI-powered presentation creation with Gamma"
+      }
+    },
+    {
+      "department": "Startup/Investor Relations",
+      "useCase": "Create investor-ready pitch decks for startups",
+      "originalUseCase": "Finance: Quarterly reports and results presentations (adapted)",
+      "resource": {
+        "title": "Pitch Deck (Gamma Template)",
+        "url": "https://gamma.app/docs/Pitch-Deck-35p6ez16vi5fvlg",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official Gamma pitch deck template for investor presentations"
+      }
+    },
+    {
+      "department": "Enterprise/Business",
+      "useCase": "Team collaboration and business presentations at scale",
+      "originalUseCase": "Enterprise use cases",
+      "resource": {
+        "title": "What options does Gamma offer for teams and business?",
+        "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-teams-and-business",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official Gamma documentation on team and business features"
+      }
+    },
+    {
+      "department": "General Business",
+      "useCase": "Use best prompt patterns for optimal Gamma presentations",
+      "originalUseCase": "Tips and workflows",
+      "resource": {
+        "title": "Best Prompt Patterns for Gamma AI Presentation (2025) - Proven Workflows & Tips",
+        "url": "https://skywork.ai/blog/best-prompt-patterns-gamma-ai-presentation-2025/",
+        "type": "guide",
+        "verified": true,
+        "notes": "Guide on effective prompting strategies for Gamma AI"
+      }
+    }
+  ],
+  "videoResources": [
+    {
+      "title": "Full Gamma AI App Tutorial For Beginners (2024) - Create Presentations With AI",
+      "url": "https://www.youtube.com/watch?v=FJGCaTjB5x4",
+      "type": "video",
+      "verified": true,
+      "notes": "YouTube tutorial for beginners covering full Gamma workflow"
+    },
+    {
+      "title": "Gamma AI App Tutorial 2024 | How To Create Presentations With Gamma AI",
+      "url": "https://www.youtube.com/watch?v=Kxqx-Fgk2TA",
+      "type": "video",
+      "verified": true,
+      "notes": "Step-by-step YouTube tutorial on creating presentations"
+    },
+    {
+      "title": "How to Use Gamma AI (Full Tutorial for Presentations, Websites & More)",
+      "url": "https://www.youtube.com/watch?v=KcbXKUR7-a0",
+      "type": "video",
+      "verified": true,
+      "notes": "Comprehensive tutorial covering presentations, websites, and more"
+    }
+  ],
+  "pressAndFunding": [
+    {
+      "title": "AI PowerPoint-killer Gamma hits $2.1B valuation, $100M ARR, founder says (TechCrunch)",
+      "url": "https://techcrunch.com/2025/11/10/ai-powerpoint-killer-gamma-hits-2-1b-valuation-100m-arr-founder-says/",
+      "type": "news",
+      "verified": true,
+      "notes": "Major news article on Gamma's growth and market position"
+    },
+    {
+      "title": "Gamma: Slides in the Blink of AI (Harvard Business School Case)",
+      "url": "https://www.hbs.edu/faculty/Pages/item.aspx?num=68178",
+      "type": "case-study",
+      "verified": true,
+      "notes": "Harvard Business School case study on Gamma"
+    },
+    {
+      "title": "Gamma's Startup Journey: The Future of Presentations with AI (JP Morgan)",
+      "url": "https://www.jpmorgan.com/insights/technology/artificial-intelligence/gammas-startup-journey-the-future-of-presentations-with-ai",
+      "type": "interview",
+      "verified": true,
+      "notes": "JP Morgan article on Gamma's startup journey and vision"
+    }
+  ],
+  "officialResources": [
+    {
+      "title": "Gamma - Best AI Presentation Maker & Website Builder",
+      "url": "https://gamma.app/",
+      "type": "official",
+      "verified": true
+    },
+    {
+      "title": "Gamma Insights | AI Design Tips & Training from the Experts",
+      "url": "https://gamma.app/insights",
+      "type": "official",
+      "verified": true
+    },
+    {
+      "title": "Gamma API - AI Content Generation API for Presentations & Docs",
+      "url": "https://gamma.app/products/api",
+      "type": "official",
+      "verified": true
+    }
+  ],
+  "summary": {
+    "totalUseCases": 20,
+    "coverageByDepartment": {
+      "Sales": 2,
+      "Marketing": 2,
+      "HR": 2,
+      "Tech/Project Management": 1,
+      "Operations": 1,
+      "Education": 1,
+      "Startup/Investors": 1,
+      "Enterprise": 1,
+      "General Business": 9
+    },
+    "originalUseCasesCovered": {
+      "Finance: Quarterly reports": "Covered via pitch deck and investor presentation resources",
+      "Sales: Commercial proposals": "Covered with SaaStr and 6-figure deals articles",
+      "Marketing: Campaign presentations": "Covered with official marketing solutions page and O8 agency review",
+      "HR: Onboarding decks and culture": "Covered with training employees doc and culture deck tutorial",
+      "Tech: Architectures and roadmaps": "Covered with project management guide",
+      "Operations: Visual SOPs": "Covered with official SOP framework example"
+    }
+  }
+}

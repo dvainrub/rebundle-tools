@@ -1,0 +1,363 @@
+{
+  "tool": "n8n",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "category": "Tech",
+      "useCase": "Data pipelines with complex JavaScript transformations - using the Code Node for data filtering, analysis, and export",
+      "resource": {
+        "title": "Learn JavaScript data processing with code node: filtering, analysis & export examples",
+        "url": "https://n8n.io/workflows/5729-learn-javascript-data-processing-with-code-node-filtering-analysis-and-export-examples/",
+        "type": "template",
+        "verified": true,
+        "notes": "Official n8n workflow template demonstrating JavaScript-based data processing"
+      },
+      "alternativeResources": [
+        {
+          "title": "From Python to JavaScript: A Playbook for Data Analytics in n8n with Code Node Examples",
+          "url": "https://towardsdatascience.com/from-python-to-javascript-a-playbook-for-data-analytics-in-n8n-with-code-node-examples/",
+          "type": "blog"
+        },
+        {
+          "title": "Automating Data Engineering with n8n (Without Drowning in Custom Code)",
+          "url": "https://medium.com/@Quaxel/automating-data-engineering-with-n8n-without-drowning-in-custom-code-cc3ee5918274",
+          "type": "blog"
+        },
+        {
+          "title": "7 Steps to Mastering No Code Automation with n8n for Data Professionals",
+          "url": "https://www.kdnuggets.com/7-steps-to-mastering-no-code-automation-with-n8n-for-data-professionals",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "category": "Operations",
+      "useCase": "Automations with strict privacy/compliance requirements - self-hosted GDPR-compliant workflows",
+      "resource": {
+        "title": "Automating GDPR Requests with n8n (Without Leaks)",
+        "url": "https://medium.com/@Nexumo_/automating-gdpr-requests-with-n8n-without-leaks-12e6b96f425e",
+        "type": "blog",
+        "verified": true,
+        "notes": "Practical guide for automating GDPR data subject access requests"
+      },
+      "alternativeResources": [
+        {
+          "title": "GDPR compliance considerations for self-hosted n8n",
+          "url": "https://lumadock.com/blog/tutorials/n8n-gdpr-compliance/",
+          "type": "tutorial"
+        },
+        {
+          "title": "Keep Workflows Home: Self-Hosting n8n for Compliance",
+          "url": "https://medium.com/@Nexumo_/keep-workflows-home-self-hosting-n8n-for-compliance-73baa5bfd4ea",
+          "type": "blog"
+        },
+        {
+          "title": "Self-Hosted N8N Complete Setup Guide 2025",
+          "url": "https://blog.automatenexus.com/self-hosted-n8n-complete-setup-guide-2025/",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "category": "Finance",
+      "useCase": "Automated invoice processing and financial reporting with AI",
+      "resource": {
+        "title": "Automate invoice processing & weekly spending reports with GPT-4 and Airtable",
+        "url": "https://n8n.io/workflows/9744-automate-invoice-processing-and-weekly-spending-reports-with-gpt-4-and-airtable/",
+        "type": "template",
+        "verified": true,
+        "notes": "Official n8n template for AI-powered invoice automation"
+      },
+      "alternativeResources": [
+        {
+          "title": "Automate Your Entire Invoice System with n8n + AI (YouTube)",
+          "url": "https://www.youtube.com/watch?v=KQLrh8WU0tk",
+          "type": "video"
+        },
+        {
+          "title": "How to Automate Full-Cycle Invoicing with Airtable, QuickBooks & Stripe using n8n",
+          "url": "https://pratik-rupareliya.medium.com/how-to-automate-full-cycle-invoicing-with-airtable-quickbooks-stripe-using-n8n-da2096ef7d25",
+          "type": "blog"
+        },
+        {
+          "title": "Automate Invoice Reminders with n8n",
+          "url": "https://www.zignuts.com/blog/n8n-automate-invoice-reminders",
+          "type": "tutorial"
+        }
+      ]
+    },
+    {
+      "category": "Marketing",
+      "useCase": "AI integrations with LangChain for personalized content and marketing automation",
+      "resource": {
+        "title": "Introduction to AI Automation with n8n and LangChain",
+        "url": "https://medium.com/@aleksej.gudkov/introduction-to-ai-automation-with-n8n-and-langchain-9b6f4c4ca675",
+        "type": "blog",
+        "verified": true,
+        "notes": "Comprehensive introduction to combining n8n with LangChain for AI workflows"
+      },
+      "alternativeResources": [
+        {
+          "title": "LangChain Code integrations for n8n",
+          "url": "https://n8n.io/integrations/langchain-code/",
+          "type": "guide"
+        },
+        {
+          "title": "10 Marketing Workflows You Didn't Know n8n Could Automate",
+          "url": "https://medium.com/@AThoughtbySnehal/10-marketing-workflows-you-didnt-know-n8n-could-automate-cdd39f4b9c80",
+          "type": "blog"
+        },
+        {
+          "title": "Guide to Creating AI Workflows with LangChain, LangGraph, n8n, and AutoGen",
+          "url": "https://prepzee.com/blog/building-ai-workflows-with-langchain-langgraph-n8n-and-autogen/",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "category": "Admin",
+      "useCase": "High-volume workflows where cost per execution matters - self-hosted unlimited executions",
+      "resource": {
+        "title": "Why E-commerce Sellers Are Ditching Expensive Automation Tools for n8n: The Complete Guide",
+        "url": "https://medium.com/aimonks/why-e-commerce-sellers-are-ditching-expensive-automation-tools-for-n8n-the-complete-guide-9794db535afa",
+        "type": "blog",
+        "verified": true,
+        "notes": "Real cost comparison and migration guide from paid alternatives to n8n"
+      },
+      "alternativeResources": [
+        {
+          "title": "n8n Automation Tool Review 2025: Ultimate Workflow Platform",
+          "url": "https://max-productive.ai/ai-tools/n8n/",
+          "type": "review"
+        },
+        {
+          "title": "n8n Pricing Tiers & Costs",
+          "url": "https://thedigitalprojectmanager.com/productivity/n8n-pricing/",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "category": "Sales",
+      "useCase": "CRM automation with AI-powered lead scoring and customer segmentation",
+      "resource": {
+        "title": "Getting Started with CRM Automation: Guide & Templates",
+        "url": "https://blog.n8n.io/how-to-get-started-with-crm-automation-and-no-code-workflow-ideas/",
+        "type": "guide",
+        "verified": true,
+        "notes": "Official n8n blog guide for CRM automation"
+      },
+      "alternativeResources": [
+        {
+          "title": "CRM Automation with n8n and Salesforce: Building AI-Powered Customer Segments",
+          "url": "https://medium.com/@dilaleynartl/crm-automation-with-n8n-and-salesforce-building-ai-powered-customer-segments-a2a4dd55ef5c",
+          "type": "blog"
+        },
+        {
+          "title": "10 Ways to Automate Lead Generation With n8n",
+          "url": "https://medium.com/@theashleygross/10-ways-to-automate-lead-generation-with-n8n-20d5d5bc32fd",
+          "type": "blog"
+        },
+        {
+          "title": "5 Powerful Ways to Automate Your CRM with n8n",
+          "url": "https://bitskingdom.com/blog/crm-automation-with-n8n/",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "category": "HR",
+      "useCase": "Automated employee onboarding with document generation and multi-platform notifications",
+      "resource": {
+        "title": "Automated employee onboarding document generator with Google Drive, Gmail & Slack integration",
+        "url": "https://n8n.io/workflows/10686-automated-employee-onboarding-document-generator-with-google-drive-gmail-and-slack-integration/",
+        "type": "template",
+        "verified": true,
+        "notes": "Official n8n template for complete onboarding automation"
+      },
+      "alternativeResources": [
+        {
+          "title": "n8n HR Recruitment Pipeline",
+          "url": "https://www.instagantt.com/project-templates/n8n-hr-recruitment-pipeline-automate-candidate-screening-interview-scheduling-and-feedback-collection-workflows",
+          "type": "template"
+        }
+      ]
+    },
+    {
+      "category": "Operations",
+      "useCase": "AI-powered customer support ticket automation with classification and routing",
+      "resource": {
+        "title": "Automate support ticket classification & routing from HubSpot to Jira with GPT",
+        "url": "https://n8n.io/workflows/7981-automate-support-ticket-classification-and-routing-from-hubspot-to-jira-with-gpt/",
+        "type": "template",
+        "verified": true,
+        "notes": "Official n8n template for AI-driven support automation"
+      },
+      "alternativeResources": [
+        {
+          "title": "AI Helpdesk on Autopilot: n8n + LLMs in Action",
+          "url": "https://medium.com/@Quaxel/ai-helpdesk-on-autopilot-n8n-llms-in-action-bb6c0f7aa4eb",
+          "type": "blog"
+        },
+        {
+          "title": "Automated support ticket system with Gmail, Trello, and Slack notifications",
+          "url": "https://n8n.io/workflows/7220-automated-support-ticket-system-with-gmail-trello-and-slack-notifications/",
+          "type": "template"
+        },
+        {
+          "title": "GitHub: Automated-Customer-Service-Workflow-using-n8n",
+          "url": "https://github.com/TuguiDragos/Automated-Customer-Service-Workflow-using-n8n",
+          "type": "repository"
+        }
+      ]
+    },
+    {
+      "category": "Marketing",
+      "useCase": "Automated social media content creation and multi-platform publishing",
+      "resource": {
+        "title": "Automated Social Media Content Creation with n8n",
+        "url": "https://medium.com/@vfirst/automated-social-media-content-creation-with-n8n-cd3ba55ab03b",
+        "type": "blog",
+        "verified": true,
+        "notes": "Complete guide for AI-powered social media automation"
+      },
+      "alternativeResources": [
+        {
+          "title": "Turn Airtable into a Social Media Post Factory: n8n and API-Based Automation",
+          "url": "https://contentdrips.com/blog/2025/07/automate-social-media-posts-airtable-n8n/",
+          "type": "tutorial"
+        },
+        {
+          "title": "GitHub: Automating-Social-Media-Posts-with-Notion-n8n",
+          "url": "https://github.com/sumamazaeem/Automating-Social-Media-Posts-with-Notion-n8n",
+          "type": "repository"
+        },
+        {
+          "title": "Social Media Posting Automation with n8n & AI: A Beginner's Guide",
+          "url": "https://yukitaylor00.medium.com/how-to-use-ai-n8n-social-media-posting-automation-with-n8n-ai-a-beginners-guide-de46c309dbdd",
+          "type": "blog"
+        }
+      ]
+    },
+    {
+      "category": "Operations",
+      "useCase": "E-commerce inventory management with predictive analytics and Shopify integration",
+      "resource": {
+        "title": "Automate Shopify inventory reordering with predictive analytics and Google Sheets",
+        "url": "https://n8n.io/workflows/11799-automate-shopify-inventory-reordering-with-predictive-analytics-and-google-sheets/",
+        "type": "template",
+        "verified": true,
+        "notes": "Official n8n template for intelligent inventory management"
+      },
+      "alternativeResources": [
+        {
+          "title": "N8n Shopify Integration: Automate E-commerce Operations With Smart Workflows",
+          "url": "https://groovetechnology.com/blog/n8n/n8n-shopify-integration-automate-e-commerce-operations-with-smart-workflows/",
+          "type": "guide"
+        },
+        {
+          "title": "n8n for E-Commerce: Automate Shopify Inventory & Support with AI",
+          "url": "https://skywork.ai/blog/ai-agent/n8n-for-e-commerce-automate-shopify-inventory-support-with-ai/",
+          "type": "blog"
+        },
+        {
+          "title": "Shopify & WooCommerce inventory sync with Google Sheets alerts",
+          "url": "https://n8n.io/workflows/10356-shopify-and-woocommerce-inventory-sync-with-google-sheets-alerts/",
+          "type": "template"
+        }
+      ]
+    },
+    {
+      "category": "Tech",
+      "useCase": "Building autonomous AI agents and multi-agent workflows",
+      "resource": {
+        "title": "How to Build AI Agents with n8n (Codecademy)",
+        "url": "https://www.codecademy.com/article/build-ai-agents-with-n8n",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Official Codecademy tutorial for building AI agents"
+      },
+      "alternativeResources": [
+        {
+          "title": "From Solo Agent to AI Swarm: Orchestrating a Multi-Agent Workflow on n8n",
+          "url": "https://gaurav-kaushikgk88.medium.com/from-solo-agent-to-ai-swarm-orchestrating-a-multi-agent-workflow-on-n8n-803fa1ddff84",
+          "type": "blog"
+        },
+        {
+          "title": "How I Built a Multi-Agent AI Workflow in 10 Minutes with n8n",
+          "url": "https://medium.com/@yashrajpahwa/how-i-built-a-multi-agent-ai-workflow-in-10-minutes-with-n8n-db32b9faad4e",
+          "type": "blog"
+        },
+        {
+          "title": "N8N Full Tutorial - Building AI Agents in 2025 for Beginners (YouTube)",
+          "url": "https://www.classcentral.com/course/youtube-n8n-full-tutorial-building-ai-agents-in-2025-for-beginners-489930",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "category": "Marketing",
+      "useCase": "Automated YouTube content creation and video publishing pipeline",
+      "resource": {
+        "title": "Fully Automated AI Video Generation & Multi-Platform Publishing",
+        "url": "https://n8n.io/workflows/3442-fully-automated-ai-video-generation-and-multi-platform-publishing/",
+        "type": "template",
+        "verified": true,
+        "notes": "Official n8n template for automated video content"
+      },
+      "alternativeResources": [
+        {
+          "title": "How I 100% Automated Long Form Content with n8n - Free Template (Nate Herk)",
+          "url": "https://www.classcentral.com/course/youtube-how-i-100-automated-long-form-content-with-n8n-free-template-489596",
+          "type": "video"
+        },
+        {
+          "title": "How to Build a YouTube Automation Workflow with n8n and Veo3",
+          "url": "https://medium.com/@amitXD/how-to-build-a-youtube-automation-workflow-with-n8n-and-veo3-step-by-step-no-code-guide-60a27d786eb9",
+          "type": "blog"
+        }
+      ]
+    },
+    {
+      "category": "Operations",
+      "useCase": "Slack-based team notifications and smart chatbots with OpenAI",
+      "resource": {
+        "title": "Build a Smart Slack Chatbot with n8n + OpenAI (n8n Community)",
+        "url": "https://community.n8n.io/t/tutorial-build-a-smart-slack-chatbot-with-n8n-openai-full-step-by-step-walkthrough-free-workflow-template/183544",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Community tutorial with free workflow template"
+      },
+      "alternativeResources": [
+        {
+          "title": "Automate Slack Notifications with n8n in 30 Minutes",
+          "url": "https://medium.com/@sebatian.reid/automate-slack-notifications-with-n8n-in-30-minutes-welcome-to-your-beginner-friendly-guide-to-33835f87d5f8",
+          "type": "blog"
+        },
+        {
+          "title": "How to Connect Slack to N8N Workflows for Instant Automation",
+          "url": "https://asfandyarmalik.medium.com/how-to-connect-slack-to-n8n-workflows-for-instant-automation-step-by-step-guide-72b1a19f5624",
+          "type": "guide"
+        },
+        {
+          "title": "Daily task reminder system: Airtable to Slack automated notifications",
+          "url": "https://n8n.io/workflows/5672-daily-task-reminder-system-airtable-to-slack-automated-notifications/",
+          "type": "template"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "totalUseCases": 13,
+    "categories": ["Tech", "Operations", "Finance", "Marketing", "Admin", "Sales", "HR"],
+    "resourceTypes": {
+      "templates": 9,
+      "blogs": 15,
+      "tutorials": 5,
+      "guides": 6,
+      "videos": 3,
+      "repositories": 2
+    },
+    "notes": "All primary resources are real URLs from web search results. Official n8n templates (n8n.io/workflows/) are the most reliable. Medium articles and blog posts provide practical implementation details. Some resources may require Medium membership to access full content."
+  }
+}

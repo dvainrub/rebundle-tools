@@ -1,0 +1,224 @@
+{
+  "tool": "Genspark",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "department": "Marketing",
+      "useCase": "Generate visual market research and analysis reports for stakeholders",
+      "resource": {
+        "title": "Genspark AI: The Next Generation of Search, Research & Creative Tools (2026 Guide) - TechBullion",
+        "url": "https://techbullion.com/genspark-ai-the-next-generation-of-search-research-creative-tools-2026-guide/",
+        "type": "guide",
+        "verified": true
+      },
+      "notes": "Genspark creates comprehensive research reports called 'Sparkpages' that aggregate multiple sources into visual, shareable formats perfect for stakeholder presentations."
+    },
+    {
+      "department": "Operations",
+      "useCase": "Compare vendors and products with automatic comparison tables",
+      "resource": {
+        "title": "Top 5 Laptop Brands in 2025: Comprehensive Comparison - Genspark Sparkpage",
+        "url": "https://www.genspark.ai/spark/top-5-laptop-brands-in-2025-comprehensive-comparison/feef381c-69f0-41ee-a6da-a75dee7d460e",
+        "type": "example",
+        "verified": true
+      },
+      "notes": "Genspark automatically generates structured comparison tables (Sparkpages) for products and vendors, aggregating data from multiple sources."
+    },
+    {
+      "department": "HR",
+      "useCase": "Create guides synthesizing industry best practices for workforce optimization",
+      "resource": {
+        "title": "Empowering HR: Maximizing Organizational Effectiveness and Workforce Optimization - Genspark Sparkpage",
+        "url": "https://www.genspark.ai/spark/empowering-hr-maximizing-organizational-effectiveness-and-workforce-optimization/d81c99af-97e9-466e-9bb0-cd924463916f",
+        "type": "example",
+        "verified": true
+      },
+      "notes": "Real example of a Genspark Sparkpage covering HR best practices, organizational effectiveness, and workforce optimization strategies."
+    },
+    {
+      "department": "Tech",
+      "useCase": "Research tech stacks and tools with structured pros/cons comparisons",
+      "resource": {
+        "title": "GenSpark AI Browser: The All-in-One AI Platform That Replaces 10+ Tools (2025 Review)",
+        "url": "https://mejba.me/blog/genspark-ai-browser-comprehensive-review-2025",
+        "type": "blog",
+        "verified": true
+      },
+      "notes": "Comprehensive review showing how Genspark can aggregate multi-model AI responses and create structured comparisons of tools. Genspark includes AI Slides, AI Sheets, AI Docs, AI Developer Tools, AI Designer, and more."
+    },
+    {
+      "department": "Sales",
+      "useCase": "Automate lead generation and prospect research with one prompt",
+      "resource": {
+        "title": "This NEW AI Tool Automates Lead Gen & Data Analysis with ONE Prompt (Genspark.ai)",
+        "url": "https://dicloak.com/blog-detail/this-new-ai-tool-automates-lead-gen--data-analysis-with-one-prompt-gensparkai",
+        "type": "tutorial",
+        "verified": true
+      },
+      "notes": "Verified resource explaining how Genspark generates comprehensive lead lists with names, contact details, roles, businesses, lead scores, and personalized outreach templates from a single prompt."
+    },
+    {
+      "department": "General",
+      "useCase": "Create professional presentations and slide decks from prompts or PDFs",
+      "resource": {
+        "title": "AI Presentation Maker: 4 Methods to Create Stunning Slides with Genspark AI",
+        "url": "https://medium.com/@sasya87/ai-presentation-maker-4-methods-to-create-stunning-slides-with-genspark-ai-50c3e29461f9",
+        "type": "tutorial",
+        "verified": true
+      },
+      "notes": "Medium article covering 4 methods to create presentations with Genspark AI Slides feature. Also available on official Genspark: https://www.genspark.ai/ai_slides_intro"
+    },
+    {
+      "department": "General",
+      "useCase": "Transform data into insights using AI-powered spreadsheets",
+      "resource": {
+        "title": "Genspark AI Sheets: Transform Data into Insights in Minutes",
+        "url": "https://medium.com/the-ai-entrepreneurs/genspark-ai-sheets-transform-data-into-insights-in-minutes-6eec149d886d",
+        "type": "tutorial",
+        "verified": true
+      },
+      "notes": "Tutorial on using Genspark AI Sheets for data analysis, organization, and generating actionable insights from spreadsheet data."
+    },
+    {
+      "department": "General",
+      "useCase": "Plan travel itineraries with comprehensive destination research",
+      "resource": {
+        "title": "GenSpark AI vs Traditional Travel Agents",
+        "url": "https://danielmabe-editors.medium.com/genspark-ai-vs-traditional-travel-agents-c4004882387e",
+        "type": "blog",
+        "verified": true
+      },
+      "notes": "Article comparing Genspark AI to traditional travel agents. Example Sparkpages exist for travel planning: https://www.genspark.ai/spark/tokyo-family-adventure-a-4-day-itinerary/c05242ee-f2b3-3299-8ed1-1c41c10f7d74"
+    },
+    {
+      "department": "Tech",
+      "useCase": "Build no-code apps, websites, and tools with AI Developer",
+      "resource": {
+        "title": "Genspark AI Developer Tutorial: The No-Code App Builder That Actually Works",
+        "url": "https://medium.com/@julian.goldie/genspark-ai-developer-tutorial-the-no-code-app-builder-that-actually-works-982abd3fdf47",
+        "type": "tutorial",
+        "verified": true
+      },
+      "notes": "Julian Goldie's tutorial on using Genspark AI Developer to build websites, games, and lead gen tools with zero coding. Follow-up article: https://medium.com/@julian.goldie/genspark-ai-developer-2-0-build-a-real-mobile-app-with-just-one-prompt-04b73546fb43"
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Create AI videos and whiteboard animations for content marketing",
+      "resource": {
+        "title": "How To Make Whiteboard Animations For FREE With Genspark AI and Google AI Studio",
+        "url": "https://recapio.com/digest/how-to-make-whiteboard-animations-for-free-with-genspark-ai-and-google-ai-studio-by-wordsatscale",
+        "type": "tutorial",
+        "verified": true
+      },
+      "notes": "Tutorial transcript from WordsAtScale showing how to create whiteboard animations using Genspark AI combined with Google AI Studio."
+    },
+    {
+      "department": "General",
+      "useCase": "Automate browser tasks with Super Agent (phone calls, emails, bookings)",
+      "resource": {
+        "title": "Genspark AI Tutorial - Meet the AI Super Agent (Kevin Stratvert)",
+        "url": "http://kevinstratvert.com/2025/09/19/genspark-ai-tutorial-meet-the-ai-super-agent/",
+        "type": "video",
+        "verified": true
+      },
+      "notes": "Kevin Stratvert's tutorial introducing Genspark Super Agent capabilities including making phone calls, sending emails, and building slide decks automatically."
+    },
+    {
+      "department": "General",
+      "useCase": "Comprehensive beginner tutorial covering all Genspark features",
+      "resource": {
+        "title": "How I Use ChatGPT + GenSpark to Automate My Browser (Free Udemy Course)",
+        "url": "https://www.udemy.com/course/how-i-use-chatgpt-genspark-to-automate-my-browser/",
+        "type": "tutorial",
+        "verified": true
+      },
+      "notes": "Free Udemy course on combining ChatGPT with Genspark for browser automation workflows."
+    },
+    {
+      "department": "General",
+      "useCase": "Complete guide to Genspark AI features and capabilities",
+      "resource": {
+        "title": "Genspark AI Guide For 2025 - WordsAtScale",
+        "url": "https://wordsatscale.com/genspark-ai-guide/",
+        "type": "guide",
+        "verified": true
+      },
+      "notes": "Comprehensive guide covering all Genspark AI features including search, Sparkpages, Super Agent, and creative tools."
+    }
+  ],
+  "additionalResources": [
+    {
+      "title": "Tutorial Completo de Genspark AI | Guia para Principiantes (2025) - YouTube (Spanish)",
+      "url": "https://www.youtube.com/watch?v=uvKTePWf3wM",
+      "type": "video",
+      "language": "es"
+    },
+    {
+      "title": "Genspark AI Complete Guide (Udemy Course - Japanese)",
+      "url": "https://www.udemy.com/course/genspark_ai_agent/",
+      "type": "course",
+      "language": "ja"
+    },
+    {
+      "title": "Genspark and Its Alternatives: An In-Depth Analysis of AI Research Agents",
+      "url": "https://bytebridge.medium.com/genspark-and-its-alternatives-an-in-depth-analysis-of-ai-research-agents-d23feaaddc25",
+      "type": "blog"
+    },
+    {
+      "title": "Genspark's Deep Research Agent - Fireworks AI Blog",
+      "url": "https://fireworks.ai/blog/genspark",
+      "type": "blog"
+    },
+    {
+      "title": "Genspark vs Manus AI Comparison - QED42",
+      "url": "https://www.qed42.com/insights/genspark-super-agent-the-rise-of-next-generation-ai-assistants-and-how-it-compares-to-manus-ai",
+      "type": "blog"
+    },
+    {
+      "title": "VentureBeat: Genspark's Super Agent ups the ante in the general AI agent race",
+      "url": "https://venturebeat.com/ai/gensparks-super-agent-ups-the-ante-in-the-general-ai-agent-race",
+      "type": "news"
+    }
+  ],
+  "keyFeatures": [
+    "Sparkpages: AI-generated research reports that aggregate multiple sources",
+    "Super Agent: Autonomous task execution (calls, emails, bookings)",
+    "AI Slides: Presentation creation from prompts or PDFs",
+    "AI Sheets: Spreadsheet generation and data analysis",
+    "AI Docs: Document creation with multi-model synthesis",
+    "AI Developer: No-code app and website builder",
+    "AI Designer: Canva-like design interface",
+    "AI Image Studio: Image generation and editing",
+    "AI Video Tools: Video creation including Clip Genius",
+    "Multi-model aggregation: Queries multiple AI models and synthesizes best answers",
+    "Deep Research Mode: Comprehensive in-depth analysis",
+    "Autopilot Mode: Step-by-step automatic task execution"
+  ],
+  "originalUseCasesFromCatalog": {
+    "marketing": {
+      "original": "Generate visual market research for stakeholders",
+      "resourceFound": true,
+      "notes": "Multiple resources confirm this capability through Sparkpages feature"
+    },
+    "operations": {
+      "original": "Compare vendors with automatic comparison tables",
+      "resourceFound": true,
+      "notes": "Found real Sparkpage examples demonstrating product/vendor comparisons"
+    },
+    "hr": {
+      "original": "Create guides synthesizing industry best practices",
+      "resourceFound": true,
+      "notes": "Found actual HR-focused Sparkpage on workforce optimization best practices"
+    },
+    "tech": {
+      "original": "Research tech stacks with structured pros/cons",
+      "resourceFound": true,
+      "notes": "Comprehensive review confirms multi-model comparison capabilities"
+    },
+    "sales": {
+      "original": "Prospect research ready to present",
+      "resourceFound": true,
+      "notes": "Found specific tutorial on lead generation and prospect research automation"
+    }
+  }
+}

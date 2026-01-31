@@ -1,0 +1,245 @@
+{
+  "tool": "Perplexity AI",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "department": "Finance",
+      "useCase": "Investment research and stock analysis with real-time financial data, earnings summaries, and market insights",
+      "resource": {
+        "title": "Getting Started With Perplexity AI For Finance",
+        "url": "https://www.f9finance.com/perplexity-ai-for-finance/",
+        "type": "guide",
+        "verified": true
+      },
+      "alternativeResources": [
+        {
+          "title": "Perplexity Finance AI: The Future Of Investment Research?",
+          "url": "https://medium.com/work-smarter-not-harder/perplexity-finance-ai-the-future-of-investment-research-ai-tasks-automation-stock-screening-6ea18ce4f5bb",
+          "type": "blog"
+        },
+        {
+          "title": "Claude and Perplexity AI for Finance: All You Need to Know",
+          "url": "https://neurons-lab.com/article/claude-perplexity-for-finance/",
+          "type": "guide"
+        },
+        {
+          "title": "Answers for Every Investor (Official Perplexity Finance)",
+          "url": "https://www.perplexity.ai/hub/blog/answers-for-every-investor",
+          "type": "blog"
+        }
+      ]
+    },
+    {
+      "department": "Legal",
+      "useCase": "Legal research for case law, regulations, and compliance with cited sources",
+      "resource": {
+        "title": "Using Perplexity AI for Legal Research",
+        "url": "https://www.theaienterprise.io/p/using-perplexity-ai-for-legal-research",
+        "type": "guide",
+        "verified": true
+      },
+      "alternativeResources": [
+        {
+          "title": "Perplexity AI for Legal Research: Best Practices for a Beginner",
+          "url": "https://www.spellbook.legal/learn/perplexity-ai-legal-research",
+          "type": "tutorial"
+        },
+        {
+          "title": "Perplexity AI Legal Research Capabilities (and Limitations)",
+          "url": "https://www.legalfly.com/post/perplexity-ai-legal-research-capabilities-and-limitations",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Market research and competitive analysis with real-time data and cited sources",
+      "resource": {
+        "title": "Perplexity AI Market Research: A Proven 5-Step Guide",
+        "url": "https://digitalmarketingsage.in/perplexity-ai-market-research-a-proven-5-step-guide/",
+        "type": "guide",
+        "verified": true
+      },
+      "alternativeResources": [
+        {
+          "title": "5 Powerful Perplexity AI Marketing Applications You Need to Know",
+          "url": "https://www.singlegrain.com/marketing/5-powerful-perplexity-ai-marketing-applications-you-need-to-know/",
+          "type": "guide"
+        },
+        {
+          "title": "5 Creative Ways to Use Perplexity AI in Your Marketing Strategy",
+          "url": "https://ninepeaks.io/creative-ways-to-use-perplexity-ai-in-your-marketing-strategy",
+          "type": "blog"
+        },
+        {
+          "title": "Competitor Research with Perplexity",
+          "url": "https://medium.com/@chandraprakash.tiwari2025/competitor-research-with-perplexity-by-chandra-prakash-tiwari-roll-no-25461cn526-marketing-live-2edb8931f557",
+          "type": "tutorial"
+        }
+      ]
+    },
+    {
+      "department": "Sales",
+      "useCase": "Prospect and company research before sales meetings with up-to-date news and insights",
+      "resource": {
+        "title": "Using Perplexity AI for Market Research & Sales Success",
+        "url": "https://marketingguys.com/blog/effectively-use-perplexity-ai/",
+        "type": "guide",
+        "verified": true
+      },
+      "alternativeResources": [
+        {
+          "title": "Top 8 Perplexity AI Business Case Studies",
+          "url": "https://digitaldefynd.com/IQ/perplexity-ai-business-case-studies/",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "department": "HR",
+      "useCase": "Job search assistance and career research for candidates and recruiters",
+      "resource": {
+        "title": "Perplexity.ai: The Best New Tool for People Searching for Jobs",
+        "url": "https://www.crescentedgeconsulting.com/blog/perplexityai-the-best-new-tool-for-people-searching-for-jobs",
+        "type": "blog",
+        "verified": true
+      },
+      "note": "Limited HR-specific resources found. Perplexity is better suited for job search/career research than traditional HR benchmarking tasks."
+    },
+    {
+      "department": "Content/Marketing",
+      "useCase": "Content creation and article writing with research-backed information",
+      "resource": {
+        "title": "How I Use Perplexity AI to Write Articles - Step by Step",
+        "url": "https://medium.com/gigonomics/how-i-use-perplexity-ai-to-write-articles-step-by-step-b95338ceccff",
+        "type": "tutorial",
+        "verified": true
+      },
+      "alternativeResources": [
+        {
+          "title": "How to use Perplexity AI for writing and content creation",
+          "url": "https://www.geeky-gadgets.com/using-perplexity-ai-the-writing/",
+          "type": "guide"
+        },
+        {
+          "title": "Mastering Article Writing with Perplexity AI: A Comprehensive Guide",
+          "url": "https://www.aitoolgo.com/learning/detail/mastering-article-writing-with-perplexity-ai-a-comprehensive-guide",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "department": "Research/Academia",
+      "useCase": "Academic research and literature review with source citations",
+      "resource": {
+        "title": "10 Smart Ways to Use Perplexity AI Search for Academic Research",
+        "url": "https://aitoolsclub.com/10-smart-ways-to-use-perplexity-ai-search-for-academic-research/",
+        "type": "guide",
+        "verified": true
+      },
+      "alternativeResources": [
+        {
+          "title": "How to Use Perplexity AI: Build 3 Projects Step-by-Step (Codecademy)",
+          "url": "https://www.codecademy.com/article/how-to-use-perplexity-ai",
+          "type": "tutorial"
+        },
+        {
+          "title": "Academic Research Finder CLI - Perplexity Official Docs",
+          "url": "https://docs.perplexity.ai/cookbook/examples/research-finder/README",
+          "type": "tutorial"
+        }
+      ]
+    },
+    {
+      "department": "Business/All",
+      "useCase": "Deep research for comprehensive business analysis and due diligence",
+      "resource": {
+        "title": "Perplexity AI Deep Research: How It Works, Limitations, and Use Cases for Professionals",
+        "url": "https://www.datastudios.org/post/perplexity-ai-deep-research-how-it-works-limitations-and-use-cases-for-professionals",
+        "type": "guide",
+        "verified": true
+      },
+      "alternativeResources": [
+        {
+          "title": "Perplexity AI Deep Research Explained: Step-by-Step 2025 Guide",
+          "url": "https://sahanirakesh.medium.com/perplexity-ai-deep-research-detailed-explanation-guide-baf6fee43ce8",
+          "type": "tutorial"
+        },
+        {
+          "title": "Perplexity AI Review 2025: Best AI Research Tool Business",
+          "url": "https://inspiredshifter.com/perplexity-ai-review-2025/",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "department": "IP/Legal",
+      "useCase": "Patent search and intellectual property research",
+      "resource": {
+        "title": "Introducing Perplexity Patents: AI-Powered Patent Search for Everyone",
+        "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-patents",
+        "type": "blog",
+        "verified": true
+      },
+      "note": "Official Perplexity feature - dedicated patent search functionality"
+    },
+    {
+      "department": "Ecommerce/Procurement",
+      "useCase": "Product research and AI-powered shopping assistant",
+      "resource": {
+        "title": "Shop like a Pro - Perplexity Shopping",
+        "url": "https://www.perplexity.ai/hub/blog/shop-like-a-pro",
+        "type": "blog",
+        "verified": true
+      },
+      "note": "Official Perplexity feature for product research and shopping"
+    }
+  ],
+  "videoResources": [
+    {
+      "title": "How to Use Perplexity AI: The Underrated Search AI (Kevin Stratvert)",
+      "url": "https://www.classcentral.com/course/youtube-how-to-use-perplexity-ai-the-underrated-search-ai-435549",
+      "type": "video",
+      "platform": "YouTube/Class Central"
+    },
+    {
+      "title": "Mastering Perplexity: Your Guide to Effective AI Research",
+      "url": "https://docsbot.ai/tools/youtube-blog-post-generator/YoWdogtZRw8",
+      "type": "video",
+      "platform": "YouTube"
+    }
+  ],
+  "officialResources": [
+    {
+      "title": "Perplexity Enterprise for Finance",
+      "url": "https://www.perplexity.ai/enterprise/lp/finance",
+      "type": "official"
+    },
+    {
+      "title": "Perplexity Finance Hub",
+      "url": "https://www.perplexity.ai/finance/AI",
+      "type": "official"
+    }
+  ],
+  "summary": {
+    "strongUseCases": [
+      "Finance/Investment research - Multiple dedicated resources and official Perplexity Finance feature",
+      "Legal research - Well-documented with multiple guides from legal tech sources",
+      "Market research and competitor analysis - Strong marketing community adoption",
+      "Content creation with research - Popular workflow for writers",
+      "Academic/literature research - Multiple educational resources"
+    ],
+    "weakUseCases": [
+      "HR salary benchmarking - Limited specific resources found; searches return Perplexity company salaries instead",
+      "Traditional HR tasks - Better suited for job search than HR operations"
+    ],
+    "recommendations": {
+      "replaceHRSalaryBenchmarking": "Consider replacing with 'HR: Research industry trends, labor regulations, and candidate sourcing strategies' or 'Job seekers: Research companies, roles, and career paths'",
+      "addNewUseCases": [
+        "Research: Academic literature review with cited sources",
+        "Content: Write articles backed by real-time research",
+        "IP/Legal: Patent search and prior art research"
+      ]
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "tool": "Claude Co-Work",
+  "researchDate": "2026-01-31",
+  "summary": "Claude Code's background/async capabilities enable developers to run multiple tasks in parallel without blocking their terminal, leveraging subagents, git worktrees, headless mode, and notification systems.",
+  "useCases": [
+    {
+      "useCase": "Run multiple refactoring agents in parallel on different folders/components",
+      "description": "Spawn multiple Claude instances working simultaneously on different parts of a codebase (e.g., one on frontend, one on backend, one on tests) using git worktrees or containerized agents with file locking to prevent conflicts.",
+      "resource": {
+        "title": "Multi-Agent Orchestration: Running 10+ Claude Instances in Parallel (Part 3)",
+        "url": "https://dev.to/bredmond1019/multi-agent-orchestration-running-10-claude-instances-in-parallel-part-3-29da",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Demonstrates converting 12,000+ lines of class components to functional components in 2 hours with zero conflicts using parallel agents."
+      }
+    },
+    {
+      "useCase": "Automated security vulnerability scanning of entire codebase",
+      "description": "Run comprehensive security audits in the background that analyze code for SQL injection, XSS, authentication flaws, hardcoded secrets, and other vulnerabilities using AI-powered semantic analysis.",
+      "resource": {
+        "title": "Claude Code Security Review GitHub Action",
+        "url": "https://github.com/anthropics/claude-code-security-review",
+        "type": "tool",
+        "verified": true,
+        "notes": "Official Anthropic GitHub Action that analyzes PR diffs for security vulnerabilities with contextual AI-powered review."
+      }
+    },
+    {
+      "useCase": "Automated PR creation after completing code changes",
+      "description": "Automatically generate PR titles and descriptions from git diffs, create the PR via GitHub CLI, and optionally run in a continuous loop that monitors CI checks and merges on success.",
+      "resource": {
+        "title": "Auto-generate Pull Requests with Claude API and Shell Function",
+        "url": "https://dev.to/toyama0919/auto-generate-pull-requests-with-claude-api-and-shell-function-fp2",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Shell function git-pr-auto that generates PR title/description from diffs, supports multi-account GitHub setup."
+      }
+    },
+    {
+      "useCase": "Continuous automated development loop (create PR, wait for CI, merge)",
+      "description": "Run Claude Code in a persistent loop that creates branches, makes changes, opens PRs, monitors CI checks and reviews, then merges or discards based on results - ideal for test coverage expansion or large refactoring.",
+      "resource": {
+        "title": "Continuous Claude: Run Claude Code in a continuous loop, autonomously creating PRs",
+        "url": "https://github.com/AnandChowdhary/continuous-claude",
+        "type": "tool",
+        "verified": true,
+        "notes": "Uses shared markdown file for context persistence between iterations. Great for incremental test coverage improvement."
+      }
+    },
+    {
+      "useCase": "Background codebase analysis while working on other tasks",
+      "description": "Run security audits, performance profiling, code duplication analysis, or dependency compatibility assessments in background agents while continuing active development in the main terminal.",
+      "resource": {
+        "title": "Claude Code Background Agents Changed How I Ship Code",
+        "url": "https://mejba.me/blog/claude-code-async-background-agents-parallel-ai-development",
+        "type": "blog",
+        "verified": true,
+        "notes": "Details parallel UI theme development with 3 agents working on dark/light/adaptive themes simultaneously in separate git worktrees."
+      }
+    },
+    {
+      "useCase": "Spawn subagents for parallel task delegation",
+      "description": "Create specialized subagents with isolated context windows for code review, testing, documentation, or research - each with custom instructions and controlled tool access.",
+      "resource": {
+        "title": "A practical guide to subagents in Claude Code",
+        "url": "https://www.eesel.ai/blog/subagents-in-claude-code",
+        "type": "guide",
+        "verified": true,
+        "notes": "Covers isolated context, custom instructions, parallel execution for frontend/backend/database analysis."
+      }
+    },
+    {
+      "useCase": "Headless/programmatic execution for CI/CD pipelines",
+      "description": "Run Claude Code non-interactively with the -p flag for automation scripts, CI/CD pipelines, and batch processing - supports structured JSON output and auto-approval of specific tools.",
+      "resource": {
+        "title": "Run Claude Code programmatically - Claude Code Docs (Headless Mode)",
+        "url": "https://code.claude.com/docs/en/headless",
+        "type": "documentation",
+        "verified": true,
+        "notes": "Official docs covering -p flag, --allowedTools, --output-format json, and CI/CD integration patterns."
+      }
+    },
+    {
+      "useCase": "Parallel agent coordination with Claude Code Agent Farm",
+      "description": "Orchestrate multiple Claude Code agents for bug fixing, best practices implementation, and complex coordinated development using lock-based file claiming to prevent merge conflicts.",
+      "resource": {
+        "title": "Claude Code Agent Farm",
+        "url": "https://github.com/Dicklesworthstone/claude_code_agent_farm",
+        "type": "tool",
+        "verified": true,
+        "notes": "Supports 34 tech stacks, real-time monitoring dashboard, automatic agent restart, 20+ parallel sessions."
+      }
+    },
+    {
+      "useCase": "GitHub Actions integration for automated code review",
+      "description": "Integrate Claude Code into GitHub workflows to automatically review PRs, implement features from issue descriptions, and fix bugs with merge-ready pull requests.",
+      "resource": {
+        "title": "How to Use Claude Code with GitHub Actions",
+        "url": "https://apidog.com/blog/claude-code-github-actions/",
+        "type": "guide",
+        "verified": true,
+        "notes": "Covers @claude mentions for feature implementation, automated PR reviews, and custom tooling integration."
+      }
+    },
+    {
+      "useCase": "Receive notifications when background tasks complete or need input",
+      "description": "Configure directed notifications that group by project, take you directly to the relevant terminal pane, and persist until dismissed - enabling effective management of multiple concurrent Claude instances.",
+      "resource": {
+        "title": "Directed Notifications for Claude Code Async Programming",
+        "url": "https://www.joshbeckman.org/blog/practicing/directed-notifications-for-claude-code-async-programming",
+        "type": "blog",
+        "verified": true,
+        "notes": "Uses terminal-notifier with WezTerm, notifications grouped by project, click-to-navigate to specific session."
+      }
+    },
+    {
+      "useCase": "Git worktrees for parallel development with multiple Claude sessions",
+      "description": "Use git worktrees to maintain multiple copies of the same repository on different branches, each with its own Claude Code session working independently without interference.",
+      "resource": {
+        "title": "Parallel development with git worktree for Cursor & Claude Code",
+        "url": "https://engineering.zenity.io/p/parallel-development-with-git-worktree-for-cursor-claude-code",
+        "type": "guide",
+        "verified": true,
+        "notes": "Engineering blog from Zenity on using worktrees for concurrent feature development."
+      }
+    },
+    {
+      "useCase": "Automated test generation and execution with Playwright",
+      "description": "Have Claude autonomously write and execute custom Playwright automation for browser testing and validation, running tests in the background.",
+      "resource": {
+        "title": "Write automated tests with Claude Code using Playwright Agents",
+        "url": "https://shipyard.build/blog/playwright-agents-claude-code/",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Covers model-invoked Playwright skill where Claude autonomously writes and executes browser automation."
+      }
+    }
+  ],
+  "additionalResources": [
+    {
+      "title": "Claude Code Everything You Need to Know",
+      "url": "https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know",
+      "type": "guide",
+      "description": "Comprehensive repository covering setup, workflows, hooks, MCP servers, and BMAD method."
+    },
+    {
+      "title": "Claude for Code Security: Find & Fix Vulnerabilities",
+      "url": "https://www.arsturn.com/blog/claude-code-security-vulnerabilities-guide",
+      "type": "guide",
+      "description": "Guide on using Claude Code for vulnerability detection including SQL injection, XSS, auth flaws."
+    },
+    {
+      "title": "How to Automate Tasks with Claude Code Workflow for Developers",
+      "url": "https://www.sidetool.co/post/how-to-automate-tasks-with-claude-code-workflow-for-developers/",
+      "type": "tutorial",
+      "description": "General workflow automation patterns for developers using Claude Code."
+    },
+    {
+      "title": "tmux + Claude Code: The Perfect Terminal Workflow",
+      "url": "https://willness.dev/blog/tmux-claude-code-workflow",
+      "type": "blog",
+      "description": "Using tmux with Claude Code for continuous background workflows."
+    },
+    {
+      "title": "How Sub-Agents Work in Claude Code: A Complete Guide",
+      "url": "https://medium.com/@kinjal01radadiya/how-sub-agents-work-in-claude-code-a-complete-guide-bafc66bbaf70",
+      "type": "guide",
+      "description": "Complete guide to understanding and using subagents in Claude Code."
+    },
+    {
+      "title": "Claude Code Skill: Automated Test Generator",
+      "url": "https://mcpmarket.com/tools/skills/automated-test-generator",
+      "type": "skill",
+      "description": "MCP skill for automated test generation."
+    },
+    {
+      "title": "Claude Code Skill: Documentation Generator",
+      "url": "https://mcpmarket.com/tools/skills/documentation-generator",
+      "type": "skill",
+      "description": "MCP skill for generating API documentation and READMEs."
+    },
+    {
+      "title": "Claude Code Skill: Backend Migrations",
+      "url": "https://mcpmarket.com/ja/tools/skills/backend-migrations-2",
+      "type": "skill",
+      "description": "MCP skill for database schema migrations."
+    },
+    {
+      "title": "Claude Code Skill: Headless Mode CI/CD Integration",
+      "url": "https://mcpmarket.com/tools/skills/headless-mode-ci-cd-integration",
+      "type": "skill",
+      "description": "MCP skill for headless automation and CI/CD integration."
+    }
+  ],
+  "originalUseCasesMapping": {
+    "Execute database migrations while working on something else": {
+      "status": "covered_by_alternative",
+      "alternative": "Headless/programmatic execution for CI/CD pipelines",
+      "resource": "https://code.claude.com/docs/en/headless",
+      "notes": "MCP skill exists for database migrations: https://mcpmarket.com/ja/tools/skills/backend-migrations-2"
+    },
+    "Generate complete project documentation asynchronously": {
+      "status": "covered_by_alternative",
+      "alternative": "Spawn subagents for parallel task delegation",
+      "resource": "https://www.eesel.ai/blog/subagents-in-claude-code",
+      "notes": "MCP skill exists for documentation generation: https://mcpmarket.com/tools/skills/documentation-generator"
+    },
+    "Refactor multiple files in parallel without blocking terminal": {
+      "status": "verified",
+      "resource": "https://dev.to/bredmond1019/multi-agent-orchestration-running-10-claude-instances-in-parallel-part-3-29da",
+      "notes": "Example shows 12,000+ lines refactored in 2 hours with zero conflicts."
+    },
+    "Run complete test suites and receive results when done": {
+      "status": "covered_by_alternative",
+      "alternative": "Automated test generation and execution with Playwright + Notifications",
+      "resource": "https://shipyard.build/blog/playwright-agents-claude-code/",
+      "notes": "Also see notifications: https://www.joshbeckman.org/blog/practicing/directed-notifications-for-claude-code-async-programming"
+    },
+    "Create PRs automatically after completing code changes": {
+      "status": "verified",
+      "resource": "https://dev.to/toyama0919/auto-generate-pull-requests-with-claude-api-and-shell-function-fp2",
+      "notes": "Also see continuous loop: https://github.com/AnandChowdhary/continuous-claude"
+    },
+    "Analyze entire codebase to detect vulnerabilities": {
+      "status": "verified",
+      "resource": "https://github.com/anthropics/claude-code-security-review",
+      "notes": "Official Anthropic GitHub Action for security analysis."
+    }
+  }
+}

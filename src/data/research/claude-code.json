@@ -1,0 +1,319 @@
+{
+  "tool": "Claude Code",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "useCase": "Refactor legacy code and modernize architectures automatically",
+      "resource": {
+        "title": "The Ultimate Code Modernization & Refactoring Prompt for Your Subagent in Claude Code",
+        "url": "https://alirezarezvani.medium.com/the-ultimate-code-modernization-refactoring-prompt-for-your-subagent-in-claude-code-codex-cli-or-d9f9a417eed3",
+        "type": "blog",
+        "verified": true,
+        "notes": "Provides a detailed refactoring prompt template for Claude Code subagents. Also covered in eesel.ai's git workflows guide which mentions using 'plan mode' for legacy code refactoring."
+      },
+      "alternativeResources": [
+        {
+          "title": "A Practical Guide to Automating Git Workflows with Claude Code",
+          "url": "https://www.eesel.ai/blog/git-workflows-claude-code",
+          "type": "guide",
+          "verified": true,
+          "notes": "Covers legacy code refactoring using plan mode to analyze large files, create detailed refactoring strategies, and execute changes incrementally with test verification"
+        }
+      ]
+    },
+    {
+      "useCase": "Implement features describing requirements in natural language",
+      "resource": {
+        "title": "Claude Code Tutorial for Beginners - Complete Guide to AI-Powered Development (Kevin Stratvert)",
+        "url": "https://www.youtube.com/watch?v=6q8joS_592k",
+        "type": "video",
+        "verified": true,
+        "notes": "Comprehensive beginner tutorial showing how to build applications by describing requirements in natural language"
+      },
+      "alternativeResources": [
+        {
+          "title": "20 Tips to Master Claude Code in 35 Minutes - Build a Real App (Peter Yang)",
+          "url": "https://www.classcentral.com/course/youtube-full-tutorial-20-tips-to-master-claude-code-in-35-minutes-build-a-real-app-489217",
+          "type": "video",
+          "verified": true,
+          "notes": "35-minute tutorial with 20 practical tips for building real applications with Claude Code"
+        },
+        {
+          "title": "Complete Guide to Claude Code: Install, Build, and Test a Full Application",
+          "url": "https://muneebsa.medium.com/complete-guide-to-claude-code-install-build-and-test-a-full-application-994a45c10609",
+          "type": "blog",
+          "verified": true,
+          "notes": "Step-by-step guide for building complete applications from scratch"
+        },
+        {
+          "title": "How to Build an AI App Without Writing Code: A Beginner's Guide to Claude Code",
+          "url": "https://www.implicator.ai/how-to-build-an-ai-app-without-writing-code-a-beginners-guide-to-claude-code/",
+          "type": "guide",
+          "verified": true,
+          "notes": "Beginner-focused guide for non-coders building apps with natural language"
+        }
+      ]
+    },
+    {
+      "useCase": "Debug complex errors analyzing logs and stack traces",
+      "resource": {
+        "title": "50 Claude Code Prompts That Actually Fix Bugs, Refactor Messes, and Ship PRs",
+        "url": "https://sider.ai/blog/ai-tools/claude-code-prompts-that-actually-fix-bugs-refactor-messes-and-ship-prs",
+        "type": "guide",
+        "verified": true,
+        "notes": "Comprehensive collection of debugging prompts including error analysis and bug fixing patterns"
+      },
+      "alternativeResources": [
+        {
+          "title": "Claude Code Best Practices (Anthropic Official)",
+          "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+          "type": "guide",
+          "verified": true,
+          "notes": "Official Anthropic engineering best practices for Claude Code including debugging workflows"
+        },
+        {
+          "title": "9 Ways Claude Code Helps Me with Testing and Debugging (Like a Pro Tester)",
+          "url": "https://medium.com/@joe.njenga/9-ways-claude-code-helps-me-with-testing-and-debugging-like-a-pro-tester-69c8776282ab",
+          "type": "blog",
+          "verified": true,
+          "notes": "Practical examples of debugging workflows with Claude Code"
+        }
+      ]
+    },
+    {
+      "useCase": "Create unit and integration tests for existing code",
+      "resource": {
+        "title": "Create Reliable Unit Tests with Claude Code",
+        "url": "https://dev.to/alfredoperez/create-reliable-unit-tests-with-claude-code-4e8p",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Detailed guide on creating testing knowledge bases (testing-core.md) to teach Claude Code your team's testing standards. Covers custom agents and slash commands for test generation."
+      },
+      "alternativeResources": [
+        {
+          "title": "Universal Test Generator Skill for Claude Code",
+          "url": "https://github.com/mkdirrobert/test-generator",
+          "type": "tool",
+          "verified": true,
+          "notes": "Self-learning test generation skill supporting 9 programming languages"
+        },
+        {
+          "title": "Create Reliable Unit Tests with Claude Code (Medium/ngconf)",
+          "url": "https://medium.com/ngconf/create-reliable-unit-tests-with-claude-code-9147d050d557",
+          "type": "blog",
+          "verified": true,
+          "notes": "Same content as dev.to article, focuses on behavior-driven testing with BDD naming conventions"
+        }
+      ]
+    },
+    {
+      "useCase": "Automatic code reviews with improvement suggestions",
+      "resource": {
+        "title": "Claude Code Review Action (Multi-Agent PR Review System)",
+        "url": "https://github.com/owengretzinger/claude-code-review-action",
+        "type": "tool",
+        "verified": true,
+        "notes": "Multi-agent GitHub Action that automatically reviews PRs with inline comments. Uses parallel agents: 2 Sonnet for coding standards, 2 Opus for bugs/security. Includes validation layer to reduce false positives."
+      },
+      "alternativeResources": [
+        {
+          "title": "Automating GitHub Pull Request Reviews with Claude Code",
+          "url": "https://medium.com/@techofhp/automating-github-pull-request-reviews-with-claude-code-b56b824844ef",
+          "type": "blog",
+          "verified": true,
+          "notes": "Step-by-step guide for setting up automated PR reviews"
+        },
+        {
+          "title": "How Claude Code Can Supercharge Your Pull-Request Review Process",
+          "url": "https://rajuhemanth456.medium.com/how-claude-code-can-supercharge-your-pull-request-review-process-b43aa322c061",
+          "type": "blog",
+          "verified": true,
+          "notes": "Practical guide on using Claude Code for PR reviews"
+        }
+      ]
+    },
+    {
+      "useCase": "Migrate projects between frameworks or update dependencies",
+      "resource": {
+        "title": "Using Claude to Migrate to a Newer Version of Node",
+        "url": "https://medium.com/@mol_96553/using-claude-to-migrate-to-a-newer-version-of-node-6e0d7f44143e",
+        "type": "blog",
+        "verified": true,
+        "notes": "Real-world example of using Claude Code for Node.js version migration"
+      },
+      "alternativeResources": [
+        {
+          "title": "Dependency Upgrade & Framework Migration Claude Code Skill",
+          "url": "https://mcpmarket.com/tools/skills/dependency-upgrade-framework-migration",
+          "type": "tool",
+          "verified": true,
+          "notes": "Specialized Claude Code skill for dependency upgrades and framework migrations"
+        },
+        {
+          "title": "From Lovable to Claude Code: The Migration You Didn't Know You Needed",
+          "url": "https://medium.com/@rentierdigital/from-lovable-to-claude-code-the-migration-you-didnt-know-you-needed-but-your-codebase-did-cb45f96dbfd4",
+          "type": "blog",
+          "verified": true,
+          "notes": "Case study of migrating from another AI tool to Claude Code"
+        }
+      ]
+    },
+    {
+      "useCase": "Security audits and vulnerability scanning",
+      "resource": {
+        "title": "Claude Code Security Review (Anthropic Official GitHub Action)",
+        "url": "https://github.com/anthropics/claude-code-security-review",
+        "type": "tool",
+        "verified": true,
+        "notes": "Official Anthropic GitHub Action for AI-powered security reviews. Detects injection attacks, auth flaws, data exposure, hardcoded secrets, XSS, and more. Posts findings as PR comments."
+      },
+      "alternativeResources": [
+        {
+          "title": "Automate Security Reviews with Claude Code (Claude.com Blog)",
+          "url": "https://claude.com/blog/automate-security-reviews-with-claude-code",
+          "type": "blog",
+          "verified": true,
+          "notes": "Official Anthropic blog post on security automation"
+        },
+        {
+          "title": "PHP Security Audit Skill for Claude Code",
+          "url": "https://github.com/netresearch/security-audit-skill",
+          "type": "tool",
+          "verified": true,
+          "notes": "Specialized skill for PHP security audits with OWASP patterns and vulnerability detection"
+        }
+      ]
+    },
+    {
+      "useCase": "Generate SQL queries and design database schemas",
+      "resource": {
+        "title": "How to Generate SQL Queries with AI: Step-by-Step Guide Using Claude Code and DBHub",
+        "url": "https://dev.to/deployhq/how-to-generate-sql-queries-with-ai-step-by-step-guide-using-claude-code-and-dbhub-422f",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Comprehensive guide on using DBHub MCP server with Claude Code for database exploration, SQL generation, and schema design. Includes safety features like read-only mode for production."
+      },
+      "alternativeResources": [
+        {
+          "title": "Database Schema Designer Claude Code Skill",
+          "url": "https://mcpmarket.com/tools/skills/database-schema-designer",
+          "type": "tool",
+          "verified": true,
+          "notes": "Specialized skill for SQL and NoSQL database schema design"
+        }
+      ]
+    },
+    {
+      "useCase": "Automate git workflows and smart commits",
+      "resource": {
+        "title": "Auto-Commit with a Custom Slash Command in Claude Code",
+        "url": "https://en.bioerrorlog.work/entry/git-commit-with-claude-code-custom-slash-command",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Shows how to create custom slash commands for automated git commits with AI-generated messages"
+      },
+      "alternativeResources": [
+        {
+          "title": "smart-commit: AI-powered git commits using Claude Code CLI",
+          "url": "https://gist.github.com/HelgeSverre/cbe562e7af74c2222afadbfa00c91ca9",
+          "type": "tool",
+          "verified": true,
+          "notes": "GitHub Gist with smart commit implementation for Claude Code"
+        },
+        {
+          "title": "Complete Guide to Setting Up Git Flow in Claude Code",
+          "url": "https://medium.com/@dan.avila7/complete-guide-to-setting-up-git-flow-in-claude-code-616477941f78",
+          "type": "guide",
+          "verified": true,
+          "notes": "Comprehensive setup guide for git flow automation"
+        },
+        {
+          "title": "A Practical Guide to Automating Git Workflows with Claude Code",
+          "url": "https://www.eesel.ai/blog/git-workflows-claude-code",
+          "type": "guide",
+          "verified": true,
+          "notes": "Covers CLAUDE.md configuration, custom slash commands, git worktrees for parallel development, and bug-to-PR pipelines"
+        }
+      ]
+    },
+    {
+      "useCase": "Build full-stack applications with specialized agents",
+      "resource": {
+        "title": "Claude Code Advanced Guide: 14 Full-Stack Examples",
+        "url": "https://github.com/rmn1978/claude-code-advanced-guide",
+        "type": "guide",
+        "verified": true,
+        "notes": "Complete toolkit with 14 production-ready examples including chat apps, video streaming, NFT marketplace, social media. Includes 13 specialized agents for Next.js, Nuxt, Django, FastAPI, Express."
+      },
+      "alternativeResources": [
+        {
+          "title": "Claude Code + Supabase Integration: Complete Guide",
+          "url": "https://medium.com/@dan.avila7/claude-code-supabase-integration-complete-guide-with-agents-commands-and-mcp-427613d9051e",
+          "type": "guide",
+          "verified": true,
+          "notes": "Full-stack integration guide with Supabase backend"
+        }
+      ]
+    }
+  ],
+  "comprehensiveGuides": [
+    {
+      "title": "The Complete Claude Code CLI Guide (Auto-Updated)",
+      "url": "https://github.com/Cranot/claude-code-guide",
+      "type": "guide",
+      "verified": true,
+      "notes": "Comprehensive guide covering installation, CLI commands, tools system, skills, hooks, MCP integration, and sub-agents. Auto-updated every 2 days."
+    },
+    {
+      "title": "Claude Code: Everything You Need to Know",
+      "url": "https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know",
+      "type": "guide",
+      "verified": true,
+      "notes": "All-in-one guide covering prompt engineering, workflows, BMAD method, MCP servers, and real-world examples"
+    },
+    {
+      "title": "Awesome Claude Code (Curated Resources)",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "type": "list",
+      "verified": true,
+      "notes": "Curated list of skills, hooks, slash commands, agent orchestrators, and plugins"
+    },
+    {
+      "title": "Claude Code Best Practices (Anthropic Official)",
+      "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+      "type": "guide",
+      "verified": true,
+      "notes": "Official engineering best practices from Anthropic"
+    }
+  ],
+  "videoTutorials": [
+    {
+      "title": "Claude Code Tutorial for Beginners (Kevin Stratvert)",
+      "url": "https://www.youtube.com/watch?v=6q8joS_592k",
+      "type": "video",
+      "verified": true,
+      "notes": "Complete beginner's guide to AI-powered development"
+    },
+    {
+      "title": "Claude Code for Non-Coders: Complete Beginner's Guide",
+      "url": "https://www.youtube.com/watch?v=S5ULIoThOIM",
+      "type": "video",
+      "verified": true,
+      "notes": "Designed for non-technical users getting started with Claude Code"
+    },
+    {
+      "title": "20 Tips to Master Claude Code in 35 Minutes (Peter Yang)",
+      "url": "https://www.classcentral.com/course/youtube-full-tutorial-20-tips-to-master-claude-code-in-35-minutes-build-a-real-app-489217",
+      "type": "video",
+      "verified": true,
+      "notes": "35-minute tutorial with 20 practical tips for building real applications"
+    },
+    {
+      "title": "Claude Code Tutorial: Build a YouTube Research Agent",
+      "url": "https://creatoreconomy.so/p/claude-code-tutorial-build-a-youtube-research-agent-in-15-min",
+      "type": "video",
+      "verified": true,
+      "notes": "15-minute tutorial building a practical YouTube research agent with slash commands"
+    }
+  ]
+}

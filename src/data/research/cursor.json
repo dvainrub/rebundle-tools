@@ -1,0 +1,178 @@
+{
+  "tool": "Cursor",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "useCase": "Tech: New feature development understanding project context",
+      "description": "Use Cursor's codebase indexing and chat to understand existing code structure before building new features",
+      "resource": {
+        "title": "DataCamp: Cursor AI - A Guide With 10 Practical Examples",
+        "url": "https://www.datacamp.com/tutorial/cursor-ai-code-editor",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Comprehensive tutorial covering codebase navigation and context-aware coding"
+      }
+    },
+    {
+      "useCase": "Tech: Refactor legacy code maintaining functionality",
+      "description": "Use Cursor to analyze and refactor legacy code while preserving behavior",
+      "resource": {
+        "title": "Fireup.pro: 6 Ways to Speed Up Code Refactoring with Cursor AI",
+        "url": "https://fireup.pro/blog/6-ways-to-speed-up-code-refactoring-with-cursor-ai",
+        "type": "guide",
+        "verified": true,
+        "notes": "Detailed guide on 6 specific refactoring techniques using Cursor AI"
+      }
+    },
+    {
+      "useCase": "Tech: Debugging and identifying issues with codebase context",
+      "description": "Use Cursor's debugging features to identify and fix bugs using full codebase understanding",
+      "resource": {
+        "title": "KodeKloud: Demo Debugging with AI",
+        "url": "https://notes.kodekloud.com/docs/Cursor-AI/Inline-Editing-and-Debugging/Demo-Debugging-with-AI",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Step-by-step debugging demonstration using Cursor AI's inline editing"
+      }
+    },
+    {
+      "useCase": "Tech: Onboarding - new developers explore codebase via chat",
+      "description": "New developers can ask questions about the codebase and get instant explanations",
+      "resource": {
+        "title": "Monday.com: Cursor AI Integration for Developers - The Ultimate 2026 Guide",
+        "url": "https://monday.com/blog/rnd/cursor-ai-integration/",
+        "type": "guide",
+        "verified": true,
+        "notes": "Covers onboarding workflows and codebase exploration features"
+      }
+    },
+    {
+      "useCase": "Tech: Automatic unit test generation",
+      "description": "Generate unit tests automatically based on existing code",
+      "resource": {
+        "title": "Lilys.ai: Write Your Unit Tests with Cursor AI",
+        "url": "https://lilys.ai/en/notes/cursor-ai-20251026/write-unit-tests-cursor-ai",
+        "type": "guide",
+        "verified": true,
+        "notes": "Guide specifically focused on automated unit test generation workflow"
+      }
+    },
+    {
+      "useCase": "Product/Tech: Rapid MVP prototyping with assisted generation",
+      "description": "Quickly build MVPs and prototypes using Cursor Composer for multi-file generation",
+      "resource": {
+        "title": "Medium: How I Use Cursor + AI to Rapid-Build MVPs Without Losing the Plot",
+        "url": "https://medium.com/@agi_brad/how-i-use-cursor-ai-to-rapid-build-mvps-without-losing-the-plot-b32ed06868fb",
+        "type": "blog",
+        "verified": true,
+        "notes": "Real-world experience building MVPs with Cursor, includes practical workflow tips"
+      }
+    },
+    {
+      "useCase": "Tech: Automated code review and PR workflow",
+      "description": "Use Cursor with GitHub MCP to automate code review processes",
+      "resource": {
+        "title": "Medium: Supercharge Your Code Review Process with Cursor and GitHub MCP",
+        "url": "https://medium.com/ni-tech-talk/supercharge-your-code-review-process-with-cursor-and-github-mcp-c55b7b1ddc91",
+        "type": "blog",
+        "verified": true,
+        "notes": "Integrating Cursor with GitHub for streamlined code reviews"
+      }
+    },
+    {
+      "useCase": "Tech: Full-stack app development with AI assistance",
+      "description": "Build complete applications from scratch using Cursor Composer",
+      "resource": {
+        "title": "Prototypr: What's Cursor Composer? How to Build Full Apps with AI",
+        "url": "https://prototypr.io/post/cursor-composer-cmdi",
+        "type": "tutorial",
+        "verified": true,
+        "notes": "Explains Cursor Composer's multi-file generation for building complete apps"
+      }
+    },
+    {
+      "useCase": "Tech: Understanding and navigating large codebases",
+      "description": "Use codebase indexing to understand how Cursor analyzes entire projects",
+      "resource": {
+        "title": "Medium: I Reverse-Engineered Cursor, This Is How It Understands Your Entire Codebase",
+        "url": "https://medium.com/@praveenrajagopal45/i-reverse-engineered-cursor-this-is-how-it-understands-your-entire-codebase-5457890c676a",
+        "type": "blog",
+        "verified": true,
+        "notes": "Technical deep-dive into how Cursor indexes and understands codebases"
+      }
+    },
+    {
+      "useCase": "Tech: Autonomous coding with AI agents",
+      "description": "Set up Cursor for autonomous code generation using agent mode and AGENTS.md",
+      "resource": {
+        "title": "Medium: How I Made Cursor Autonomous - AGENTS.md and the Art of AI Instruction",
+        "url": "https://medium.com/@gopikrish3004/how-i-made-cursor-autonomous-agents-md-and-the-art-of-ai-instruction-e8bdd7562442",
+        "type": "blog",
+        "verified": true,
+        "notes": "Guide to configuring Cursor for autonomous coding workflows"
+      }
+    }
+  ],
+  "additionalResources": [
+    {
+      "title": "Real Python: Tips for Using the AI Coding Editor Cursor",
+      "url": "https://realpython.com/courses/tips-using-ai-coding-editor-cursor/",
+      "type": "video",
+      "notes": "Video course with practical tips for Python developers"
+    },
+    {
+      "title": "Tech With Tim: Cursor Tutorial for Beginners - AI-Powered Code Editor",
+      "url": "https://www.youtube.com/watch?v=gqUQbjsYZLQ",
+      "type": "video",
+      "notes": "Beginner-friendly YouTube tutorial"
+    },
+    {
+      "title": "Intellipaat: Complete Cursor AI Tutorial",
+      "url": "https://www.youtube.com/watch?v=nIK2UxECBi0",
+      "type": "video",
+      "notes": "Comprehensive video tutorial on YouTube"
+    },
+    {
+      "title": "Sidetool: How To Use Cursor For Efficient Code Review And Debugging",
+      "url": "https://www.sidetool.co/post/how-to-use-cursor-for-efficient-code-review-and-debugging/",
+      "type": "guide",
+      "notes": "In-depth guide on debugging and code review workflows"
+    },
+    {
+      "title": "GeeksforGeeks: Cursor AI - How to Use with Examples",
+      "url": "https://www.geeksforgeeks.org/blogs/how-to-use-cursor-ai-with-examples/",
+      "type": "tutorial",
+      "notes": "Tutorial with practical coding examples"
+    },
+    {
+      "title": "Medium: How Top 1% Developers Use Cursor AI - Complete Guide to 10x Productivity",
+      "url": "https://weber-stephen.medium.com/how-top-1-developers-use-cursor-ai-a-complete-guide-to-10x-your-coding-productivity-a0316bdb108a",
+      "type": "blog",
+      "notes": "Advanced tips from experienced developers"
+    },
+    {
+      "title": "Shadhin Lab: The Ultimate Guide to Using Cursor AI for Faster Development in 2025",
+      "url": "https://shadhinlab.com/how-to-use-cursor-ai/",
+      "type": "guide",
+      "notes": "Comprehensive guide covering all major features"
+    },
+    {
+      "title": "Udemy: The Complete AI Coding Course (2025) - Cursor, Claude Code",
+      "url": "https://www.udemy.com/course/the-complete-ai-coding-course-2025-cursor-ai-v0-vercel/",
+      "type": "course",
+      "notes": "Paid course covering Cursor alongside other AI coding tools"
+    },
+    {
+      "title": "WeareBrain: How we build apps with AI - V0 + Cursor 2.0",
+      "url": "https://wearebrain.com/blog/building-an-app-with-ai-v0-cursor-ai/",
+      "type": "blog",
+      "notes": "Real engineering team experience building apps with Cursor"
+    },
+    {
+      "title": "Medium: Cursor Agent - 10 Pro Tips to Supercharge Your Coding Workflow",
+      "url": "https://medium.com/@raksbisht/cursor-agent-10-pro-tips-to-supercharge-your-coding-workflow-21f537fc0616",
+      "type": "blog",
+      "notes": "Pro tips for maximizing agent mode productivity"
+    }
+  ]
+}

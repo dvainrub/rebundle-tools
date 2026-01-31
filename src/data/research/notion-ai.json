@@ -1,0 +1,353 @@
+{
+  "tool": "Notion AI",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "department": "Finance",
+      "useCase": "Summarize financial reports and documentation for presentations",
+      "resource": {
+        "title": "How Notion AI Can Help in Financial Documentation: The Ultimate 2025 Guide",
+        "url": "https://circuitintellect.com/notion-ai-can-help-in-financial-documentation/",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Finance",
+      "useCase": "Build budget tracking systems with AI-powered insights",
+      "resource": {
+        "title": "How to Build a Simple Budget Tracking System in Notion (That Actually Works)",
+        "url": "https://medium.com/@LearnChangeDo/how-to-build-a-simple-budget-tracking-system-in-notion-that-actually-works-0f2df5f62e1e",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "HR",
+      "useCase": "Create job descriptions and manage HR workflows",
+      "resource": {
+        "title": "Notion for HR Professionals: Ultimate Guide (2024)",
+        "url": "https://www.landmarklabs.co/blog/notion-for-hr-professionals-ultimate-guide-2024",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "HR",
+      "useCase": "Streamline employee onboarding with AI-powered documentation",
+      "resource": {
+        "title": "Notion's Solution for Faster Employee Onboarding",
+        "url": "https://www.notion.com/use-case/employee-onboarding",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Generate content drafts and brainstorm campaign ideas",
+      "resource": {
+        "title": "How marketing and sales teams can enhance creativity and productivity with Notion AI",
+        "url": "https://www.notion.com/es-es/help/guides/how-marketing-and-sales-teams-can-enhance-creativity-and-productivity-with",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Create blog posts and content quickly with AI assistance",
+      "resource": {
+        "title": "Write blog posts in 10 seconds with Notion AI",
+        "url": "https://www.whalesync.com/blog/write-blogs-posts-in-10-seconds-with-notion-ai",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Translate marketing materials for multilingual teams",
+      "resource": {
+        "title": "5 Smart Ways to Use Notion AI for Translation and Interpreting Prep",
+        "url": "https://www.techforword.com/blog/notion-ai-translation-interpreting-prep",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Brainstorm ideas and overcome creative blocks",
+      "resource": {
+        "title": "A practical guide to Notion AI brainstorming",
+        "url": "https://www.eesel.ai/blog/notion-ai-brainstorming",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Document code, APIs, and technical processes",
+      "resource": {
+        "title": "Notion For API Documentation: Ultimate Guide (2024)",
+        "url": "https://www.landmarklabs.co/blog/notion-for-api-documentation",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Use engineering tech spec and RFC templates with AI",
+      "resource": {
+        "title": "Best Engineering Tech Spec Templates from Notion",
+        "url": "https://www.notion.com/templates/category/engineering-tech-spec",
+        "type": "template",
+        "verified": true
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Build AI-driven task and project management systems",
+      "resource": {
+        "title": "Build an AI-Driven Task System in Notion",
+        "url": "https://medium.com/@theBotGroup/build-an-ai-driven-task-system-in-notion-767358995f67",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Create SOPs with AI-generated prompts and templates",
+      "resource": {
+        "title": "AI Prompts for Notion AI: SOPs, Meeting Notes & Knowledge Bases (2026 Guide)",
+        "url": "https://gptprompts.ai/ai-prompts-notion-ai",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Generate meeting notes with AI summaries and action items",
+      "resource": {
+        "title": "Use Notion AI to Generate Accurate Meeting Summaries",
+        "url": "https://tactiq.io/learn/use-notion-ai-to-generate-accurate-meeting-summaries",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Automate workflows with Notion AI multi-step automation",
+      "resource": {
+        "title": "Notion AI Workspace: From AI Meeting Notes to Multi Step Automation (2025)",
+        "url": "https://windowsforum.com/threads/notion-ai-workspace-from-ai-meeting-notes-to-multi-step-automation-2025.385309/",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Automate entire workflows with step-by-step AI guidance",
+      "resource": {
+        "title": "How to Automate Your Entire Workflow with Notion AI - Step-by-Step Guide",
+        "url": "https://medium.com/@saadatali.sayed/how-to-automate-your-entire-workflow-with-notion-ai-step-by-step-guide-67d46e288001",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Summarize long documents with action items and key takeaways",
+      "resource": {
+        "title": "How to Use Notion AI to Summarize Long Documents with Action-Items & Key Takeaways",
+        "url": "https://sider.ai/blog/ai-tools/how-to-use-notion-ai-to-summarize-long-documents-with-action-items-key-takeaways",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Edit, improve writing, and change tone professionally",
+      "resource": {
+        "title": "Edit, Improve, and Change Tone - Notion AI Course",
+        "url": "https://www.futurepedia.io/courses/notion-ai/lessons/editing-and-reviewing-spelling-and-grammar-improve-changing-tone",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Use AI autofill to analyze and enrich database entries",
+      "resource": {
+        "title": "Notion AI Database Autofill: Complete Guide [2024]",
+        "url": "https://www.landmarklabs.co/notion-tutorials/notion-ai-database-autofill",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Surface insights from databases with AI prompts",
+      "resource": {
+        "title": "5 AI prompts to surface fresh insights from your databases",
+        "url": "https://www.notion.com/help/guides/5-ai-prompts-to-surface-fresh-insights-from-your-databases",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Build a knowledge hub for team Q&A and documentation",
+      "resource": {
+        "title": "A practical guide to the Notion AI knowledge hub",
+        "url": "https://www.eesel.ai/blog/notion-ai-knowledge-hub",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Organize everyday life and personal productivity with AI",
+      "resource": {
+        "title": "Organize your everyday life with Notion AI",
+        "url": "https://www.notion.com/help/guides/organize-your-everyday-life-with-notion-ai",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Write better notes and docs with AI assistance",
+      "resource": {
+        "title": "Use Notion AI to write better, more efficient notes and docs",
+        "url": "https://www.notion.com/help/guides/notion-ai-for-docs",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Complete guide to all Notion AI features and capabilities",
+      "resource": {
+        "title": "Everything you can do with Notion AI",
+        "url": "https://www.notion.com/help/guides/everything-you-can-do-with-notion-ai",
+        "type": "guide",
+        "verified": true
+      }
+    }
+  ],
+  "comprehensiveTutorials": [
+    {
+      "title": "Notion AI: 14 Use Cases to Save You 20+ Hours Per Week",
+      "url": "https://matthiasfrank.de/en/notion-ai/",
+      "type": "blog",
+      "description": "Detailed guide with 14 practical Notion AI use cases including prompts"
+    },
+    {
+      "title": "Notion AI is Here: 10 Ways to Use This Powerful New Tool",
+      "url": "https://thomasjfrank.com/notion-ai-guide/",
+      "type": "blog",
+      "description": "Thomas Frank's comprehensive guide to 10 Notion AI use cases"
+    },
+    {
+      "title": "Notion AI Features: 9 Ways to Boost Your Productivity",
+      "url": "https://thedigitalprojectmanager.com/productivity/notion-ai-features/",
+      "type": "blog",
+      "description": "9 productivity-focused Notion AI features"
+    },
+    {
+      "title": "Notion AI Features & Capabilities You Should Know in 2025",
+      "url": "https://kipwise.com/blog/notion-ai-features-capabilities",
+      "type": "blog",
+      "description": "Comprehensive overview of Notion AI features"
+    }
+  ],
+  "videoResources": [
+    {
+      "title": "Notion AI is AMAZING - How to use Notion AI: Tutorial & Examples",
+      "url": "https://www.youtube.com/watch?v=sBkYPri_-vU",
+      "type": "video",
+      "description": "YouTube tutorial covering Notion AI basics with examples"
+    },
+    {
+      "title": "Notion AI: Full Guide for Beginners (2024 Notion AI Tutorial)",
+      "url": "https://www.youtube.com/watch?v=87h-xfX1jGU",
+      "type": "video",
+      "description": "Beginner-friendly full guide to Notion AI"
+    },
+    {
+      "title": "NOTION AI: 14 Real-Life Use Cases That Don't Suck (with prompts)",
+      "url": "https://www.youtube.com/watch?v=7N5cP5TOU40",
+      "type": "video",
+      "description": "14 practical use cases with actual prompts demonstrated"
+    },
+    {
+      "title": "7 Mind-Blowing Notion AI Tips and Tricks",
+      "url": "https://www.youtube.com/watch?v=xNmUR0P6464",
+      "type": "video",
+      "description": "Advanced tips and tricks for Notion AI"
+    },
+    {
+      "title": "Notion AI Tutorial: Is It Really Worth It? (2025)",
+      "url": "https://www.youtube.com/watch?v=SnbMRRZ2_Ag",
+      "type": "video",
+      "description": "2025 review and tutorial evaluating Notion AI value"
+    }
+  ],
+  "officialNotionGuides": [
+    {
+      "title": "Everything you can do with Notion AI",
+      "url": "https://www.notion.com/help/guides/everything-you-can-do-with-notion-ai",
+      "type": "guide"
+    },
+    {
+      "title": "How marketing and sales teams can enhance creativity and productivity with Notion AI",
+      "url": "https://www.notion.com/es-es/help/guides/how-marketing-and-sales-teams-can-enhance-creativity-and-productivity-with",
+      "type": "guide"
+    },
+    {
+      "title": "Use Notion AI to write better, more efficient notes and docs",
+      "url": "https://www.notion.com/help/guides/notion-ai-for-docs",
+      "type": "guide"
+    },
+    {
+      "title": "Organize your everyday life with Notion AI",
+      "url": "https://www.notion.com/help/guides/organize-your-everyday-life-with-notion-ai",
+      "type": "guide"
+    },
+    {
+      "title": "5 AI prompts to surface fresh insights from your databases",
+      "url": "https://www.notion.com/help/guides/5-ai-prompts-to-surface-fresh-insights-from-your-databases",
+      "type": "guide"
+    },
+    {
+      "title": "Notion AI for databases (Autofill)",
+      "url": "https://notion.com/help/autofill",
+      "type": "documentation"
+    },
+    {
+      "title": "Notion's Solution for Faster Employee Onboarding",
+      "url": "https://www.notion.com/use-case/employee-onboarding",
+      "type": "use-case"
+    },
+    {
+      "title": "Best Engineering Tech Spec Templates from Notion",
+      "url": "https://www.notion.com/templates/category/engineering-tech-spec",
+      "type": "templates"
+    }
+  ],
+  "reviews": [
+    {
+      "title": "A practical Notion AI review for 2025: Is it right for your team?",
+      "url": "https://www.eesel.ai/blog/notion-ai",
+      "type": "review"
+    },
+    {
+      "title": "Notion AI Review 2025: I Tested It Daily For 6 Months (Honest Results)",
+      "url": "https://medium.com/@hevitech.ai/notion-ai-review-2025-i-tested-it-daily-for-6-months-honest-results-hevitech-ai-d7d3f2bd9747",
+      "type": "review"
+    },
+    {
+      "title": "Notion AI Review 2025: Features, Pricing & AI Agents Guide",
+      "url": "https://max-productive.ai/ai-tools/notion-ai/",
+      "type": "review"
+    }
+  ]
+}

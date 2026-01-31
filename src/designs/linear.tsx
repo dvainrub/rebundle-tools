@@ -26,7 +26,7 @@ import {
   type SkillLevel,
 } from "@/data/tools";
 import { ui } from "@/data/translations";
-import { resourceMapping, type ResourceLink, type NewUseCase } from "@/data/resourceMapping";
+import { resourceMapping, type ResourceLink } from "@/data/resourceMapping";
 import { useLang } from "@/lib/useLang";
 import { type Lang } from "@/lib/i18n";
 
@@ -96,7 +96,6 @@ function ToolCard({ tool, lang, showResources }: { tool: Tool; lang: Lang; showR
   // Get resource mapping for this tool
   const toolResources = resourceMapping[tool.id];
   const existingResources = toolResources?.existingUseCases || [];
-  const newUseCases = toolResources?.newUseCases || [];
 
   return (
     <motion.div
@@ -250,31 +249,6 @@ function ToolCard({ tool, lang, showResources }: { tool: Tool; lang: Lang; showR
                       </li>
                     );
                   })}
-                  {/* New use cases from research - only show when resources toggle is ON */}
-                  {showResources && newUseCases.map((newCase, idx) => (
-                    <li key={`new-${idx}`} className="flex items-start justify-between gap-2 text-sm text-gray-600">
-                      <div className="flex items-start gap-2.5">
-                        <span className="inline-flex items-center rounded bg-violet-100 px-1.5 py-0.5 text-[10px] font-semibold text-violet-700">
-                          {ui.footer.newBadge[lang]}
-                        </span>
-                        <span>{newCase.useCase[lang]}</span>
-                      </div>
-                      <div className="flex flex-shrink-0 gap-1">
-                        {newCase.resources.map((r, i) => (
-                          <a
-                            key={i}
-                            href={r.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title={r.title}
-                            className="text-violet-500 hover:text-violet-700 transition-colors"
-                          >
-                            <ExternalLink className="h-4 w-4" />
-                          </a>
-                        ))}
-                      </div>
-                    </li>
-                  ))}
                 </ul>
               </div>
 
@@ -334,7 +308,7 @@ function FilterPill({
   return (
     <button
       onClick={onClick}
-      className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-sm font-medium transition-all ${
+      className={`inline-flex items-center gap-1 sm:gap-1.5 rounded-lg border px-2 py-1 sm:px-3 sm:py-1.5 text-xs sm:text-sm font-medium transition-all ${
         active
           ? "border-violet-300 bg-violet-100 text-violet-700 shadow-sm"
           : "border-gray-200 bg-white text-gray-600 hover:border-violet-200 hover:bg-violet-50 hover:text-violet-700"

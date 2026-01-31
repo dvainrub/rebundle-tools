@@ -1,5 +1,5 @@
-// Resource mapping linking existing use cases to researched resources
-// Read from tmp/research/*.json
+// Resource mapping linking use cases to researched resources
+// Research files stored in src/data/research/*.json
 
 export interface ResourceLink {
   title: string;
@@ -7,17 +7,9 @@ export interface ResourceLink {
   type: string;
 }
 
-export interface NewUseCase {
-  department: string;
-  useCase: { en: string; es: string };
-  resources: ResourceLink[];
-}
-
 export interface ToolResourceMapping {
   // Index matches casosDeUso array position - null means no resource found
   existingUseCases: (ResourceLink[] | null)[];
-  // New use cases from research not in catalog
-  newUseCases: NewUseCase[];
 }
 
 export const resourceMapping: Record<string, ToolResourceMapping> = {
@@ -36,13 +28,8 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "Automated Lead Generation System", url: "https://www.classcentral.com/course/youtube-steal-this-powerful-make-com-lead-generation-system-489808", type: "video" }],
       // 5: Marketing: Segment audiences and campaigns
       [{ title: "Email Marketing Segmentation", url: "https://www.make.com/en/how-to-guides/how-to-automate-data-collection-part-two-email-marketing-segmentation", type: "tutorial" }],
-    ],
-    newUseCases: [
-      {
-        department: "Marketing",
-        useCase: { en: "Marketing: AI-powered campaign automation with GPT integration", es: "Marketing: Automatizacion de campanas con IA y GPT" },
-        resources: [{ title: "Blend Make.com with GPTs for Campaign Automation", url: "https://www.growth-rocket.com/blog/how-to-blend-make-com-with-gpts-for-end-to-end-campaign-automation/", type: "blog" }],
-      },
+      // 6: Marketing: AI-powered campaign automation with GPT
+      [{ title: "Blend Make.com with GPTs for Campaign Automation", url: "https://www.growth-rocket.com/blog/how-to-blend-make-com-with-gpts-for-end-to-end-campaign-automation/", type: "blog" }],
     ],
   },
 
@@ -58,13 +45,8 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "Calendly HubSpot Integration", url: "https://zapier.com/apps/calendly/integrations/hubspot", type: "template" }],
       // 4: Marketing: Sync subscribers Mailchimp/Sheets
       [{ title: "Google Sheets Mailchimp Integration", url: "https://zapier.com/apps/google-sheets/integrations/mailchimp", type: "template" }],
-    ],
-    newUseCases: [
-      {
-        department: "Marketing",
-        useCase: { en: "Marketing: AI social media posting across platforms", es: "Marketing: Publicacion automatica en redes con IA" },
-        resources: [{ title: "AI Social Media Posting Automation", url: "https://zapier.com/automation/social-media-automation/ai-social-media-posting", type: "guide" }],
-      },
+      // 5: Marketing: AI social media posting
+      [{ title: "AI Social Media Posting Automation", url: "https://zapier.com/automation/social-media-automation/ai-social-media-posting", type: "guide" }],
     ],
   },
 
@@ -83,7 +65,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 5: Tech: Build autonomous AI agents with multi-agent orchestration
       [{ title: "How to Build AI Agents with n8n", url: "https://www.codecademy.com/article/build-ai-agents-with-n8n", type: "tutorial" }],
     ],
-    newUseCases: [],
   },
 
   // CONOCIMIENTO
@@ -101,13 +82,8 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "Perplexity for Market Research & Sales", url: "https://marketingguys.com/blog/effectively-use-perplexity-ai/", type: "guide" }],
       // 5: Legal: Patent search with Perplexity Patents
       [{ title: "Introducing Perplexity Patents", url: "https://www.perplexity.ai/hub/blog/introducing-perplexity-patents", type: "blog" }],
-    ],
-    newUseCases: [
-      {
-        department: "Content",
-        useCase: { en: "Content: Write articles backed by real-time research", es: "Contenido: Escribir articulos con investigacion en tiempo real" },
-        resources: [{ title: "How I Use Perplexity AI to Write Articles", url: "https://medium.com/gigonomics/how-i-use-perplexity-ai-to-write-articles-step-by-step-b95338ceccff", type: "tutorial" }],
-      },
+      // 6: Content: Write articles with real-time research
+      [{ title: "How I Use Perplexity AI to Write Articles", url: "https://medium.com/gigonomics/how-i-use-perplexity-ai-to-write-articles-step-by-step-b95338ceccff", type: "tutorial" }],
     ],
   },
 
@@ -126,7 +102,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 5: All: Create AI podcasts about documents
       [{ title: "Create Custom Educational Podcasts with NotebookLM", url: "https://www.kdnuggets.com/how-to-create-custom-educational-podcasts-with-notebooklm", type: "tutorial" }],
     ],
-    newUseCases: [],
   },
 
   "notion-ai": {
@@ -142,7 +117,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 4: Operations: Create automated SOPs
       [{ title: "AI Prompts for Notion AI: SOPs Guide", url: "https://gptprompts.ai/ai-prompts-notion-ai", type: "guide" }],
     ],
-    newUseCases: [],
   },
 
   rows: {
@@ -157,13 +131,8 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "BigQuery Integration", url: "https://rows.com/integrations/bigquery", type: "guide" }],
       // 4: Operations: Consolidate data from sources
       [{ title: "How to import data from Notion", url: "https://rows.com/blog/post/how-to-import-data-from-spreadsheets-in-notion", type: "blog" }],
-    ],
-    newUseCases: [
-      {
-        department: "All",
-        useCase: { en: "All: Use AI to analyze, classify, and extract data from spreadsheets", es: "Todos: Usar IA para analizar, clasificar y extraer datos de hojas de calculo" },
-        resources: [{ title: "How to use Rows AI functions", url: "https://rows.com/docs/using-rowsai", type: "tutorial" }],
-      },
+      // 5: All: Use AI to analyze, classify, and extract data
+      [{ title: "How to use Rows AI functions", url: "https://rows.com/docs/using-rowsai", type: "tutorial" }],
     ],
   },
 
@@ -183,7 +152,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 5: All: Automate browser tasks with Super Agent
       [{ title: "Genspark AI Tutorial - Meet the AI Super Agent", url: "http://kevinstratvert.com/2025/09/19/genspark-ai-tutorial-meet-the-ai-super-agent/", type: "video" }],
     ],
-    newUseCases: [],
   },
 
   manus: {
@@ -201,7 +169,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 5: Tech: Build full-stack websites without coding
       [{ title: "AI Website Builder - Build Full-Stack Web Apps", url: "https://manus.im/features/webapp", type: "guide" }],
     ],
-    newUseCases: [],
   },
 
   // CREATIVIDAD
@@ -220,7 +187,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 5: Operations: Visual SOPs/manuals
       [{ title: "Ultimate SOP Creation Framework", url: "https://gamma.app/docs/The-Ultimate-SOP-Creation-Framework-10-8h8vxihm881vunp", type: "guide" }],
     ],
-    newUseCases: [],
   },
 
   canva: {
@@ -238,7 +204,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 5: Operations: Process diagrams, checklists
       [{ title: "Flowchart Design Tips", url: "https://www.canva.com/learn/flowchart-design-tips/", type: "guide" }],
     ],
-    newUseCases: [],
   },
 
   heygen: {
@@ -256,7 +221,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 5: Social: Platform-optimized videos for LinkedIn, Instagram, TikTok
       [{ title: "Create Social Media Videos with HeyGen", url: "https://community.heygen.com/public/resources/how-to-create-social-media-videos-using-heygen", type: "guide" }],
     ],
-    newUseCases: [],
   },
 
   elevenlabs: {
@@ -274,7 +238,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 5: Localization: Dub videos into 29+ languages
       [{ title: "ElevenLabs Dubbing Studio", url: "https://www.maginative.com/article/elevenlabs-unveils-dubbing-studio-professional-video-localization/", type: "blog" }],
     ],
-    newUseCases: [],
   },
 
   // NO-CODE
@@ -293,7 +256,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 5: Tech: Convert Figma designs into full-stack applications
       [{ title: "Turn Figma Designs into Full Stack Apps", url: "https://www.builder.io/blog/lovable-builder", type: "tutorial" }],
     ],
-    newUseCases: [],
   },
 
   base44: {
@@ -308,13 +270,8 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "E-commerce and Retail Apps", url: "https://base44.com/use-cases/categories/ecommerce-retail", type: "guide" }],
       // 4: Legal: Contract database with reminders
       [{ title: "Scheduling Tasks in Your App", url: "https://docs.base44.com/Building-your-app/Scheduling-tasks", type: "guide" }],
-    ],
-    newUseCases: [
-      {
-        department: "Tech",
-        useCase: { en: "Tech: Combine Base44 with n8n for AI automation workflows", es: "Tech: Combinar Base44 con n8n para flujos de automatizacion IA" },
-        resources: [{ title: "AI Automation with Base44 and n8n", url: "https://www.aifire.co/p/a-no-code-guide-to-ai-automation-with-base44-and-n8n", type: "guide" }],
-      },
+      // 5: Tech: Combine Base44 with n8n for AI automation
+      [{ title: "AI Automation with Base44 and n8n", url: "https://www.aifire.co/p/a-no-code-guide-to-ai-automation-with-base44-and-n8n", type: "guide" }],
     ],
   },
 
@@ -336,7 +293,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 6: Tech: Security audits and vulnerability scanning with GitHub Actions
       [{ title: "Claude Code Security Review Action", url: "https://github.com/anthropics/claude-code-security-review", type: "tool" }],
     ],
-    newUseCases: [],
   },
 
   cursor: {
@@ -356,7 +312,6 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       // 6: Tech: Automated code review and PR workflow with GitHub MCP
       [{ title: "Supercharge Code Review with Cursor and GitHub MCP", url: "https://medium.com/ni-tech-talk/supercharge-your-code-review-process-with-cursor-and-github-mcp-c55b7b1ddc91", type: "blog" }],
     ],
-    newUseCases: [],
   },
 
   "claude-cowork": {
@@ -373,13 +328,8 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "Auto-generate PRs with Claude API", url: "https://dev.to/toyama0919/auto-generate-pull-requests-with-claude-api-and-shell-function-fp2", type: "tutorial" }],
       // 5: Analyze codebase for vulnerabilities
       [{ title: "Claude Code Security Review", url: "https://github.com/anthropics/claude-code-security-review", type: "tool" }],
-    ],
-    newUseCases: [
-      {
-        department: "Tech",
-        useCase: { en: "Tech: Continuous automated development loop (create PR, wait CI, merge)", es: "Tech: Ciclo de desarrollo automatizado continuo (crear PR, esperar CI, merge)" },
-        resources: [{ title: "Continuous Claude - Autonomous PR Loop", url: "https://github.com/AnandChowdhary/continuous-claude", type: "tool" }],
-      },
+      // 6: Tech: Continuous automated development loop
+      [{ title: "Continuous Claude - Autonomous PR Loop", url: "https://github.com/AnandChowdhary/continuous-claude", type: "tool" }],
     ],
   },
 };

@@ -1,0 +1,352 @@
+{
+  "tool": "Zapier",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "department": "Finance",
+      "useCase": "Automate Stripe payment notifications to Slack, email, or accounting tools",
+      "resource": {
+        "title": "Get email notifications for Stripe charges - Zapier",
+        "url": "https://zapier.com/apps/email/integrations/stripe/3368/get-email-notifications-for-stripe-charges",
+        "type": "template",
+        "verified": true
+      }
+    },
+    {
+      "department": "Finance",
+      "useCase": "Create QuickBooks invoices automatically from Shopify or Stripe orders",
+      "resource": {
+        "title": "Automate invoices with QuickBooks Online and Zapier",
+        "url": "https://zapier.com/blog/automate-quickbooks-invoices-with-zapier/",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Finance",
+      "useCase": "Set up sales receipts via Stripe and QuickBooks using Zapier",
+      "resource": {
+        "title": "How to Set Up Sales Receipt via Stripe and QuickBooks using Zapier - ZenMaid",
+        "url": "https://www.zenmaid.com/answers/en/articles/3632603-how-to-set-up-sales-receipt-via-stripe-and-quickbooks-using-zapier",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "Finance",
+      "useCase": "Automate invoice processing and expense tracking with AI",
+      "resource": {
+        "title": "Invoice Automation - Zapier",
+        "url": "https://zapier.com/automation/invoice-automation",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Admin",
+      "useCase": "Create Asana tasks from labeled Gmail emails automatically",
+      "resource": {
+        "title": "Create Asana tasks for labeled Gmail emails [Business Gmail Accounts Only]",
+        "url": "https://zapier.com/apps/asana/integrations/gmail/9207/create-asana-tasks-for-labeled-gmail-emails-business-gmail-accounts-only",
+        "type": "template",
+        "verified": true
+      }
+    },
+    {
+      "department": "Admin",
+      "useCase": "Turn starred emails into Asana tasks with AI assistance",
+      "resource": {
+        "title": "Email assistant: Turn starred emails into Asana tasks with AI",
+        "url": "https://editor.vercel.zapier.com/templates/details/email-assistant-turn-starred-emails-into-asana-tasks-with-ai",
+        "type": "template",
+        "verified": true
+      }
+    },
+    {
+      "department": "Admin",
+      "useCase": "Integrate Monday.com project boards for task management",
+      "resource": {
+        "title": "How to get started with monday.com on Zapier",
+        "url": "https://help.zapier.com/hc/en-us/articles/8496052585485-How-to-get-started-with-monday-com-on-Zapier",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Admin",
+      "useCase": "Parse emails automatically and extract data to spreadsheets or CRM",
+      "resource": {
+        "title": "Email Parsing Automation - Zapier",
+        "url": "https://zapier.com/automation/email-automation/email-parsing",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "HR",
+      "useCase": "Automate employee onboarding workflows across HR tools",
+      "resource": {
+        "title": "Human Resources AI automation solutions - Zapier",
+        "url": "https://zapier.com/solutions/hr",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "HR",
+      "useCase": "Automate BambooHR for time-off requests, onboarding, and payroll",
+      "resource": {
+        "title": "4 ways to automate BambooHR - Zapier",
+        "url": "https://zapier.com/blog/automate-bamboohr/",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "HR",
+      "useCase": "AI-powered job recruitment automation from requisition to candidate scoring",
+      "resource": {
+        "title": "AI Job Recruitment Automation - Zapier",
+        "url": "https://zapier.com/automation/job-automation/ai-job-recruitment",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "HR",
+      "useCase": "AI employee onboarding with automatic scheduling and Slack reminders",
+      "resource": {
+        "title": "AI Employee Onboarding Automation - Zapier",
+        "url": "https://zapier.com/automation/employee-automation/ai-employee-onboarding",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Sales",
+      "useCase": "Create HubSpot contacts and deals from new Calendly invitees",
+      "resource": {
+        "title": "Calendly HubSpot Integration - Quick Connect - Zapier",
+        "url": "https://zapier.com/apps/calendly/integrations/hubspot",
+        "type": "template",
+        "verified": true
+      }
+    },
+    {
+      "department": "Sales",
+      "useCase": "Automate LinkedIn Lead Gen Forms to CRM systems",
+      "resource": {
+        "title": "How to automate LinkedIn Ads - Zapier",
+        "url": "https://zapier.com/blog/what-are-linkedin-lead-gen-forms/",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Sales",
+      "useCase": "Automate lead capture and routing to the right sales rep",
+      "resource": {
+        "title": "CRM automation guide - Zapier",
+        "url": "https://zapier.com/blog/crm-automation/",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Sales",
+      "useCase": "Get Slack notifications for new Salesforce opportunities",
+      "resource": {
+        "title": "How to Get Slack Notifications for New Salesforce Opportunities Using Zapier",
+        "url": "https://medium.com/@theashleygross/how-to-get-slack-notifications-for-new-salesforce-opportunities-using-zapier-6ec33bf5cd47",
+        "type": "blog",
+        "verified": true
+      }
+    },
+    {
+      "department": "Sales",
+      "useCase": "Create DocuSign signature requests from leads or forms automatically",
+      "resource": {
+        "title": "5 ways to automate DocuSign - Zapier",
+        "url": "https://zapier.com/blog/automate-docusign/",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Sync Mailchimp subscribers with Google Sheets bidirectionally",
+      "resource": {
+        "title": "Google Sheets Mailchimp Integration - Quick Connect - Zapier",
+        "url": "https://zapier.com/apps/google-sheets/integrations/mailchimp",
+        "type": "template",
+        "verified": true
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Automate email marketing with welcome emails, drip campaigns, and lead nurturing",
+      "resource": {
+        "title": "A guide to email marketing automation - Zapier",
+        "url": "https://zapier.com/blog/automate-email-marketing/",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Connect Facebook Lead Ads to your CRM automatically",
+      "resource": {
+        "title": "How to get started with Facebook Lead Ads on Zapier",
+        "url": "https://help.zapier.com/hc/en-us/articles/8496061306253-How-to-get-started-with-Facebook-Lead-Ads-on-Zapier",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Automate social media posting across platforms with AI",
+      "resource": {
+        "title": "AI Social Media Posting Automation - Zapier",
+        "url": "https://zapier.com/automation/social-media-automation/ai-social-media-posting",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Automate WooCommerce orders to spreadsheets, mailing lists, and invoices",
+      "resource": {
+        "title": "7 ways to automate WooCommerce - Zapier",
+        "url": "https://zapier.com/blog/automate-woocommerce/",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Connect Trello to calendars, email, and chat for project management",
+      "resource": {
+        "title": "7 ways to automate Trello - Zapier",
+        "url": "https://zapier.com/blog/trello-integrations/",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Sync Intercom and Zendesk for unified customer support tickets",
+      "resource": {
+        "title": "Intercom Zendesk Integration - Quick Connect - Zapier",
+        "url": "https://zapier.com/apps/intercom/integrations/zendesk",
+        "type": "template",
+        "verified": true
+      }
+    },
+    {
+      "department": "Operations",
+      "useCase": "Create support tickets from user interactions in communication platforms",
+      "resource": {
+        "title": "Automated Support Tickets - Zapier",
+        "url": "https://zapier.com/automation/use-case/create-support-tickets-from-user-interactions-in-communication-platforms",
+        "type": "guide",
+        "verified": true
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Get Slack notifications for new video call recordings",
+      "resource": {
+        "title": "Zapier tutorial: Get Slack notifications for new video call recordings - Daily.co",
+        "url": "https://www.daily.co/blog/zapier-tutorial-get-slack-notifications-for-new-video-call-recordings/",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "Tech",
+      "useCase": "Notify team in Slack about Zapier errors with details and context",
+      "resource": {
+        "title": "Notify team in Slack about Zapier errors with details and context",
+        "url": "https://zapier.com/templates/details/e80976fd20e04dba3ec6e315007a7f87b8017774ca2fdf6b21927d8532f6c405",
+        "type": "template",
+        "verified": true
+      }
+    },
+    {
+      "department": "General",
+      "useCase": "Beginner's guide to Zapier automation in 10 easy steps",
+      "resource": {
+        "title": "Learn Zapier in 10 easy steps - crash course! - NoCode MBA",
+        "url": "https://www.nocode.mba/articles/learn-zapier-in-10-easy-steps-crash-course",
+        "type": "tutorial",
+        "verified": true
+      }
+    },
+    {
+      "department": "General",
+      "useCase": "Full Zapier tutorial for beginners (YouTube video)",
+      "resource": {
+        "title": "Full Zapier Tutorial for Beginners 2024 - Step by Step - The Social Guide",
+        "url": "https://www.classcentral.com/course/youtube-full-zapier-tutorial-for-beginners-2024-step-by-step-336747",
+        "type": "video",
+        "verified": true
+      }
+    },
+    {
+      "department": "General",
+      "useCase": "Zapier AI Tutorial for beginners - automation made simple (YouTube)",
+      "resource": {
+        "title": "Zapier AI Tutorial - Automating Workflows with No-Code Tools - Kevin Stratvert",
+        "url": "https://www.classcentral.com/course/youtube-zapier-ai-tutorial-for-beginners-automation-made-simple-413173",
+        "type": "video",
+        "verified": true
+      }
+    },
+    {
+      "department": "General",
+      "useCase": "How five businesses use Zapier Interfaces to scale smarter",
+      "resource": {
+        "title": "How five businesses use Zapier Interfaces to scale smarter - Zapier Blog",
+        "url": "https://zapier.com/blog/zapier-interfaces-customer-roundup/",
+        "type": "blog",
+        "verified": true
+      }
+    }
+  ],
+  "originalUseCasesMapping": {
+    "Finance: Notify Stripe/QuickBooks payments and send to accounting": {
+      "foundResources": true,
+      "resources": [
+        "https://zapier.com/apps/email/integrations/stripe/3368/get-email-notifications-for-stripe-charges",
+        "https://zapier.com/blog/automate-quickbooks-invoices-with-zapier/",
+        "https://www.zenmaid.com/answers/en/articles/3632603-how-to-set-up-sales-receipt-via-stripe-and-quickbooks-using-zapier"
+      ]
+    },
+    "Admin: Create tasks in Asana/Monday from incoming emails": {
+      "foundResources": true,
+      "resources": [
+        "https://zapier.com/apps/asana/integrations/gmail/9207/create-asana-tasks-for-labeled-gmail-emails-business-gmail-accounts-only",
+        "https://editor.vercel.zapier.com/templates/details/email-assistant-turn-starred-emails-into-asana-tasks-with-ai"
+      ]
+    },
+    "HR: Post job offers to multiple platforms": {
+      "foundResources": true,
+      "resources": [
+        "https://zapier.com/automation/job-automation/ai-job-recruitment",
+        "https://zapier.com/solutions/hr"
+      ]
+    },
+    "Sales: Add Calendly contacts to HubSpot automatically": {
+      "foundResources": true,
+      "resources": [
+        "https://zapier.com/apps/calendly/integrations/hubspot"
+      ]
+    },
+    "Marketing: Sync subscribers between Mailchimp and Google Sheets": {
+      "foundResources": true,
+      "resources": [
+        "https://zapier.com/apps/google-sheets/integrations/mailchimp"
+      ]
+    }
+  }
+}

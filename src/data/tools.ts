@@ -90,6 +90,7 @@ export const tools: Tool[] = [
         "Tech: Sync Jira tickets with Slack, monitoring alerts",
         "Sales: Enrich leads with LinkedIn/Clearbit data to CRM",
         "Marketing: Segment audiences and trigger personalized campaigns",
+        "Marketing: AI-powered campaign automation with GPT integration",
       ],
       es: [
         "Finanzas: Conciliación bancaria automática cruzando extractos con facturas",
@@ -98,6 +99,7 @@ export const tools: Tool[] = [
         "Tech: Sincronizar tickets Jira con Slack, alertas de monitoreo",
         "Ventas: Enriquecer leads con datos de LinkedIn/Clearbit al CRM",
         "Marketing: Segmentar audiencias y activar campañas personalizadas",
+        "Marketing: Automatización de campañas con IA e integración GPT",
       ],
     },
     porQueEsBueno: {
@@ -144,6 +146,7 @@ export const tools: Tool[] = [
         "HR: Post job offers to multiple platforms",
         "Sales: Add Calendly contacts to HubSpot automatically",
         "Marketing: Sync subscribers between Mailchimp and Google Sheets",
+        "Marketing: AI social media posting across platforms",
       ],
       es: [
         "Finanzas: Notificar pagos de Stripe/QuickBooks y enviar a contabilidad",
@@ -151,6 +154,7 @@ export const tools: Tool[] = [
         "RRHH: Publicar ofertas de empleo en múltiples plataformas",
         "Ventas: Añadir contactos de Calendly a HubSpot automáticamente",
         "Marketing: Sincronizar suscriptores entre Mailchimp y Google Sheets",
+        "Marketing: Publicación automática en redes sociales con IA",
       ],
     },
     porQueEsBueno: {
@@ -254,6 +258,7 @@ export const tools: Tool[] = [
         "Marketing: Analyze market trends in real-time",
         "Sales: Research prospects and news before meetings",
         "Legal: Patent search and intellectual property research with Perplexity Patents",
+        "Content: Write articles backed by real-time research",
       ],
       es: [
         "Finanzas: Investigar regulaciones financieras con fuentes citadas",
@@ -262,6 +267,7 @@ export const tools: Tool[] = [
         "Marketing: Analizar tendencias de mercado en tiempo real",
         "Ventas: Investigar prospectos y noticias antes de reuniones",
         "Legal: Búsqueda de patentes e investigación de propiedad intelectual con Perplexity Patents",
+        "Contenido: Escribir artículos con investigación en tiempo real",
       ],
     },
     porQueEsBueno: {
@@ -468,6 +474,7 @@ export const tools: Tool[] = [
         "Sales: Sync HubSpot/Salesforce for real-time pipeline",
         "Tech: Monitor Mixpanel/Amplitude metrics with alerts",
         "Operations: Consolidate data from multiple sources automatically",
+        "All: Use AI to analyze, classify, and extract data from spreadsheets",
       ],
       es: [
         "Marketing: Conectar Analytics y redes para dashboards en vivo",
@@ -475,6 +482,7 @@ export const tools: Tool[] = [
         "Ventas: Sincronizar HubSpot/Salesforce para pipeline en tiempo real",
         "Tech: Monitorear métricas de Mixpanel/Amplitude con alertas",
         "Operaciones: Consolidar datos de múltiples fuentes automáticamente",
+        "Todos: Usar IA para analizar, clasificar y extraer datos de hojas de cálculo",
       ],
     },
     porQueEsBueno: {
@@ -851,6 +859,7 @@ export const tools: Tool[] = [
         "HR: Request portal (vacations, permits) with approvals",
         "Operations: Order tracking and vendor management",
         "Legal: Contract database with expiration reminders",
+        "Tech: Combine Base44 with n8n for AI automation workflows",
       ],
       es: [
         "Finanzas: Sistema de aprobación de gastos con flujos automatizados",
@@ -858,6 +867,7 @@ export const tools: Tool[] = [
         "RRHH: Portal de solicitudes (vacaciones, permisos) con aprobaciones",
         "Operaciones: Seguimiento de pedidos y gestión de proveedores",
         "Legal: Base de datos de contratos con recordatorios de vencimiento",
+        "Tech: Combinar Base44 con n8n para flujos de automatización IA",
       ],
     },
     porQueEsBueno: {
@@ -1018,6 +1028,7 @@ export const tools: Tool[] = [
         "Run complete test suites and receive results when done",
         "Create PRs automatically after completing code changes",
         "Analyze entire codebase to detect vulnerabilities",
+        "Tech: Continuous automated development loop (create PR, wait CI, merge)",
       ],
       es: [
         "Ejecutar pipelines CI/CD headless y despliegues automatizados en segundo plano",
@@ -1026,6 +1037,7 @@ export const tools: Tool[] = [
         "Ejecutar suites de tests completas y recibir resultados al terminar",
         "Crear PRs automáticamente tras completar cambios de código",
         "Analizar codebase completo para detectar vulnerabilidades",
+        "Tech: Ciclo de desarrollo automatizado continuo (crear PR, esperar CI, merge)",
       ],
     },
     porQueEsBueno: {

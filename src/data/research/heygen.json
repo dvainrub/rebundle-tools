@@ -1,0 +1,195 @@
+{
+  "tool": "HeyGen",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "useCase": "Marketing: Create UGC-style promotional videos and ads at scale without traditional production, using hyper-realistic AI avatars",
+      "resource": {
+        "title": "The ultimate guide to creating AI UGC ads with HeyGen",
+        "url": "https://community.heygen.com/public/resources/ai-ugc-ads-with-heygen",
+        "type": "guide",
+        "verified": true,
+        "notes": "Comprehensive guide covering avatar selection, ad copy development, voice customization, and strategic recommendations for 15-45 second ads with problem-solution narratives"
+      }
+    },
+    {
+      "useCase": "Marketing: Maximize marketing budget efficiency with AI-powered video content creation, personalization, and localization",
+      "resource": {
+        "title": "5 ways to be more efficient with your marketing budget",
+        "url": "https://community.heygen.com/public/resources/5-ways-to-maximize-your-marketing-budget-with-ai-video",
+        "type": "guide",
+        "verified": true,
+        "notes": "Explores data-driven video ad campaigns, interactive video content, personalized messaging at scale, AI-powered localization, and content repurposing"
+      }
+    },
+    {
+      "useCase": "Sales: Personalized prospecting videos for outbound outreach, lead follow-up, pre-call introductions, and post-meeting summaries",
+      "resource": {
+        "title": "How to use HeyGen for personalized sales outreach",
+        "url": "https://community.heygen.com/public/resources/how-to-use-heygen-for-personalized-sales-outreach",
+        "type": "guide",
+        "verified": true,
+        "notes": "Covers 30-45 second cold outreach videos, lead re-engagement, pre-call rapport building, and post-meeting recaps. Distribution via email, LinkedIn, CRM, and messaging apps"
+      }
+    },
+    {
+      "useCase": "HR: Welcome messages and onboarding training videos for new employee orientation without needing to appear on camera",
+      "resource": {
+        "title": "How to use HeyGen for HR and onboarding training",
+        "url": "https://community.heygen.com/public/resources/how-to-use-heygen-for-hr-and-onboarding-training",
+        "type": "guide",
+        "verified": true,
+        "notes": "Five-step approach covering content planning, avatar selection (700+ voices in 170+ languages), video types (orientation, department-specific, culture videos), and LMS distribution"
+      }
+    },
+    {
+      "useCase": "HR: Automated workflow to transform HR PDFs into engaging onboarding videos using n8n, HeyGen, and Google Drive",
+      "resource": {
+        "title": "Transform HR PDFs into engaging onboarding videos with AI, HeyGen and Google Drive",
+        "url": "https://n8n.io/workflows/11735-transform-hr-pdfs-into-engaging-onboarding-videos-with-ai-heygen-and-google-drive/",
+        "type": "tutorial",
+        "verified": false,
+        "notes": "n8n automation workflow template for converting HR documents into video content automatically"
+      }
+    },
+    {
+      "useCase": "Training: Compliance training videos (HIPAA, GDPR, workplace safety, anti-harassment) that are instantly updatable and scalable",
+      "resource": {
+        "title": "How to use HeyGen for compliance training",
+        "url": "https://community.heygen.com/public/resources/how-to-use-heygen-for-compliance-training",
+        "type": "guide",
+        "verified": true,
+        "notes": "Covers general compliance, industry-specific regulations, workplace safety training. Emphasizes consistency, standardization, and visual engagement for regulatory content"
+      }
+    },
+    {
+      "useCase": "Training: Corporate training videos for leadership skills, software onboarding, diversity & inclusion, and safety training",
+      "resource": {
+        "title": "How to use HeyGen for corporate training",
+        "url": "https://community.heygen.com/public/resources/how-to-use-heygen-for-corporate-training",
+        "type": "guide",
+        "verified": true,
+        "notes": "Five-step process with sample 60-second script structure. Covers LMS distribution, Brand Voice for consistency, and Interactive Avatars for adaptive learning"
+      }
+    },
+    {
+      "useCase": "L&D: Scale training across global teams with AI-generated videos in 170+ languages, reducing production timelines and localization costs",
+      "resource": {
+        "title": "A guide to how L&D teams are scaling training with AI video",
+        "url": "https://community.heygen.com/public/resources/a-guide-to-how-landd-teams-are-scaling-training-with-ai-video-2025-06-17",
+        "type": "guide",
+        "verified": true,
+        "notes": "Case studies from Komatsu, Equity Trust, and Wurth Group. Covers efficiency gains, content agility for policy updates, and global reach with lip-synced avatars"
+      }
+    },
+    {
+      "useCase": "Communication: Translate and localize leadership messages and existing videos into 175+ languages with lip-sync dubbing",
+      "resource": {
+        "title": "How to translate and localize your videos in HeyGen",
+        "url": "https://community.heygen.com/public/resources/how-to-translate-and-localize-your-existing-videos-in-heygen",
+        "type": "guide",
+        "verified": true,
+        "notes": "Covers translation of HeyGen-created videos and existing uploads. Includes Dynamic Duration for timing adjustment, Brand Voice for untranslated terms, and Script Proofread for enterprise"
+      }
+    },
+    {
+      "useCase": "Communication: Get started with video translation - upload any video and translate to multiple languages",
+      "resource": {
+        "title": "How to Get Started with Video Translation",
+        "url": "https://help.heygen.com/en/articles/10029081-how-to-get-started-with-video-translation",
+        "type": "guide",
+        "verified": true,
+        "notes": "HeyGen Help Center official documentation for video translation feature, covering uploading, language selection, and plan limitations"
+      }
+    },
+    {
+      "useCase": "Social Media: Create platform-optimized videos for LinkedIn, Instagram, TikTok with correct dimensions and engaging formats",
+      "resource": {
+        "title": "How to create social media videos using HeyGen",
+        "url": "https://community.heygen.com/public/resources/how-to-create-social-media-videos-using-heygen",
+        "type": "guide",
+        "verified": true,
+        "notes": "Five-step approach covering script development, avatar selection, dimension optimization (9:16 for TikTok, 4:5 for Instagram), and platform-specific posting strategies. Recommends 15-60 second videos with captions"
+      }
+    },
+    {
+      "useCase": "Product Marketing: Create product explainer and demo videos with AI avatars to showcase features and benefits",
+      "resource": {
+        "title": "How to create a product explainer video in HeyGen",
+        "url": "https://community.heygen.com/public/resources/how-to-create-a-product-explainer-video-in-heygen",
+        "type": "guide",
+        "verified": true,
+        "notes": "6-step process with 7-part script structure (Hook, Problem, Solution, How it works, Benefits, Social proof, CTA). Recommends 60-90 second videos for maximum engagement"
+      }
+    },
+    {
+      "useCase": "Education: Create engaging e-learning courses, educational lectures, and tutorials with AI avatars",
+      "resource": {
+        "title": "Step-by-step guide: create engaging e-learning courses",
+        "url": "https://community.heygen.com/public/resources/step-by-step-guide-create-engaging-e-learning-courses-educational-lectures-motivational-videos-and-tutorials",
+        "type": "guide",
+        "verified": true,
+        "notes": "Nine-scene framework for educational content. Covers interactive prompts, storytelling for emotional connection, practice exercises, and localization to 170+ languages"
+      }
+    },
+    {
+      "useCase": "Automation: Integrate HeyGen with Zapier for automated video generation workflows",
+      "resource": {
+        "title": "HeyGen Code by Zapier Integration",
+        "url": "https://zapier.com/apps/heygen/integrations/code",
+        "type": "tutorial",
+        "verified": false,
+        "notes": "Zapier integration page for connecting HeyGen with other apps for automated video workflows"
+      }
+    },
+    {
+      "useCase": "Customer Support: Build AI avatar assistants with HeyGen's Streaming Avatar API for real-time customer interactions",
+      "resource": {
+        "title": "Building a Real-Time AI Avatar Assistant with OpenAI Realtime + HeyGen",
+        "url": "https://medium.com/@silverskytechnology/building-a-real-time-ai-avatar-assistant-with-openai-realtime-heygen-cb5f222732a5",
+        "type": "blog",
+        "verified": false,
+        "notes": "Technical article on combining OpenAI's realtime API with HeyGen for interactive avatar assistants"
+      }
+    }
+  ],
+  "additionalResources": [
+    {
+      "title": "HeyGen Customer Stories",
+      "url": "https://www.heygen.com/customer-stories",
+      "type": "case-studies",
+      "notes": "Official customer success stories page"
+    },
+    {
+      "title": "HeyGen for Learning & Development",
+      "url": "https://www.heygen.com/learning-and-development",
+      "type": "landing-page",
+      "notes": "Official L&D product page"
+    },
+    {
+      "title": "HeyGen for Sales",
+      "url": "https://www.heygen.com/sales",
+      "type": "landing-page",
+      "notes": "Official sales product page"
+    },
+    {
+      "title": "HeyGen Internal Communications",
+      "url": "https://www.heygen.com/business/internal-communications",
+      "type": "landing-page",
+      "notes": "Official internal communications product page"
+    },
+    {
+      "title": "HeyGen Onboarding & Training",
+      "url": "https://www.heygen.com/use-cases/onboarding-training",
+      "type": "landing-page",
+      "notes": "Official onboarding and training use case page"
+    }
+  ],
+  "originalUseCasesMapping": {
+    "Marketing: Promotional videos and UGC ads at scale": "Covered - see UGC ads guide and marketing budget guide",
+    "Sales: Personalized prospecting videos with dynamic client name": "Covered - see personalized sales outreach guide",
+    "HR: Welcome and training videos for employee onboarding": "Covered - see HR onboarding guide and n8n automation workflow",
+    "Training: Compliance and software training instantly updatable": "Covered - see compliance training and corporate training guides",
+    "Communication: Leadership messages translated to multiple languages": "Covered - see video translation guide and help center article"
+  }
+}

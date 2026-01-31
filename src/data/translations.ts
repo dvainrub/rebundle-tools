@@ -156,10 +156,6 @@ export const ui = {
       en: "Resources",
       es: "Recursos",
     } as Localized<string>,
-    newBadge: {
-      en: "NEW",
-      es: "NUEVO",
-    } as Localized<string>,
     noResource: {
       en: "No resource linked",
       es: "Sin recurso vinculado",

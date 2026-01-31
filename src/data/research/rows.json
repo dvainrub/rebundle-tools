@@ -1,0 +1,399 @@
+{
+  "tool": "Rows.com",
+  "researchDate": "2026-01-31",
+  "useCases": [
+    {
+      "department": "Marketing",
+      "useCase": "Connect Google Analytics and social platforms for live marketing dashboards with automatic refresh",
+      "resource": {
+        "title": "How to set up a custom traffic report with Google Analytics",
+        "url": "https://rows.com/docs/website-traffic-report-analytics",
+        "type": "tutorial",
+        "verified": true
+      },
+      "alternativeResources": [
+        {
+          "title": "Google Analytics 4 Social Media Report Template",
+          "url": "https://rows.com/templates/google-analytics-4-social-media-report",
+          "type": "template",
+          "verified": true
+        },
+        {
+          "title": "LinkedIn Page Analytics Dashboard Template",
+          "url": "https://rows.com/templates/linkedin-page-analytics-dashboard",
+          "type": "template",
+          "verified": true
+        },
+        {
+          "title": "Marketing Playbook Documentation",
+          "url": "https://rows.com/docs/category/marketing-playbook",
+          "type": "guide",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "department": "Finance",
+      "useCase": "Integrate Stripe for automatic revenue, subscription, and payment reports",
+      "resource": {
+        "title": "Stripe Integration - Rows",
+        "url": "https://rows.com/integrations/stripe",
+        "type": "guide",
+        "verified": true
+      },
+      "details": {
+        "functions": [
+          "SEARCH_SUBSCRIPTIONS_STRIPE",
+          "SEARCH_CHARGES_STRIPE",
+          "SEARCH_PAYOUTS_STRIPE",
+          "SEARCH_INVOICES_STRIPE",
+          "SEARCH_CUSTOMERS_STRIPE",
+          "SEARCH_REFUNDS_STRIPE",
+          "GET_BALANCE_STRIPE"
+        ],
+        "capabilities": "Access subscription details, customer information, invoice records, charge history, refund data, payout information, pricing plans, and account balance"
+      },
+      "alternativeResources": [
+        {
+          "title": "Bank Accounts Integration (Plaid) - Monitor balances and transactions",
+          "url": "https://rows.com/integrations/bank-accounts",
+          "type": "guide",
+          "verified": true
+        },
+        {
+          "title": "How to connect bank accounts in Rows",
+          "url": "https://rows.com/docs/how-to-connect-bank-accounts-in-rows",
+          "type": "tutorial",
+          "verified": true
+        },
+        {
+          "title": "10 Best Cash Flow Statement Templates",
+          "url": "https://rows.com/blog/post/cash-flow-statement-template",
+          "type": "blog",
+          "verified": true
+        },
+        {
+          "title": "13-Week Cash Flow Model with Bank Integration",
+          "url": "https://rows.com/templates/cash-flow-model",
+          "type": "template",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "department": "Sales",
+      "useCase": "Sync HubSpot or Salesforce CRM for real-time pipeline visibility and lead enrichment",
+      "resource": {
+        "title": "Salesforce Integration - Rows",
+        "url": "https://rows.com/integrations/salesforce",
+        "type": "guide",
+        "verified": true
+      },
+      "details": {
+        "salesforceFunctions": [
+          "SEARCH_ACCOUNTS_SALESFORCE",
+          "SEARCH_CONTACTS_SALESFORCE",
+          "SEARCH_LEADS_SALESFORCE",
+          "SEARCH_OPPORTUNITIES_SALESFORCE",
+          "SEARCH_OBJECTS_ADVANCED_SALESFORCE"
+        ],
+        "hubspotFunctions": [
+          "SEARCH_DEALS_HUBSPOT",
+          "SEARCH_CONTACTS_HUBSPOT",
+          "SEARCH_COMPANIES_HUBSPOT",
+          "GET_CONTACTS_FROM_LIST_HUBSPOT"
+        ],
+        "capabilities": "Bidirectional sync - retrieve, add, edit, and manage accounts, contacts, leads, opportunities, and deals"
+      },
+      "alternativeResources": [
+        {
+          "title": "HubSpot Integration - Rows",
+          "url": "https://rows.com/integrations/hubspot",
+          "type": "guide",
+          "verified": true
+        },
+        {
+          "title": "Pipedrive Integration - Rows",
+          "url": "https://rows.com/integrations/pipedrive",
+          "type": "guide",
+          "verified": true
+        },
+        {
+          "title": "Enriching a leads list and automating uploads to CRM",
+          "url": "https://rows.com/docs/enrich-lead-list-CRM-automation",
+          "type": "tutorial",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "department": "Tech",
+      "useCase": "Connect data warehouses (BigQuery, Snowflake) and databases for automated metric reports with Slack/email alerts",
+      "resource": {
+        "title": "BigQuery Integration - Rows",
+        "url": "https://rows.com/integrations/bigquery",
+        "type": "guide",
+        "verified": true
+      },
+      "details": {
+        "bigqueryFunctions": ["QUERY_BIGQUERY", "IMPORT_TABLE_BIGQUERY"],
+        "snowflakeFunctions": ["QUERY_SNOWFLAKE"],
+        "slackFunctions": ["MESSAGE_CHANNEL_SLACK", "MESSAGE_USER_SLACK"],
+        "emailFunction": "SEND_EMAIL (up to 20/hour)",
+        "capabilities": "Execute SQL queries, schedule automated imports (daily/weekly/monthly), send metrics via email or Slack"
+      },
+      "alternativeResources": [
+        {
+          "title": "Snowflake Integration - Rows",
+          "url": "https://rows.com/integrations/snowflake",
+          "type": "guide",
+          "verified": true
+        },
+        {
+          "title": "MySQL Connection Guide",
+          "url": "https://rows.com/docs/how-to-connect-mysql-with-rows",
+          "type": "tutorial",
+          "verified": true
+        },
+        {
+          "title": "PostgreSQL Connection Guide",
+          "url": "https://rows.com/docs/how-to-connect-postgresql-with-rows",
+          "type": "tutorial",
+          "verified": true
+        },
+        {
+          "title": "Slack Integration - Rows",
+          "url": "https://rows.com/integrations/slack",
+          "type": "guide",
+          "verified": true
+        },
+        {
+          "title": "Email Integration - Rows",
+          "url": "https://rows.com/integrations/email",
+          "type": "guide",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "department": "Operations",
+      "useCase": "Consolidate data from multiple sources (Notion, Airtable, APIs) with automated refresh schedules",
+      "resource": {
+        "title": "How to import data from spreadsheets in Notion",
+        "url": "https://rows.com/blog/post/how-to-import-data-from-spreadsheets-in-notion",
+        "type": "blog",
+        "verified": true
+      },
+      "details": {
+        "supportedSources": [
+          "Notion",
+          "Airtable",
+          "Google Sheets",
+          "MySQL",
+          "PostgreSQL",
+          "BigQuery",
+          "Snowflake",
+          "Amazon Redshift",
+          "HTTP APIs (GET/POST/PUT)"
+        ],
+        "capabilities": "Import from 50+ integrations, schedule automatic refreshes, embed live charts in Notion/Confluence"
+      },
+      "alternativeResources": [
+        {
+          "title": "Rows Features - Live Data & Automation",
+          "url": "https://rows.com/features/",
+          "type": "guide",
+          "verified": true
+        },
+        {
+          "title": "Using the Rows API",
+          "url": "https://rows.com/docs/using-rows-api",
+          "type": "tutorial",
+          "verified": true
+        },
+        {
+          "title": "Inventory Management Template",
+          "url": "https://rows.com/templates/inventory-management",
+          "type": "template",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Build Google Ads and Facebook Ads campaign reports with live metrics and scheduled refresh",
+      "resource": {
+        "title": "Google Ads Report Template",
+        "url": "https://rows.com/templates/google-ads-ppc-report",
+        "type": "template",
+        "verified": true
+      },
+      "details": {
+        "metrics": "Ad spend, CPC, CTR, impressions, clicks, ROAS, conversions",
+        "capabilities": "Daily automatic refresh, embed in Notion/Confluence, customize data sources"
+      },
+      "alternativeResources": [
+        {
+          "title": "Facebook Ads Campaign Report Template",
+          "url": "https://rows.com/templates/facebook-ads-campaign-report",
+          "type": "template",
+          "verified": true
+        },
+        {
+          "title": "How to set up a Google Ads report",
+          "url": "https://rows.com/docs/google-ads-report",
+          "type": "tutorial",
+          "verified": true
+        },
+        {
+          "title": "How to set up a Facebook Ads report",
+          "url": "https://rows.com/docs/facebook-ads-report",
+          "type": "tutorial",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "department": "Marketing",
+      "useCase": "Track YouTube channel performance with analytics dashboard",
+      "resource": {
+        "title": "YouTube Analytics Dashboard Template",
+        "url": "https://rows.com/templates/youtube-channel-report",
+        "type": "template",
+        "verified": true
+      },
+      "details": {
+        "metrics": "Views, watch time, subscribers, engagement, demographics, top videos",
+        "capabilities": "Auto-refresh, embed charts, audience insights by age/country"
+      }
+    },
+    {
+      "department": "Finance",
+      "useCase": "Analyze public company financials with live stock data integration",
+      "resource": {
+        "title": "Profitability Report Template",
+        "url": "https://rows.com/templates/profitability-report",
+        "type": "template",
+        "verified": true
+      },
+      "details": {
+        "metrics": "Gross margin, operating margin, net margin, EBIT, EBITDA, ROI",
+        "dataSource": "Alpha Vantage for live financial data"
+      },
+      "alternativeResources": [
+        {
+          "title": "10 Best Free Financial Projection Templates",
+          "url": "https://rows.com/blog/post/financial-projection-templates",
+          "type": "blog",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "department": "Sales",
+      "useCase": "Enrich lead lists with company data and automate CRM uploads",
+      "resource": {
+        "title": "Enriching a leads list and automating uploads to CRM",
+        "url": "https://rows.com/docs/enrich-lead-list-CRM-automation",
+        "type": "tutorial",
+        "verified": true
+      },
+      "details": {
+        "enrichmentFunctions": [
+          "FIND_DOMAIN() - Company name to website",
+          "FIND_EMAIL() - Generate email from domain + name",
+          "GET_COMPANY() - Company metadata (size, location, founding)",
+          "VERIFY_EMAIL_ZEROBOUNCE() - Email validation"
+        ],
+        "crmSync": "Salesforce, HubSpot, Pipedrive, Zoho"
+      }
+    },
+    {
+      "department": "All",
+      "useCase": "Use AI to analyze, summarize, classify, and extract data from spreadsheets and documents",
+      "resource": {
+        "title": "How to use Rows AI functions",
+        "url": "https://rows.com/docs/using-rowsai",
+        "type": "tutorial",
+        "verified": true
+      },
+      "details": {
+        "aiFunctions": [
+          "ASK_AI - General prompting",
+          "CLASSIFY_AI - Categorize text",
+          "EXTRACT_AI - Pull specific information",
+          "SUMMARIZE_AI - Condense content",
+          "SENTIMENT_ANALYSIS_AI - Analyze tone",
+          "TRANSLATE_AI - Language conversion"
+        ],
+        "capabilities": "Extract data from PDFs, automate text processing, build reports with natural language"
+      },
+      "alternativeResources": [
+        {
+          "title": "White Paper: Rows is the End-to-End AI stack for spreadsheets",
+          "url": "https://rows.com/blog/post/white-paper-rows-is-the-end-to-end-ai-stack-for-spreadsheets",
+          "type": "blog",
+          "verified": true
+        },
+        {
+          "title": "White Paper: Personal, Private, Seamless AI for Spreadsheets",
+          "url": "https://rows.com/blog/post/white-paper-rows-com-personal-private-seamless-ai-for-spreadsheets",
+          "type": "blog",
+          "verified": true
+        },
+        {
+          "title": "Rows Product Page - AI Data Analyst",
+          "url": "https://rows.com/product",
+          "type": "guide",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "department": "Operations",
+      "useCase": "Track inventory levels, transactions, and reorder alerts",
+      "resource": {
+        "title": "Inventory Management Template",
+        "url": "https://rows.com/templates/inventory-management",
+        "type": "template",
+        "verified": true
+      },
+      "details": {
+        "features": [
+          "Real-time stock level updates",
+          "Transaction logging (inbound/outbound)",
+          "Low-stock alerts",
+          "Inventory value calculations",
+          "Supplier management"
+        ]
+      },
+      "alternativeResources": [
+        {
+          "title": "10 Best Inventory Spreadsheet Templates",
+          "url": "https://rows.com/blog/post/inventory-spreadsheet-templates",
+          "type": "blog",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "integrationsSummary": {
+    "marketing": ["Google Analytics 4", "Google Ads", "Facebook Ads", "LinkedIn Pages", "LinkedIn Ads", "Instagram", "YouTube", "TikTok", "TikTok Ads", "Google Search Console"],
+    "crm": ["Salesforce", "HubSpot", "Pipedrive", "Zoho CRM"],
+    "finance": ["Stripe", "Bank Accounts (Plaid)", "Alpha Vantage"],
+    "databases": ["BigQuery", "Snowflake", "MySQL", "PostgreSQL", "Amazon Redshift", "Airtable", "Notion"],
+    "messaging": ["Slack", "Email", "Gmail"],
+    "enrichment": ["Hunter", "Clearbit", "FullContact", "ZeroBounce"]
+  },
+  "keyDifferentiators": [
+    "89% first-try success rate with AI (benchmarked against competitors)",
+    "50+ native integrations with live data refresh",
+    "Bidirectional sync with CRMs (read and write)",
+    "Built-in AI functions for text processing and data extraction",
+    "PDF and document data extraction",
+    "Embed live charts in Notion/Confluence",
+    "Schedule automated reports via email/Slack",
+    "Bank account integration via Plaid",
+    "Full Excel/Google Sheets formula compatibility"
+  ]
+}
