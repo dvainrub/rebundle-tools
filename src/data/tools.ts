@@ -195,15 +195,17 @@ export const tools: Tool[] = [
         "Tech: Data pipelines with complex JavaScript transformations",
         "Operations: Automations with strict privacy/compliance requirements",
         "Finance: Internal processes that can't leave your infrastructure",
-        "Marketing: AI integrations with LangChain for personalized content",
+        "Marketing: Build AI agents with LangChain for multi-step content workflows",
         "Admin: High-volume workflows where cost per execution matters",
+        "Tech: Build autonomous AI agents with multi-agent orchestration workflows",
       ],
       es: [
         "Tech: Pipelines de datos con transformaciones complejas en JavaScript",
         "Operaciones: Automatizaciones con requisitos estrictos de privacidad/compliance",
         "Finanzas: Procesos internos que no pueden salir de la infraestructura propia",
-        "Marketing: Integraciones de IA con LangChain para contenido personalizado",
+        "Marketing: Construir agentes IA con LangChain para flujos de contenido multi-paso",
         "Admin: Workflows de alto volumen donde el costo por ejecución importa",
+        "Tech: Construir agentes IA autónomos con flujos de orquestación multi-agente",
       ],
     },
     porQueEsBueno: {
@@ -247,17 +249,19 @@ export const tools: Tool[] = [
     casosDeUso: {
       en: [
         "Finance: Research financial regulations with cited sources",
-        "HR: Search salary benchmarks by industry and region",
+        "HR: Research competitor hiring practices and employer branding strategies",
         "Legal: Research case law and regulatory changes",
         "Marketing: Analyze market trends in real-time",
         "Sales: Research prospects and news before meetings",
+        "Legal: Patent search and intellectual property research with Perplexity Patents",
       ],
       es: [
         "Finanzas: Investigar regulaciones financieras con fuentes citadas",
-        "RRHH: Buscar benchmarks salariales por industria y región",
+        "RRHH: Investigar prácticas de contratación de competidores y estrategias de employer branding",
         "Legal: Investigar jurisprudencia y cambios normativos",
         "Marketing: Analizar tendencias de mercado en tiempo real",
         "Ventas: Investigar prospectos y noticias antes de reuniones",
+        "Legal: Búsqueda de patentes e investigación de propiedad intelectual con Perplexity Patents",
       ],
     },
     porQueEsBueno: {
@@ -302,14 +306,16 @@ export const tools: Tool[] = [
         "Operations: Compare vendors with automatic comparison tables",
         "HR: Create guides synthesizing industry best practices",
         "Tech: Research tech stacks with structured pros/cons",
-        "Sales: Prospect research ready to present",
+        "Sales: Automate lead generation with prospect lists, contact details, and outreach templates",
+        "All: Automate browser tasks (scheduling calls, sending emails, making bookings) with Super Agent",
       ],
       es: [
         "Marketing: Generar researches de mercado visuales para stakeholders",
         "Operaciones: Comparar proveedores con tablas comparativas automáticas",
         "RRHH: Crear guías sintetizando mejores prácticas de la industria",
         "Tech: Investigar stacks tecnológicos con pros/contras estructurados",
-        "Ventas: Research de prospectos listo para presentar",
+        "Ventas: Automatizar generación de leads con listas de prospectos, datos de contacto y plantillas de outreach",
+        "Todos: Automatizar tareas del navegador (programar llamadas, enviar emails, hacer reservas) con Super Agent",
       ],
     },
     porQueEsBueno: {
@@ -355,6 +361,7 @@ export const tools: Tool[] = [
         "Finance: Analyze annual reports with audio summaries",
         "Tech: Technical documentation converted to queryable assistant",
         "Operations: Procedure manuals queryable via chat",
+        "All: Create AI podcasts where two hosts discuss and explain your documents",
       ],
       es: [
         "Legal: Subir contratos para que el equipo pregunte sin leer todo",
@@ -362,6 +369,7 @@ export const tools: Tool[] = [
         "Finanzas: Analizar reportes anuales con resúmenes en audio",
         "Tech: Documentación técnica convertida en asistente consultable",
         "Operaciones: Manuales de procedimientos consultables por chat",
+        "Todos: Crear podcasts IA donde dos presentadores discuten y explican tus documentos",
       ],
     },
     porQueEsBueno: {
@@ -511,6 +519,7 @@ export const tools: Tool[] = [
         "Operations: Automate multi-step processes with various tools",
         "Sales: Research prospect companies and generate automatic briefings",
         "Finance: Compile data from multiple sources into structured reports",
+        "Tech: Build full-stack websites and web applications without writing code",
       ],
       es: [
         "Tech: Automatizar investigación de código, crear prototipos, scraping",
@@ -518,6 +527,7 @@ export const tools: Tool[] = [
         "Operaciones: Automatizar procesos multi-paso con varias herramientas",
         "Ventas: Investigar empresas prospectas y generar briefings automáticos",
         "Finanzas: Compilar datos de múltiples fuentes en reportes estructurados",
+        "Tech: Crear sitios web y aplicaciones full-stack sin escribir código",
       ],
     },
     porQueEsBueno: {
@@ -673,15 +683,17 @@ export const tools: Tool[] = [
         "Marketing: Promotional videos and UGC ads at scale without traditional production",
         "Sales: Personalized prospecting videos with dynamic client name",
         "HR: Welcome and training videos for employee onboarding",
-        "Training: Compliance and software training instantly updatable",
+        "Training: HIPAA, GDPR, workplace safety videos instantly updatable across languages",
         "Communication: Leadership messages automatically translated to multiple languages",
+        "Social: Create platform-optimized videos for LinkedIn, Instagram, and TikTok",
       ],
       es: [
         "Marketing: Videos promocionales y anuncios UGC a escala sin producción tradicional",
         "Ventas: Videos personalizados de prospección con nombre del cliente dinámico",
         "RRHH: Videos de bienvenida y formación para onboarding de empleados",
-        "Formación: Capacitación en compliance y uso de software actualizable al instante",
+        "Formación: Videos de HIPAA, GDPR, seguridad laboral actualizables al instante en múltiples idiomas",
         "Comunicación: Mensajes de liderazgo traducidos automáticamente a múltiples idiomas",
+        "Social: Crear videos optimizados por plataforma para LinkedIn, Instagram y TikTok",
       ],
     },
     porQueEsBueno: {
@@ -726,15 +738,17 @@ export const tools: Tool[] = [
         "Marketing: Voices for ads and promotional videos in multiple languages",
         "Content: Narration for podcasts, audiobooks and YouTube videos",
         "Training: E-learning materials and online courses with natural voices",
-        "Support: Voice conversational agents for automated customer service",
+        "Support: Deploy conversational AI agents in minutes for 24/7 customer service",
         "Accessibility: Text to audio conversion for people with disabilities",
+        "Localization: Dub videos into 29+ languages while preserving the original speaker's voice",
       ],
       es: [
         "Marketing: Voces para anuncios y videos promocionales en múltiples idiomas",
         "Contenido: Narración de podcasts, audiolibros y videos de YouTube",
         "Formación: Materiales de e-learning y cursos online con voces naturales",
-        "Soporte: Agentes conversacionales de voz para atención automatizada",
+        "Soporte: Desplegar agentes conversacionales IA en minutos para atención 24/7",
         "Accesibilidad: Conversión de texto a audio para personas con discapacidades",
+        "Localización: Doblar videos a 29+ idiomas manteniendo la voz original del hablante",
       ],
     },
     porQueEsBueno: {
@@ -783,6 +797,7 @@ export const tools: Tool[] = [
         "Sales: Simplified internal CRM for lead tracking",
         "Marketing: Landing pages for campaigns with capture forms",
         "Tech: Functional prototypes to validate ideas before development",
+        "Tech: Convert Figma designs directly into full-stack applications",
       ],
       es: [
         "Finanzas: Dashboard de seguimiento de gastos con gráficos interactivos",
@@ -790,6 +805,7 @@ export const tools: Tool[] = [
         "Ventas: CRM interno simplificado para seguimiento de leads",
         "Marketing: Landing pages para campañas con formularios de captura",
         "Tech: Prototipos funcionales para validar ideas antes de desarrollo",
+        "Tech: Convertir diseños de Figma directamente en aplicaciones full-stack",
       ],
     },
     porQueEsBueno: {
@@ -890,6 +906,7 @@ export const tools: Tool[] = [
         "Create unit and integration tests for existing code",
         "Automatic code reviews with improvement suggestions",
         "Migrate projects between frameworks or update dependencies",
+        "Tech: Security audits and vulnerability scanning integrated with GitHub Actions",
       ],
       es: [
         "Refactorizar código legacy y modernizar arquitecturas automáticamente",
@@ -898,6 +915,7 @@ export const tools: Tool[] = [
         "Crear tests unitarios y de integración para código existente",
         "Code reviews automáticos con sugerencias de mejora",
         "Migrar proyectos entre frameworks o actualizar dependencias",
+        "Tech: Auditorías de seguridad y escaneo de vulnerabilidades integrado con GitHub Actions",
       ],
     },
     porQueEsBueno: {
@@ -945,6 +963,7 @@ export const tools: Tool[] = [
         "Tech: Onboarding - new devs explore codebase via chat",
         "Tech: Automatic unit test generation",
         "Product/Tech: Rapid MVP prototyping with assisted generation",
+        "Tech: Automated code review and PR workflow with GitHub MCP integration",
       ],
       es: [
         "Tech: Desarrollo de features nuevas entendiendo contexto del proyecto",
@@ -953,6 +972,7 @@ export const tools: Tool[] = [
         "Tech: Onboarding - nuevos devs exploran codebase via chat",
         "Tech: Generación automática de tests unitarios",
         "Product/Tech: Prototipado rápido de MVPs con generación asistida",
+        "Tech: Revisión de código automatizada y flujo de PRs con integración GitHub MCP",
       ],
     },
     porQueEsBueno: {
@@ -992,7 +1012,7 @@ export const tools: Tool[] = [
     ],
     casosDeUso: {
       en: [
-        "Execute database migrations while working on something else",
+        "Run headless CI/CD pipelines and automated deployments in background",
         "Generate complete project documentation asynchronously",
         "Refactor multiple files in parallel without blocking terminal",
         "Run complete test suites and receive results when done",
@@ -1000,7 +1020,7 @@ export const tools: Tool[] = [
         "Analyze entire codebase to detect vulnerabilities",
       ],
       es: [
-        "Ejecutar migraciones de base de datos mientras trabajas en otro",
+        "Ejecutar pipelines CI/CD headless y despliegues automatizados en segundo plano",
         "Generar documentación completa del proyecto de forma asíncrona",
         "Refactorizar múltiples archivos en paralelo sin bloquear terminal",
         "Ejecutar suites de tests completas y recibir resultados al terminar",

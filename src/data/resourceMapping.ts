@@ -76,18 +76,14 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "Automating GDPR Requests with n8n", url: "https://medium.com/@Nexumo_/automating-gdpr-requests-with-n8n-without-leaks-12e6b96f425e", type: "blog" }],
       // 2: Finance: Internal processes on own infra
       [{ title: "Invoice Processing with GPT-4 and Airtable", url: "https://n8n.io/workflows/9744-automate-invoice-processing-and-weekly-spending-reports-with-gpt-4-and-airtable/", type: "template" }],
-      // 3: Marketing: LangChain AI integrations
+      // 3: Marketing: Build AI agents with LangChain
       [{ title: "AI Automation with n8n and LangChain", url: "https://medium.com/@aleksej.gudkov/introduction-to-ai-automation-with-n8n-and-langchain-9b6f4c4ca675", type: "blog" }],
       // 4: Admin: High-volume workflows
       [{ title: "Why E-commerce Sellers Choose n8n", url: "https://medium.com/aimonks/why-e-commerce-sellers-are-ditching-expensive-automation-tools-for-n8n-the-complete-guide-9794db535afa", type: "blog" }],
+      // 5: Tech: Build autonomous AI agents with multi-agent orchestration
+      [{ title: "How to Build AI Agents with n8n", url: "https://www.codecademy.com/article/build-ai-agents-with-n8n", type: "tutorial" }],
     ],
-    newUseCases: [
-      {
-        department: "Tech",
-        useCase: { en: "Tech: Build autonomous AI agents with multi-agent workflows", es: "Tech: Construir agentes IA autonomos con flujos multi-agente" },
-        resources: [{ title: "How to Build AI Agents with n8n", url: "https://www.codecademy.com/article/build-ai-agents-with-n8n", type: "tutorial" }],
-      },
-    ],
+    newUseCases: [],
   },
 
   // CONOCIMIENTO
@@ -95,25 +91,22 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
     existingUseCases: [
       // 0: Finance: Research financial regulations
       [{ title: "Getting Started With Perplexity AI For Finance", url: "https://www.f9finance.com/perplexity-ai-for-finance/", type: "guide" }],
-      // 1: HR: Search salary benchmarks
-      null, // Limited HR-specific resources
+      // 1: HR: Research competitor hiring practices
+      [{ title: "Research Competitor Hiring Practices", url: "https://marketingguys.com/blog/effectively-use-perplexity-ai/", type: "guide" }],
       // 2: Legal: Research case law
       [{ title: "Using Perplexity AI for Legal Research", url: "https://www.theaienterprise.io/p/using-perplexity-ai-for-legal-research", type: "guide" }],
       // 3: Marketing: Analyze market trends
       [{ title: "Perplexity AI Market Research Guide", url: "https://digitalmarketingsage.in/perplexity-ai-market-research-a-proven-5-step-guide/", type: "guide" }],
       // 4: Sales: Research prospects
       [{ title: "Perplexity for Market Research & Sales", url: "https://marketingguys.com/blog/effectively-use-perplexity-ai/", type: "guide" }],
+      // 5: Legal: Patent search with Perplexity Patents
+      [{ title: "Introducing Perplexity Patents", url: "https://www.perplexity.ai/hub/blog/introducing-perplexity-patents", type: "blog" }],
     ],
     newUseCases: [
       {
         department: "Content",
         useCase: { en: "Content: Write articles backed by real-time research", es: "Contenido: Escribir articulos con investigacion en tiempo real" },
         resources: [{ title: "How I Use Perplexity AI to Write Articles", url: "https://medium.com/gigonomics/how-i-use-perplexity-ai-to-write-articles-step-by-step-b95338ceccff", type: "tutorial" }],
-      },
-      {
-        department: "Legal",
-        useCase: { en: "Legal: Patent search and intellectual property research", es: "Legal: Busqueda de patentes e investigacion de propiedad intelectual" },
-        resources: [{ title: "Introducing Perplexity Patents", url: "https://www.perplexity.ai/hub/blog/introducing-perplexity-patents", type: "blog" }],
       },
     ],
   },
@@ -130,14 +123,10 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "How to Use NotebookLM for Developers", url: "https://clickup.com/blog/how-to-use-notebooklm-for-developers/", type: "guide" }],
       // 4: Operations: Queryable procedure manuals
       [{ title: "NotebookLM for Project Management", url: "https://www.geeky-gadgets.com/notebooklm-project-management-guide-2025/", type: "guide" }],
+      // 5: All: Create AI podcasts about documents
+      [{ title: "Create Custom Educational Podcasts with NotebookLM", url: "https://www.kdnuggets.com/how-to-create-custom-educational-podcasts-with-notebooklm", type: "tutorial" }],
     ],
-    newUseCases: [
-      {
-        department: "All",
-        useCase: { en: "All: Create AI podcasts discussing your documents", es: "Todos: Crear podcasts IA sobre tus documentos" },
-        resources: [{ title: "Create Custom Educational Podcasts with NotebookLM", url: "https://www.kdnuggets.com/how-to-create-custom-educational-podcasts-with-notebooklm", type: "tutorial" }],
-      },
-    ],
+    newUseCases: [],
   },
 
   "notion-ai": {
@@ -189,16 +178,12 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "HR Workforce Optimization Sparkpage", url: "https://www.genspark.ai/spark/empowering-hr-maximizing-organizational-effectiveness-and-workforce-optimization/d81c99af-97e9-466e-9bb0-cd924463916f", type: "example" }],
       // 3: Tech: Research tech stacks
       [{ title: "GenSpark AI Browser Review", url: "https://mejba.me/blog/genspark-ai-browser-comprehensive-review-2025", type: "blog" }],
-      // 4: Sales: Prospect research ready to present
+      // 4: Sales: Automate lead generation with prospect lists
       [{ title: "Automate Lead Gen with Genspark", url: "https://dicloak.com/blog-detail/this-new-ai-tool-automates-lead-gen--data-analysis-with-one-prompt-gensparkai", type: "tutorial" }],
+      // 5: All: Automate browser tasks with Super Agent
+      [{ title: "Genspark AI Tutorial - Meet the AI Super Agent", url: "http://kevinstratvert.com/2025/09/19/genspark-ai-tutorial-meet-the-ai-super-agent/", type: "video" }],
     ],
-    newUseCases: [
-      {
-        department: "All",
-        useCase: { en: "All: Automate browser tasks (calls, emails, bookings) with Super Agent", es: "Todos: Automatizar tareas del navegador con Super Agent" },
-        resources: [{ title: "Genspark AI Tutorial - Meet the AI Super Agent", url: "http://kevinstratvert.com/2025/09/19/genspark-ai-tutorial-meet-the-ai-super-agent/", type: "video" }],
-      },
-    ],
+    newUseCases: [],
   },
 
   manus: {
@@ -213,14 +198,10 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "11 Practical Use Cases of Manus AI in Marketing", url: "https://blusteak.com/blog/manus-ai-in-marketing", type: "guide" }],
       // 4: Finance: Compile data into structured reports
       [{ title: "No-Hallucination Financial AI Assistant with Manus", url: "https://medium.com/@bwzheng2010/i-built-myself-a-no-hallucination-financial-data-ai-assistant-88a43961f104", type: "tutorial" }],
+      // 5: Tech: Build full-stack websites without coding
+      [{ title: "AI Website Builder - Build Full-Stack Web Apps", url: "https://manus.im/features/webapp", type: "guide" }],
     ],
-    newUseCases: [
-      {
-        department: "Tech",
-        useCase: { en: "Tech: Build full-stack websites without coding", es: "Tech: Crear sitios web full-stack sin programar" },
-        resources: [{ title: "AI Website Builder - Build Full-Stack Web Apps", url: "https://manus.im/features/webapp", type: "guide" }],
-      },
-    ],
+    newUseCases: [],
   },
 
   // CREATIVIDAD
@@ -268,18 +249,14 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "HeyGen for Personalized Sales Outreach", url: "https://community.heygen.com/public/resources/how-to-use-heygen-for-personalized-sales-outreach", type: "guide" }],
       // 2: HR: Welcome and training videos
       [{ title: "HeyGen for HR and Onboarding Training", url: "https://community.heygen.com/public/resources/how-to-use-heygen-for-hr-and-onboarding-training", type: "guide" }],
-      // 3: Training: Compliance training
+      // 3: Training: HIPAA, GDPR, workplace safety videos
       [{ title: "HeyGen for Compliance Training", url: "https://community.heygen.com/public/resources/how-to-use-heygen-for-compliance-training", type: "guide" }],
       // 4: Communication: Leadership messages translated
       [{ title: "Translate and Localize Videos in HeyGen", url: "https://community.heygen.com/public/resources/how-to-translate-and-localize-your-existing-videos-in-heygen", type: "guide" }],
+      // 5: Social: Platform-optimized videos for LinkedIn, Instagram, TikTok
+      [{ title: "Create Social Media Videos with HeyGen", url: "https://community.heygen.com/public/resources/how-to-create-social-media-videos-using-heygen", type: "guide" }],
     ],
-    newUseCases: [
-      {
-        department: "Social",
-        useCase: { en: "Social: Platform-optimized videos for LinkedIn, Instagram, TikTok", es: "Social: Videos optimizados para LinkedIn, Instagram, TikTok" },
-        resources: [{ title: "Create Social Media Videos with HeyGen", url: "https://community.heygen.com/public/resources/how-to-create-social-media-videos-using-heygen", type: "guide" }],
-      },
-    ],
+    newUseCases: [],
   },
 
   elevenlabs: {
@@ -290,18 +267,14 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "Producing AI-Narrated Audiobooks", url: "https://www.thecreativepenn.com/2025/06/27/producing-ai-narrated-audiobooks-using-elevenlabs-with-simon-patrick/", type: "guide" }],
       // 2: Training: E-learning with natural voices
       [{ title: "AI Voice Creation for Every Industry", url: "https://www.udemy.com/course/ai-voice-creation-for-every-industry-with-elevenlabs/", type: "tutorial" }],
-      // 3: Support: Voice conversational agents
+      // 3: Support: Deploy conversational AI agents
       [{ title: "Deploy Conversational AI Agents", url: "https://elevenlabs.io/agents", type: "guide" }],
       // 4: Accessibility: Text to audio conversion
       [{ title: "ElevenLabs Partners with NFB", url: "https://elevenlabs.io/blog/nfb-elevenlabs", type: "blog" }],
+      // 5: Localization: Dub videos into 29+ languages
+      [{ title: "ElevenLabs Dubbing Studio", url: "https://www.maginative.com/article/elevenlabs-unveils-dubbing-studio-professional-video-localization/", type: "blog" }],
     ],
-    newUseCases: [
-      {
-        department: "Localization",
-        useCase: { en: "Localization: Dub videos into 29+ languages preserving original voice", es: "Localizacion: Doblar videos a 29+ idiomas manteniendo la voz original" },
-        resources: [{ title: "ElevenLabs Dubbing Studio", url: "https://www.maginative.com/article/elevenlabs-unveils-dubbing-studio-professional-video-localization/", type: "blog" }],
-      },
-    ],
+    newUseCases: [],
   },
 
   // NO-CODE
@@ -317,14 +290,10 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "Build $10K Landing Page in 1 Hour", url: "https://lovable.dev/video/can-ai-build-a-10k-landing-page-in-1-hour-we-tried-it-live", type: "video" }],
       // 4: Tech: Functional prototypes
       [{ title: "How to Validate a Business Idea", url: "https://lovable.dev/guides/bloghow-to-validate-a-business-idea", type: "guide" }],
+      // 5: Tech: Convert Figma designs into full-stack applications
+      [{ title: "Turn Figma Designs into Full Stack Apps", url: "https://www.builder.io/blog/lovable-builder", type: "tutorial" }],
     ],
-    newUseCases: [
-      {
-        department: "Tech",
-        useCase: { en: "Tech: Convert Figma designs into full-stack applications", es: "Tech: Convertir disenos Figma en aplicaciones full-stack" },
-        resources: [{ title: "Turn Figma Designs into Full Stack Apps", url: "https://www.builder.io/blog/lovable-builder", type: "tutorial" }],
-      },
-    ],
+    newUseCases: [],
   },
 
   base44: {
@@ -364,14 +333,10 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "Claude Code Review Action", url: "https://github.com/owengretzinger/claude-code-review-action", type: "tool" }],
       // 5: Migrate projects/update dependencies
       [{ title: "Using Claude to Migrate Node Versions", url: "https://medium.com/@mol_96553/using-claude-to-migrate-to-a-newer-version-of-node-6e0d7f44143e", type: "blog" }],
+      // 6: Tech: Security audits and vulnerability scanning with GitHub Actions
+      [{ title: "Claude Code Security Review Action", url: "https://github.com/anthropics/claude-code-security-review", type: "tool" }],
     ],
-    newUseCases: [
-      {
-        department: "Tech",
-        useCase: { en: "Tech: Security audits and vulnerability scanning", es: "Tech: Auditorias de seguridad y escaneo de vulnerabilidades" },
-        resources: [{ title: "Claude Code Security Review Action", url: "https://github.com/anthropics/claude-code-security-review", type: "tool" }],
-      },
-    ],
+    newUseCases: [],
   },
 
   cursor: {
@@ -388,19 +353,15 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "Write Unit Tests with Cursor AI", url: "https://lilys.ai/en/notes/cursor-ai-20251026/write-unit-tests-cursor-ai", type: "guide" }],
       // 5: Product/Tech: Rapid MVP prototyping
       [{ title: "Rapid-Build MVPs with Cursor + AI", url: "https://medium.com/@agi_brad/how-i-use-cursor-ai-to-rapid-build-mvps-without-losing-the-plot-b32ed06868fb", type: "blog" }],
+      // 6: Tech: Automated code review and PR workflow with GitHub MCP
+      [{ title: "Supercharge Code Review with Cursor and GitHub MCP", url: "https://medium.com/ni-tech-talk/supercharge-your-code-review-process-with-cursor-and-github-mcp-c55b7b1ddc91", type: "blog" }],
     ],
-    newUseCases: [
-      {
-        department: "Tech",
-        useCase: { en: "Tech: Automated code review and PR workflow with GitHub MCP", es: "Tech: Revision de codigo y PRs automatizados con GitHub MCP" },
-        resources: [{ title: "Supercharge Code Review with Cursor and GitHub MCP", url: "https://medium.com/ni-tech-talk/supercharge-your-code-review-process-with-cursor-and-github-mcp-c55b7b1ddc91", type: "blog" }],
-      },
-    ],
+    newUseCases: [],
   },
 
   "claude-cowork": {
     existingUseCases: [
-      // 0: Execute database migrations
+      // 0: Run headless CI/CD pipelines and automated deployments
       [{ title: "Headless Mode CI/CD Integration", url: "https://code.claude.com/docs/en/headless", type: "documentation" }],
       // 1: Generate project documentation
       [{ title: "Subagents in Claude Code", url: "https://www.eesel.ai/blog/subagents-in-claude-code", type: "guide" }],
