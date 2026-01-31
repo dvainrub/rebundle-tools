@@ -407,7 +407,7 @@ function CatalogContent() {
       </header>
 
       {/* Filters */}
-      <div className="sticky top-0 z-20 border-b border-gray-200 bg-white/80 backdrop-blur-xl">
+      <div className="relative z-20 border-b border-gray-200 bg-white/80 backdrop-blur-xl">
         <div className="mx-auto max-w-6xl px-4 py-4">
           {/* Tier Filters */}
           <div className="mb-3 flex flex-wrap items-center gap-2">
