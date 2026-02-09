@@ -123,8 +123,7 @@ export const tools: Tool[] = [
     departamentos: ["finanzas", "admin", "ventas", "marketing", "todos"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: { en: "100 tasks/month, 5 Zaps", es: "100 tareas/mes, 5 Zaps" } },
-      { plan: "Starter", precio: "$20/mo", caracteristicas: { en: "750 tasks/month, multi-step", es: "750 tareas/mes, multi-paso" } },
-      { plan: "Professional", precio: "$49/mo", caracteristicas: { en: "2,000 tasks/month, paths", es: "2,000 tareas/mes, paths" } },
+      { plan: "Professional", precio: "$20/mo", caracteristicas: { en: "2,000 tasks/month, paths", es: "2,000 tareas/mes, paths" } },
       { plan: "Team", precio: "$69/mo", caracteristicas: { en: "Per user, shared", es: "Por usuario, compartido" } },
     ],
     casosDeUso: {
@@ -178,8 +177,8 @@ export const tools: Tool[] = [
     departamentos: ["tech", "operaciones", "finanzas"],
     precios: [
       { plan: "Self-hosted", precio: "$0", caracteristicas: { en: "Free, unlimited, your infra", es: "Gratis, ilimitado, tu infra" } },
-      { plan: "Starter Cloud", precio: "$22/mo", caracteristicas: { en: "2,500 executions", es: "2,500 ejecuciones" } },
-      { plan: "Pro Cloud", precio: "$57/mo", caracteristicas: { en: "10,000 executions, collaboration", es: "10,000 ejecuciones, colaboración" } },
+      { plan: "Starter Cloud", precio: "€24/mo", caracteristicas: { en: "2,500 executions", es: "2,500 ejecuciones" } },
+      { plan: "Pro Cloud", precio: "€60/mo", caracteristicas: { en: "10,000 executions, collaboration", es: "10,000 ejecuciones, colaboración" } },
       { plan: "Enterprise", precio: "Custom", caracteristicas: { en: "SSO, SLA, support", es: "SSO, SLA, soporte" } },
     ],
     casosDeUso: {
@@ -291,8 +290,8 @@ export const tools: Tool[] = [
     departamentos: ["marketing", "ventas", "operaciones", "rrhh", "tech"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: { en: "Unlimited searches, basic", es: "Búsquedas ilimitadas, básico" } },
-      { plan: "Plus", precio: "$20/mo", caracteristicas: { en: "Premium agents, speed", es: "Agentes premium, velocidad" } },
-      { plan: "Pro", precio: "$199/mo", caracteristicas: { en: "API access [VERIFY]", es: "API access [VERIFICAR]" } },
+      { plan: "Plus", precio: "$24.99/mo", caracteristicas: { en: "Premium agents, speed", es: "Agentes premium, velocidad" } },
+      { plan: "Pro", precio: "$249.99/mo", caracteristicas: { en: "API access", es: "API access" } },
     ],
     casosDeUso: {
       en: [
@@ -400,7 +399,7 @@ export const tools: Tool[] = [
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: { en: "20 limited responses", es: "20 respuestas limitadas" } },
       { plan: "AI Add-on", precio: "$10/mo", caracteristicas: { en: "Unlimited, per user", es: "Ilimitado, por usuario" } },
-      { plan: "Business + AI", precio: "$18/mo", caracteristicas: { en: "Included, per user", es: "Incluido, por usuario" } },
+      { plan: "Business + AI", precio: "$24/mo", caracteristicas: { en: "Included, per user", es: "Incluido, por usuario" } },
     ],
     casosDeUso: {
       en: [
@@ -451,8 +450,8 @@ export const tools: Tool[] = [
     departamentos: ["finanzas", "ventas", "operaciones", "marketing", "tech"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: { en: "5 spreadsheets, 10 AI/month", es: "5 spreadsheets, 10 AI/mes" } },
-      { plan: "Plus", precio: "$9/mo", caracteristicas: { en: "Unlimited, 250 AI/month", es: "Ilimitados, 250 AI/mes" } },
-      { plan: "Pro", precio: "$18/mo", caracteristicas: { en: "1,000 AI/month, embeds", es: "1,000 AI/mes, embeds" } },
+      { plan: "Plus", precio: "$8/mo", caracteristicas: { en: "Unlimited, 250 AI/month", es: "Ilimitados, 250 AI/mes" } },
+      { plan: "Pro", precio: "$79/mo", caracteristicas: { en: "1,000 AI/month, embeds", es: "1,000 AI/mes, embeds" } },
       { plan: "Team", precio: "$49+/mo", caracteristicas: { en: "Unlimited AI, SSO", es: "AI ilimitado, SSO" } },
     ],
     casosDeUso: {
@@ -505,8 +504,9 @@ export const tools: Tool[] = [
     tier: "tier2",
     departamentos: ["tech", "operaciones", "marketing", "ventas", "finanzas"],
     precios: [
-      { plan: "Credits", precio: "~$39/mo", caracteristicas: { en: "Credit system [VERIFY]", es: "Sistema de créditos [VERIFICAR]" } },
-      { plan: "Enterprise", precio: "Contact", caracteristicas: { en: "Dedicated access, no queues", es: "Acceso dedicado, sin colas" } },
+      { plan: "Customizable", precio: "$40/mo", caracteristicas: { en: "Basic access, limited tasks", es: "Acceso básico, tareas limitadas" } },
+      { plan: "Extended", precio: "$200/mo", caracteristicas: { en: "More tasks, priority", es: "Más tareas, prioridad" } },
+      { plan: "Team", precio: "Contact", caracteristicas: { en: "Dedicated access, no queues", es: "Acceso dedicado, sin colas" } },
     ],
     casosDeUso: {
       en: [
@@ -562,7 +562,7 @@ export const tools: Tool[] = [
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: { en: "400 credits, with branding", es: "400 créditos, con marca" } },
       { plan: "Plus", precio: "$10/mo", caracteristicas: { en: "No branding, PDF/PPT export", es: "Sin marca, export PDF/PPT" } },
-      { plan: "Pro", precio: "$20/mo", caracteristicas: { en: "Unlimited, analytics", es: "Ilimitados, analíticas" } },
+      { plan: "Pro", precio: "$18/mo", caracteristicas: { en: "Unlimited, analytics", es: "Ilimitados, analíticas" } },
     ],
     casosDeUso: {
       en: [
@@ -671,7 +671,7 @@ export const tools: Tool[] = [
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: { en: "3 videos/month, 3 min, 720p with branding", es: "3 videos/mes, 3 min, 720p con marca" } },
       { plan: "Creator", precio: "$29/mo", caracteristicas: { en: "Unlimited 30 min, 1080p, voice cloning", es: "Ilimitados 30 min, 1080p, clonación voz" } },
-      { plan: "Team", precio: "$39/user", caracteristicas: { en: "4K, collaboration, min 2 users", es: "4K, colaboración, min 2 usuarios" } },
+      { plan: "Pro", precio: "$99/mo", caracteristicas: { en: "4K, collaboration", es: "4K, colaboración" } },
       { plan: "Enterprise", precio: "Custom", caracteristicas: { en: "SSO, dedicated support [VERIFY]", es: "SSO, soporte dedicado [VERIFICAR]" } },
     ],
     casosDeUso: {
@@ -782,7 +782,7 @@ export const tools: Tool[] = [
     departamentos: ["operaciones", "rrhh", "ventas", "finanzas", "marketing", "tech"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: { en: "Limited projects", es: "Proyectos limitados" } },
-      { plan: "Starter", precio: "$20/mo", caracteristicas: { en: "More AI messages, domains", es: "Más mensajes IA, dominios" } },
+      { plan: "Pro", precio: "$25/mo", caracteristicas: { en: "More AI messages, domains", es: "Más mensajes IA, dominios" } },
       { plan: "Launch", precio: "$50/mo", caracteristicas: { en: "Priority, support", es: "Prioridad, soporte" } },
       { plan: "Scale", precio: "$100+/mo", caracteristicas: { en: "Team, SLA", es: "Equipo, SLA" } },
     ],
@@ -837,8 +837,10 @@ export const tools: Tool[] = [
     departamentos: ["finanzas", "admin", "operaciones", "rrhh", "legal"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: { en: "Limited projects", es: "Proyectos limitados" } },
-      { plan: "Pro", precio: "$25-50/mo", caracteristicas: { en: "Unlimited, integrations", es: "Ilimitados, integraciones" } },
-      { plan: "Enterprise", precio: "Contact", caracteristicas: { en: "SSO, dedicated support", es: "SSO, soporte dedicado" } },
+      { plan: "Starter", precio: "$25/mo", caracteristicas: { en: "5 apps, basic integrations", es: "5 apps, integraciones básicas" } },
+      { plan: "Builder", precio: "$50/mo", caracteristicas: { en: "Unlimited apps, advanced integrations", es: "Apps ilimitadas, integraciones avanzadas" } },
+      { plan: "Pro", precio: "$100/mo", caracteristicas: { en: "Priority support, custom domain", es: "Soporte prioritario, dominio propio" } },
+      { plan: "Elite", precio: "$200/mo", caracteristicas: { en: "Dedicated support, SLA", es: "Soporte dedicado, SLA" } },
     ],
     casosDeUso: {
       en: [
@@ -892,7 +894,7 @@ export const tools: Tool[] = [
     tier: "tier2",
     departamentos: ["tech"],
     precios: [
-      { plan: "Pro", precio: "$20/mo", caracteristicas: { en: "Included with limits", es: "Incluido con límites" } },
+      { plan: "Pro", precio: "$17/mo", caracteristicas: { en: "Included with limits", es: "Incluido con límites" } },
       { plan: "Max", precio: "$100/mo", caracteristicas: { en: "Extended use, priority", es: "Uso extendido, prioridad" } },
       { plan: "API Usage", precio: "Per tokens", caracteristicas: { en: "Pay per use", es: "Pago por uso" } },
     ],
