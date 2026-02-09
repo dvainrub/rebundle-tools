@@ -100,6 +100,10 @@ export const ui = {
       en: "Development",
       es: "Desarrollo",
     } as Localized<string>,
+    productividad: {
+      en: "Productivity",
+      es: "Productividad",
+    } as Localized<string>,
   },
 
   // Tier labels

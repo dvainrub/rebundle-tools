@@ -8,6 +8,7 @@ import {
   Presentation,
   Code2,
   Layers,
+  Rocket,
 } from "lucide-react";
 import React from "react";
 
@@ -19,6 +20,7 @@ export const categoryIcons: Record<Category, React.ReactNode> = {
   creatividad: React.createElement(Presentation, { className: "h-3.5 w-3.5" }),
   nocode: React.createElement(Layers, { className: "h-3.5 w-3.5" }),
   desarrollo: React.createElement(Code2, { className: "h-3.5 w-3.5" }),
+  productividad: React.createElement(Rocket, { className: "h-3.5 w-3.5" }),
 };
 
 // Category colors (Tailwind classes)
@@ -29,6 +31,7 @@ export const categoryColors: Record<Category, string> = {
   creatividad: "bg-purple-50 text-purple-700 border-purple-200",
   nocode: "bg-pink-50 text-pink-700 border-pink-200",
   desarrollo: "bg-slate-100 text-slate-700 border-slate-200",
+  productividad: "bg-indigo-50 text-indigo-700 border-indigo-200",
 };
 
 // Tier styling

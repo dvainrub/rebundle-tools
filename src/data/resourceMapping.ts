@@ -332,4 +332,56 @@ export const resourceMapping: Record<string, ToolResourceMapping> = {
       [{ title: "Continuous Claude - Autonomous PR Loop", url: "https://github.com/AnandChowdhary/continuous-claude", type: "tool" }],
     ],
   },
+
+  // PRODUCTIVIDAD
+  superwhisper: {
+    existingUseCases: [
+      // 0: All - Dictate emails, messages, documents
+      [{ title: "I Dictated This Email (And It Didn't Suck): SuperWhisper Review", url: "https://tinyblocks.kit.com/posts/superwhisper-review", type: "blog" }],
+      // 1: Sales - CRM notes
+      [{ title: "SuperWhisper AI: Voice to Text Transcription for Mac", url: "https://goaihelper.com/superwhisper-ai/", type: "guide" }],
+      // 2: Marketing - Draft content by voice
+      [{ title: "Superwhisper: The AI Dictation App That Listens and Learns", url: "https://todayonmac.com/superwhisper/", type: "blog" }],
+      // 3: Legal - Dictate legal documents
+      [{ title: "Dictation and Transcription Options for Lawyers", url: "https://www.ncbar.org/2025/04/29/hit-the-brakes-dictation-and-transcription-options-for-lawyers/", type: "guide" }],
+      // 4: Tech - Vibe coding
+      [{ title: "Intro to Modes - Superwhisper", url: "https://superwhisper.com/docs/modes/modes", type: "documentation" }],
+      // 5: HR - Transcribe interviews
+      [{ title: "Email Mode - Superwhisper Docs", url: "https://superwhisper.com/docs/modes/email", type: "documentation" }],
+    ],
+  },
+
+  granola: {
+    existingUseCases: [
+      // 0: All - Meeting notes without bot
+      [{ title: "What is Granola? The AI note taker everyone's talking about", url: "https://zapier.com/blog/granola-ai/", type: "blog" }],
+      // 1: Sales - Call summaries to CRM
+      [{ title: "Your meeting notes, now connected with 8,000+ apps", url: "https://www.granola.ai/blog/your-meeting-notes-now-connected-with-8000-apps", type: "blog" }],
+      // 2: HR - Interview notes
+      [{ title: "How Granola AI helped me stop taking notes during meetings and interviews", url: "https://designingmyself.medium.com/how-granola-ai-helped-me-stop-taking-notes-and-start-listening-during-meetings-and-interviews-ff72215b6553", type: "blog" }],
+      // 3: Tech - Standups and retros with templates
+      [{ title: "We've upgraded meeting note templates", url: "https://www.granola.ai/blog/upgraded-meeting-note-templates", type: "blog" }],
+      // 4: Operations - Action items to Asana
+      [{ title: "Track your action items from Granola notes by creating Asana tasks", url: "https://zapier.com/templates/details/turn-granola-notes-into-tasks", type: "template" }],
+      // 5: Marketing - Client briefs to Slack
+      [{ title: "Auto-post meeting notes from Granola to Slack channels", url: "https://zapier.com/templates/details/automate-granola-meeting-notes-to-slack-ai-summaries", type: "template" }],
+    ],
+  },
+
+  supercut: {
+    existingUseCases: [
+      // 0: All - Polished video messages
+      [{ title: "Supercut - AI-Powered Video Messaging for Pros", url: "https://supercut.ai", type: "guide" }],
+      // 1: Sales - Outreach videos
+      null,
+      // 2: Marketing - Product demos
+      null,
+      // 3: Tech - Async code reviews
+      null,
+      // 4: HR - Training videos
+      null,
+      // 5: Operations - Process documentation
+      null,
+    ],
+  },
 };

@@ -21,7 +21,8 @@ export type Category =
   | "conocimiento"
   | "creatividad"
   | "nocode"
-  | "desarrollo";
+  | "desarrollo"
+  | "productividad";
 
 export type RecommendationTier = "tier1" | "tier2" | "tier3" | null;
 
@@ -1042,6 +1043,170 @@ export const tools: Tool[] = [
         "Reduce tiempos de espera en tareas que requieren procesamiento extenso",
         "Notificaciones inteligentes cuando tareas se completan o requieren atención",
         "Maximiza productividad sin supervisión constante de tareas de IA",
+      ],
+    },
+  },
+
+  // PRODUCTIVIDAD
+  {
+    id: "superwhisper",
+    nombre: "Superwhisper",
+    url: "https://superwhisper.com",
+    descripcion: {
+      en: "AI-powered voice-to-text app for macOS that lets you dictate into any application using a single keyboard shortcut. Features offline-first processing, 100+ languages, custom modes (Voice, Message, Email), and works with AI coding tools for voice-driven development.",
+      es: "App de voz a texto con IA para macOS que permite dictar en cualquier aplicación con un solo atajo de teclado. Incluye procesamiento offline, 100+ idiomas, modos personalizados (Voz, Mensaje, Email) y funciona con herramientas de código IA para desarrollo por voz.",
+    },
+    descripcionCorta: {
+      en: "Voice-to-text across any app",
+      es: "Voz a texto en cualquier app",
+    },
+    categoria: "productividad",
+    nivel: "principiante",
+    tier: "tier2",
+    departamentos: ["todos"],
+    precios: [
+      { plan: "Free", precio: "$0", caracteristicas: { en: "Voice-to-text in any app, meeting recording, 100+ languages, unlimited small AI models, email support", es: "Voz a texto en cualquier app, grabación de reuniones, 100+ idiomas, modelos IA pequeños ilimitados, soporte email" } },
+      { plan: "Pro", precio: "$8.49/mo", caracteristicas: { en: "Own API keys, unlimited cloud/local AI, English translation, audio/video transcription, priority support", es: "Claves API propias, IA cloud/local ilimitada, traducción al inglés, transcripción audio/video, soporte prioritario" } },
+      { plan: "Enterprise", precio: "Custom", caracteristicas: { en: "SOC 2 Type II, centralized billing, enterprise-hosted models, volume discounts", es: "SOC 2 Type II, facturación centralizada, modelos enterprise, descuentos por volumen" } },
+    ],
+    casosDeUso: {
+      en: [
+        "All: Dictate emails, messages, and documents 3x faster than typing",
+        "Sales: Dictate CRM notes and follow-up emails after client meetings",
+        "Marketing: Draft blog posts, social copy, and campaign briefs by voice",
+        "Legal: Dictate contract reviews, legal memos, and case notes hands-free",
+        "Tech: Voice-code with AI coding tools (Cursor, Claude Code) for vibe coding",
+        "HR: Record and transcribe interviews, meeting notes, and performance reviews",
+      ],
+      es: [
+        "Todos: Dictar emails, mensajes y documentos 3x más rápido que escribiendo",
+        "Ventas: Dictar notas de CRM y emails de seguimiento tras reuniones con clientes",
+        "Marketing: Redactar posts de blog, copy social y briefs de campaña por voz",
+        "Legal: Dictar revisiones de contratos, memos legales y notas de casos sin manos",
+        "Tech: Programar por voz con herramientas de código IA (Cursor, Claude Code) para vibe coding",
+        "RRHH: Grabar y transcribir entrevistas, notas de reuniones y evaluaciones de rendimiento",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "Offline-first: works without internet, data stays on device for maximum privacy",
+        "Works across any app (Slack, Gmail, Cursor, Notion) via a single keyboard shortcut",
+        "Custom modes (Voice, Message, Email) plus user-defined modes for different contexts",
+        "100+ languages with real-time translation capability",
+      ],
+      es: [
+        "Offline-first: funciona sin internet, datos en el dispositivo para máxima privacidad",
+        "Funciona en cualquier app (Slack, Gmail, Cursor, Notion) con un solo atajo de teclado",
+        "Modos personalizados (Voz, Mensaje, Email) más modos definidos por el usuario para diferentes contextos",
+        "100+ idiomas con capacidad de traducción en tiempo real",
+      ],
+    },
+  },
+  {
+    id: "granola",
+    nombre: "Granola",
+    url: "https://granola.ai",
+    descripcion: {
+      en: "AI meeting notes app that enhances your own notes with transcript context, without a bot joining your calls. Uses system audio to capture meetings discreetly, with customizable templates and 8,000+ app integrations via Zapier.",
+      es: "App de notas de reunión con IA que mejora tus propias notas con contexto de la transcripción, sin que un bot se una a tus llamadas. Usa el audio del sistema para capturar reuniones discretamente, con plantillas personalizables y 8,000+ integraciones via Zapier.",
+    },
+    descripcionCorta: {
+      en: "AI meeting notes without the bot",
+      es: "Notas de reunión con IA sin bot",
+    },
+    categoria: "productividad",
+    nivel: "principiante",
+    tier: "tier3",
+    departamentos: ["todos"],
+    precios: [
+      { plan: "Basic", precio: "$0", caracteristicas: { en: "AI meeting notes, limited meeting history", es: "Notas de reunión IA, historial limitado" } },
+      { plan: "Business", precio: "$14/user/mo", caracteristicas: { en: "Unlimited notes and history, advanced AI, integrations (Notion, Slack, HubSpot)", es: "Notas e historial ilimitados, IA avanzada, integraciones (Notion, Slack, HubSpot)" } },
+      { plan: "Enterprise", precio: "$35/user/mo", caracteristicas: { en: "SSO, priority support, API access, org-wide admin controls", es: "SSO, soporte prioritario, acceso API, controles admin organizacionales" } },
+    ],
+    casosDeUso: {
+      en: [
+        "All: Take AI-enhanced meeting notes without a bot joining your calls",
+        "Sales: Auto-generate call summaries and sync to CRM via Zapier integrations",
+        "HR: Capture interview notes and key takeaways hands-free",
+        "Tech: Document standups, retros, and sprint planning with custom templates",
+        "Operations: Track action items from meetings and auto-create tasks in Asana",
+        "Marketing: Generate client meeting briefs and share via Slack automatically",
+      ],
+      es: [
+        "Todos: Tomar notas de reunión mejoradas con IA sin que un bot se una a tus llamadas",
+        "Ventas: Generar resúmenes de llamadas automáticamente y sincronizar al CRM via Zapier",
+        "RRHH: Capturar notas de entrevistas y puntos clave sin manos",
+        "Tech: Documentar standups, retros y planificación de sprints con plantillas personalizadas",
+        "Operaciones: Rastrear acciones pendientes de reuniones y crear tareas en Asana automáticamente",
+        "Marketing: Generar briefs de reuniones con clientes y compartir via Slack automáticamente",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "No bot joining meetings - uses system audio so participants aren't disrupted",
+        "AI enhances your own notes rather than replacing them, combining context with transcription",
+        "Customizable note templates for different meeting types (sales, standup, 1:1)",
+        "8,000+ app integrations via Zapier for automated workflows",
+      ],
+      es: [
+        "Sin bot en las reuniones - usa audio del sistema para no interrumpir a los participantes",
+        "La IA mejora tus propias notas en vez de reemplazarlas, combinando contexto con transcripción",
+        "Plantillas de notas personalizables para diferentes tipos de reunión (ventas, standup, 1:1)",
+        "8,000+ integraciones de apps via Zapier para flujos automatizados",
+      ],
+    },
+  },
+  {
+    id: "supercut",
+    nombre: "Supercut",
+    url: "https://supercut.ai",
+    descripcion: {
+      en: "AI-powered video messaging platform that automatically removes filler words, pauses, and mistakes to create polished recordings. Features native 4K recording, noise cancellation, custom branding, and auto-generated chapters and captions.",
+      es: "Plataforma de video messaging con IA que elimina automáticamente muletillas, pausas y errores para crear grabaciones pulidas. Incluye grabación nativa 4K, cancelación de ruido, branding personalizado y capítulos y subtítulos auto-generados.",
+    },
+    descripcionCorta: {
+      en: "AI video messaging with auto-editing",
+      es: "Video messaging con IA y edición automática",
+    },
+    categoria: "productividad",
+    nivel: "principiante",
+    tier: "tier3",
+    departamentos: ["todos"],
+    precios: [
+      { plan: "Free", precio: "$0", caracteristicas: { en: "Basic recording and sharing, includes watermark", es: "Grabación y compartir básico, incluye marca de agua" } },
+      { plan: "Pro", precio: "€13/seat/mo", caracteristicas: { en: "Unlimited 4K recording, AI auto-edit, custom branding, auto-chapters (billed yearly)", es: "Grabación 4K ilimitada, auto-edición IA, branding personalizado, auto-capítulos (facturación anual)" } },
+      { plan: "Enterprise", precio: "Custom", caracteristicas: { en: "Team licensing, centralized billing", es: "Licencias por equipo, facturación centralizada" } },
+    ],
+    casosDeUso: {
+      en: [
+        "All: Record polished video messages without editing - AI removes filler words and pauses",
+        "Sales: Create personalized outreach videos with custom branding and CTAs",
+        "Marketing: Record product demos and walkthroughs with auto-generated chapters",
+        "Tech: Share async code reviews and bug reports with screen recording",
+        "HR: Create training videos and company announcements with professional quality",
+        "Operations: Document processes with screen recording and automatic cleanup",
+      ],
+      es: [
+        "Todos: Grabar videos pulidos sin editar - la IA elimina muletillas y pausas",
+        "Ventas: Crear videos de outreach personalizados con branding y CTAs propios",
+        "Marketing: Grabar demos de producto y walkthroughs con capítulos auto-generados",
+        "Tech: Compartir code reviews y reportes de bugs asíncronos con grabación de pantalla",
+        "RRHH: Crear videos de formación y comunicados de empresa con calidad profesional",
+        "Operaciones: Documentar procesos con grabación de pantalla y limpieza automática",
+      ],
+    },
+    porQueEsBueno: {
+      en: [
+        "AI auto-edit removes filler words, pauses, and mistakes for polished output",
+        "Native 4K recording with noise cancellation and low system resource usage",
+        "Custom branding with logos, colors, fonts, and call-to-action buttons",
+        "Auto-generated chapters and captions for easy navigation",
+      ],
+      es: [
+        "Auto-edición IA elimina muletillas, pausas y errores para un resultado pulido",
+        "Grabación nativa 4K con cancelación de ruido y bajo consumo de recursos",
+        "Branding personalizado con logos, colores, fuentes y botones de llamada a la acción",
+        "Capítulos y subtítulos auto-generados para navegación fácil",
       ],
     },
   },
