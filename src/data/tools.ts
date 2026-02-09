@@ -1120,8 +1120,8 @@ export const tools: Tool[] = [
     departamentos: ["todos"],
     precios: [
       { plan: "Basic", precio: "$0", caracteristicas: { en: "AI meeting notes, limited meeting history", es: "Notas de reunión IA, historial limitado" } },
-      { plan: "Business", precio: "$14/user/mo", caracteristicas: { en: "Unlimited notes and history, advanced AI, integrations (Notion, Slack, HubSpot)", es: "Notas e historial ilimitados, IA avanzada, integraciones (Notion, Slack, HubSpot)" } },
-      { plan: "Enterprise", precio: "$35/user/mo", caracteristicas: { en: "SSO, priority support, API access, org-wide admin controls", es: "SSO, soporte prioritario, acceso API, controles admin organizacionales" } },
+      { plan: "Business", precio: "$14/mo", caracteristicas: { en: "Unlimited notes and history, advanced AI, integrations (Notion, Slack, HubSpot)", es: "Notas e historial ilimitados, IA avanzada, integraciones (Notion, Slack, HubSpot)" } },
+      { plan: "Enterprise", precio: "$35/mo", caracteristicas: { en: "SSO, priority support, API access, org-wide admin controls", es: "SSO, soporte prioritario, acceso API, controles admin organizacionales" } },
     ],
     casosDeUso: {
       en: [
@@ -1174,7 +1174,7 @@ export const tools: Tool[] = [
     departamentos: ["todos"],
     precios: [
       { plan: "Free", precio: "$0", caracteristicas: { en: "Basic recording and sharing, includes watermark", es: "Grabación y compartir básico, incluye marca de agua" } },
-      { plan: "Pro", precio: "€13/seat/mo", caracteristicas: { en: "Unlimited 4K recording, AI auto-edit, custom branding, auto-chapters (billed yearly)", es: "Grabación 4K ilimitada, auto-edición IA, branding personalizado, auto-capítulos (facturación anual)" } },
+      { plan: "Pro", precio: "€18/mo", caracteristicas: { en: "Unlimited 4K recording, AI auto-edit, custom branding, auto-chapters", es: "Grabación 4K ilimitada, auto-edición IA, branding personalizado, auto-capítulos" } },
       { plan: "Enterprise", precio: "Custom", caracteristicas: { en: "Team licensing, centralized billing", es: "Licencias por equipo, facturación centralizada" } },
     ],
     casosDeUso: {

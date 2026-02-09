@@ -83,6 +83,10 @@ All content uses `Localized<T>` type to enforce both languages exist. See `src/l
 - Add `[VERIFY]`/`[VERIFICAR]` if pricing uncertain
 - Enterprise often "Custom"/"Contactar"
 
+### Pricing Format
+- Always use `/mo` (not `/user/mo`, `/seat/mo`, or yearly prices)
+- Always use monthly prices, not annual billing rates
+
 ### Adding Categories
 Confirm with user first, then update:
 1. `Category` type in `tools.ts`
